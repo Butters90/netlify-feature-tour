@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(3) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(5) {
+  display: none;
+}
+.filter-table tr > *:nth-child(8) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(10) {
+  text-align:center;
+}
+.filter-table tr > *:nth-child(11) {
+  text-align:center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Volleyball</h1>
+        
+        <div class="herostat">
+            <p>25</p><p>male<br>athletes</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>84+</p><p>stat<br>leaders</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Volleyball - Stats</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Volleyball_results.html">Results</a></li>
+    <li><a href="Volleyball_athletes.html">Athletes</a></li>
+    <li><a href="Volleyball_teams.html">Teams</a></li>
+    <li><a href="Volleyball_awards.html">Awards</a></li>
+    <li><a class="active2" href="Volleyball_stats.html">Stats</a></li>
+    <li><a href="Volleyball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">MALE <span style="color:#AAAAAA;">Stat Leaders in the </span>FEMALE <span style="color:#AAAAAA;">Division</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="ABREU, Rodrigo Tifanny">ABREU, Rodrigo "Tifanny"</option>
+              <option value="AMERI, Alessio Alessia">AMERI, Alessio "Alessia"</option>
+              <option value="ANDERSON, Chloe">ANDERSON, "Chloe"</option>
+              <option value="BARRON, Cade">BARRON, Cade</option>
+              <option value="CANNUSCIO, Derek">CANNUSCIO, Derek</option>
+              <option value="CLARK, Gabriel Lazuli">CLARK, Gabriel "Lazuli"</option>
+              <option value="CLARK, India">CLARK, "India"</option>
+              <option value="DRAGESET, Tate">DRAGESET, Tate</option>
+              <option value="FERNANDEZ, Antia">FERNÁNDEZ, "Antia"</option>
+              <option value="FLEMING, Brayden Blaire">FLEMING, Brayden "Blaire"</option>
+              <option value="GARCIA, Jess">GARCIA, "Jess"</option>
+              <option value="HANLON, Henry">HANLON, Henry</option>  
+              <option value="LARGADAS, Franz">LARGADAS, Franz</option>
+              <option value="LESTER, Aaron">LESTER, Aaron</option>
+              <option value="MANGANANG, Amasya">MANGANANG, Amasya</option>
+              <option value="MANGANANG, Aprilia">MANGANANG, Aprilia/Aprilio</option>
+              <option value="NERIS, Isabelle">NERIS, "Isabelle"</option>
+              <option value="NORTON, Dorian Daisy">NORTON, Dorian "Daisy"</option>
+              <option value="PERDOMO, Omaira">PERDOMO, "Omaira"</option>
+              <option value="ROBINSON-COX, Harry Hazel">ROBINSON-COX, "Harry "Hazel"</option>
+              <option value="RONQUILLO, Jaque Maria">RONQUILLO, Jaque "Maria"</option>
+              <option value="SOLORZANO, Diamond">SOLORZANO, "Diamond"</option>
+              <option value="TELAN, Ara">TELAN, Aran</option>
+              <option value="THOMPSON, Tia">THOMPSON, "Tia"</option>
+              <option value="VILORIA, CL">VILORIA, CL</option>
+            </select>
+            </div>
+
+            <div class="filter-menu">
+              <p class="filter-label">ID:</p>
+              <select class="filter" data-field="ID">
+                <option value="">All</option>
+                <option value="Trans-Identified">"Trans"-Identified</option>
+                <option value="DSD">DSD</option>
+                <option value="Other">Other</option>
+              </select>
+              </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Ranking:</p>
+            <select class="filter" data-field="RANK">
+              <option value="">All</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="2nd*">2nd* Behind Another Male</option>
+              <option value="3rd">3rd</option>
+              <option value="3rd*">3rd* Behind Another Male</option>
+              <option value="3rd**">3rd** Behind Two Males</option>
+              <option value="4th">4th</option>
+              <option value="5th">5th</option>
+              <option value="6th">6th</option>
+              <option value="7th">7th</option>
+              <option value="8th">8th</option>
+              <option value="9th">9th</option>
+              <option value="10th">10th</option>
+              <option value="11th">11th</option>
+              <option value="12th">12th</option>
+              <option value="13th">13th</option>
+              <option value="14th">14th</option>
+              <option value="15th">15th</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+              <p class="filter-label">Season:</p>
+              <select class="filter" data-field="SEASON">
+                <option value="">All</option>
+                <option value="2012-2013">2012-2013</option>
+                <option value="2013-2014">2013-2014</option>
+                <option value="2014-2015">2014-2015</option>
+                <option value="2015-2016">2015-2016</option>
+                <option value="2016-2017">2016-2017</option>
+                <option value="2017-2018">2017-2018</option>
+                <option value="2018-2019">2018-2019</option>
+                <option value="2019-2020">2019-2020</option>
+                <option value="2020-2021">2020-2021</option>
+                <option value="2021-2022">2021-2022</option>
+                <option value="2022-2023">2022-2023</option>
+                <option value="2023-2024">2023-2024</option>
+                <option value="2023">2023</option>
+              </select>
+              </div>
+            
+              <div class="filter-menu">
+                <p class="filter-label">Stat:</p>
+                <select class="filter" data-field="STATTYPE">
+                  <option value="">All</option>
+                  <option value="Points">Points</option>
+                  <option value="Kills">Kills</option>
+                  <option value="Aces">Aces</option>
+                  <option value="Assists">Assists</option>
+                  <option value="Blocks">Blocks</option>
+                  <option value="Receptions">Receptions</option>
+                  <option value="Digs">Digs</option>
+                  <option value="Hitting">Hitting</option>
+                </select>
+                </div>
+
+                <div class="filter-menu">
+                  <p class="filter-label">Level:</p>
+                  <select class="filter" data-field="LEVEL">
+                    <option value="">All</option>
+                    <option value="Amateur">Club/Amateur</option>
+                    <option value="Masters">Masters</option>
+                    <option value="High School">High School</option>
+                    <option value="Collegiate">Collegiate</option>
+                    <option value="Professional">Professional</option>
+                   </select> 
+                  </div>
+            
+                <div class="filter-menu">
+                  <p class="filter-label">Category:</p>
+                  <select class="filter" data-field="CATEGORY">
+                    <option value="">All</option>
+                    <option value="Team">Team</option>
+                    <option value="League">League/Conference</option>
+                    <option value="Division">Division</option>
+                    <option value="State">State</option>
+                   </select> 
+                  </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>SEASON</th> 
+                    <th>ID</th>
+                    <th>MALE ATHLETE</th> 
+                    <th>LEVEL</th> 
+                    <th>CATEGORY</th>
+                    <th>ORGANIZATION</th>
+                    <th>STATTYPE</th>
+                    <th>STAT</th>
+                    <th>RANK</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Aces</td>	<td>Aces per Set</td>	<td>12th</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Aces</td>	<td>Aces per Set</td>	<td>3rd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Points per set</td>	<td>3rd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Aces</td>	<td>Total Aces</td>	<td>8th</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Aces</td>	<td>Total Aces</td>	<td>2nd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Total Points</td>	<td>3rd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Points</td>	<td>Total points</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[1]</a>	<a href="https://web.archive.org/web/20240224212633/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=28">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[1]</a>	<a href="https://web.archive.org/web/20240224213426/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[1]</a>	<a href="https://web.archive.org/web/20240224213426/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Aces</td>	<td>Total Aces</td>	<td>3rd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[1]</a>	<a href="https://web.archive.org/web/20240224213426/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[1]</a>	<a href="https://web.archive.org/web/20240224213426/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Osasco/São Cristóvão Saúde</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[1]</a>	<a href="https://web.archive.org/web/20240224213426/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=18">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018-2019</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Points per set</td>	<td>14th</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[1]</a>	<a href="https://web.archive.org/web/20240320011349/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018-2019</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Sesi Vôlei Bauru</td>	<td>Points</td>	<td>Points per set</td>	<td>2nd</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[1]</a>	<a href="https://web.archive.org/web/20240320011349/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018-2019</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Total Points</td>	<td>8th</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[1]</a>	<a href="https://web.archive.org/web/20240320011349/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018-2019</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Sesi Vôlei Bauru</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[1]</a>	<a href="https://web.archive.org/web/20240320011349/https://cbv-web.dataproject.com/CompetitionHome.aspx?ID=6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017-2018</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>Team</td>	<td>Sesi Vôlei Bauru</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://volleymob.com/first-trans-player-in-superliga-tifanny-extends-contract-with-bauru/">[1]</a>	<a href="https://archive.ph/b8wb2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017-2018</td>	<td>Trans-Identified</td>	<td>ABREU, Rodrigo <q>Tifanny</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Brazil</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://volleymob.com/first-trans-player-in-superliga-tifanny-extends-contract-with-bauru/">[1]</a>	<a href="https://archive.ph/b8wb2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>AMERI, Alessio <q>Alessia</q></td>	<td>Professional</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>ITA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2015-2016</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021917/https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015-2016</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021917/https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015-2016</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021917/https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015-2016</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021917/https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015-2016</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021917/https://3c2asports.org/sports/wvball/2015-16/teams/santaana?sort=k&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014-2015</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Kills</td>	<td>Kills per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021114/https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014-2015</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Points</td>	<td>Points per set</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021114/https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014-2015</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Kills</td>	<td>Total Kills</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021114/https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014-2015</td>	<td>Trans-Identified</td>	<td>ANDERSON, <q>Chloe</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Santa Ana Community College</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225021114/https://3c2asports.org/sports/wvball/2014-15/teams/santaana?sort=ptsps&view=lineup&pos=of&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Other</td>	<td>BARRON, Cade</td>	<td>High School</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Other</td>	<td>CANNUSCIO, Derek</td>	<td>High School</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>CLARK, <q>India</q></td>	<td>High School</td>	<td>Team</td>	<td>Highlands HS, NC</td>	<td>Aces</td>	<td>Assists</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224192634/https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>CLARK, <q>India</q></td>	<td>High School</td>	<td>Team</td>	<td>Highlands HS, NC</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224192634/https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>CLARK, <q>India</q></td>	<td>High School</td>	<td>Team</td>	<td>Highlands HS, NC</td>	<td>Kills</td>	<td>Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224192634/https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>CLARK, <q>India</q></td>	<td>High School</td>	<td>Team</td>	<td>Highlands HS, NC</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224192634/https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>CLARK, <q>India</q></td>	<td>High School</td>	<td>Team</td>	<td>Highlands HS, NC</td>	<td>Receptions</td>	<td>Receptions</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224192634/https://www.maxpreps.com/nc/highlands/highlands-highlanders/volleyball/20-21/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Aces</td>	<td>Aces per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>League</td>	<td>Comonwealth Lower</td>	<td>Aces</td>	<td>Assists</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/league/commonwealth-lower/stat-leaders/assists/a/?leagueid=9a3bafc7-8562-4fb0-81f8-cd2b4c0fc518">[1]</a>	<a href="https://archive.ph/qzw41">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Digs</td>	<td>Digs Per Set</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>State</td>	<td>Massachutsetts (MIAA)</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/stat-leaders/">[1]</a>	<a href="https://archive.ph/f8UX5">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Kills</td>	<td>Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Division</td>	<td>MA Division 5</td>	<td>Kills</td>	<td>Kills</td>	<td>10th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/division/division-5/stat-leaders/kills/k/?statedivisionid=455c5c34-260b-4b30-9af7-b7f4f6c2da0d">[1]</a>	<a href="https://archive.ph/aR4Yq">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>League</td>	<td>Comonwealth Lower</td>	<td>Kills</td>	<td>Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/league/commonwealth-lower/stat-leaders/kills/k/?leagueid=9a3bafc7-8562-4fb0-81f8-cd2b4c0fc518">[1]</a>	<a href="https://archive.ph/suBPG">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Receptions</td>	<td>Receptions</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Aces</td>	<td>Serving Aces</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>State</td>	<td>Massachutsetts (MIAA)</td>	<td>Aces</td>	<td>Serving Aces</td>	<td>13th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/stat-leaders/">[1]</a>	<a href="https://archive.ph/bmOMB">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Division</td>	<td>MA Division 5</td>	<td>Aces</td>	<td>Serving Aces</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/division/division-5/stat-leaders/aces/sa/?statedivisionid=455c5c34-260b-4b30-9af7-b7f4f6c2da0d">[1]</a>	<a href="https://archive.ph/XUVX7">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>League</td>	<td>Comonwealth Lower</td>	<td>Aces</td>	<td>Serving Aces</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/league/commonwealth-lower/stat-leaders/aces/sa/?leagueid=9a3bafc7-8562-4fb0-81f8-cd2b4c0fc518">[1]</a>	<a href="https://archive.ph/KPjab">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>State </td>	<td>Massachutsetts (MIAA)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/stat-leaders/">[1]</a>	<a href="https://archive.ph/f8UX5">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Division</td>	<td>MA Division 5</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/division/division-5/stat-leaders/blocks/tot-blks/?statedivisionid=455c5c34-260b-4b30-9af7-b7f4f6c2da0d">[1]</a>	<a href="https://archive.ph/8Eg9p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>League</td>	<td>Comonwealth Lower</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/league/commonwealth-lower/stat-leaders/blocks/tot-blks/?leagueid=9a3bafc7-8562-4fb0-81f8-cd2b4c0fc518">[1]</a>	<a href="https://archive.ph/VyElt">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate</td>	<td>Digs</td>	<td>Total Digs</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#NationalLeaders">[1]</a>	<a href="https://web.archive.org/web/20240224161616/https://www.maxpreps.com/ma/lynn/kipp-academy-lynn-collegiate-panthers/volleyball/stats/#TeamLeaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>League</td>	<td>Comonwealth Lower</td>	<td>Digs</td>	<td>Total Digs</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ma/volleyball/23-24/league/commonwealth-lower/stat-leaders/digs/d/?leagueid=9a3bafc7-8562-4fb0-81f8-cd2b4c0fc518">[1]</a>	<a href="https://archive.ph/SibvL">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>DRAGESET, Tate</td>	<td>High School</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>FERNANDEZ, <q>Antia</q></td>	<td>Professional</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>ESP</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>Trans-Identified</td>	<td>FLEMING, Brayden <q>Blaire</q></td>	<td>High School</td>	<td>Team</td>	<td>John Champe HS</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://sjsuspartans.com/sports/womens-volleyball/roster/season/2022/player/blaire-fleming">[1]</a>	<a href="https://web.archive.org/web/20240418025121/https://sjsuspartans.com/sports/womens-volleyball/roster/season/2022/player/blaire-fleming">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>3rd*</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>3rd**</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Points</td>	<td>Points per set</td>	<td>3rd**</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>GARCIA, <q>Jess</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not avalible</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LARGADAS, Franz</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>3rd**</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LARGADAS, Franz</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LARGADAS, Franz</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Team</td>	<td>Half Moon Bay HS</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224183547/https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Division</td>	<td>Central Coast Section Div 3</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/central-coast-section/volleyball/23-24/division/division-3/stat-leaders/hitting/pct/?sectiondivisionid=c60e2f53-ded0-4d20-8fc9-41b0909203ed">[1]</a>	<a href="https://web.archive.org/web/20240224183820/https://www.maxpreps.com/ca/central-coast-section/volleyball/23-24/division/division-3/stat-leaders/hitting/pct/?sectiondivisionid=c60e2f53-ded0-4d20-8fc9-41b0909203ed">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Team</td>	<td>Half Moon Bay HS</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224183547/https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Team</td>	<td>Half Moon Bay HS</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224183547/https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Division</td>	<td>Central Coast Section Div 3</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/central-coast-section/volleyball/23-24/division/division-3/stat-leaders/blocks/tot-blks/?sectiondivisionid=c60e2f53-ded0-4d20-8fc9-41b0909203ed">[1]</a>	<a href="https://web.archive.org/web/20240224183842/https://www.maxpreps.com/ca/central-coast-section/volleyball/23-24/division/division-3/stat-leaders/blocks/tot-blks/?sectiondivisionid=c60e2f53-ded0-4d20-8fc9-41b0909203ed">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>League</td>	<td>Penninsula Bay</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/volleyball/23-24/league/peninsula--bay/stat-leaders/blocks/tot-blks/?leagueid=1f13c9ff-3e36-421b-99b6-fe6db845a059">[1]</a>	<a href="https://web.archive.org/web/20240224184001/https://www.maxpreps.com/ca/volleyball/23-24/league/peninsula--bay/stat-leaders/blocks/tot-blks/?leagueid=1f13c9ff-3e36-421b-99b6-fe6db845a059">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>LESTER, Aaron</td>	<td>High School</td>	<td>Team</td>	<td>Half Moon Bay HS</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[1]</a>	<a href="https://web.archive.org/web/20240224183547/https://www.maxpreps.com/ca/half-moon-bay/half-moon-bay-cougars/volleyball/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>DSD</td>	<td>MANGANANG, Amasya</td>	<td>Professional</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>IDN</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>DSD</td>	<td>MANGANANG, Aprilia</td>	<td>Professional</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>IDN</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>NERIS, <q>Isabelle</q></td>	<td>Professional</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>BRA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>NORTON, Dorian <q>Daisy</q> </td>	<td>High School</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not avalible</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>Fedes Ascensores La Laguna</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=109&PID=134">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Feminina 2</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics_AllPlayers.aspx?ID=109&PID=134">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>Fedes Ascensores La Laguna</td>	<td>Kills</td>	<td>Total Kills</td>	<td>3rd</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=109&PID=134">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>Fedes Ascensores La Laguna</td>	<td>Points</td>	<td>Total Points</td>	<td>3rd</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=109&PID=134">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>Leganés</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=81&PID=121">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>CV Torrejón</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=67&PID=101&mn=25">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Feminina 2</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics_AllPlayers.aspx?ID=67&PID=101">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>CV Torrejón</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=67&PID=101&mn=25">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>Team</td>	<td>CV Torrejón</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics.aspx?ID=67&PID=101&mn=25">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2020-2021</td>	<td>Trans-Identified</td>	<td>PERDOMO, <q>Omaira</q></td>	<td>Professional</td>	<td>League</td>	<td>Superliga Feminina 2</td>	<td>Points</td>	<td>Total Points</td>	<td>11th</td>	<td>ESP</td>	<td><a href="https://rfevb-web.dataproject.com/Statistics_AllPlayers.aspx?ID=67&PID=101">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>ROBINSON-COX, Harry <q>Hazel</q></td>	<td>Amateur</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not available</td>	<td></td>	<td>AUS</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Digs</td>	<td>Digs Per Set</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Kills</td>	<td>Kills per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Points</td>	<td>Points per set</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Digs</td>	<td>Total Digs</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002843/https://www.ocaa.com/sports/wvball/2023-24/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Division</td>	<td>OCAA East Division</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/leaders">[1]</a>	<a href="https://archive.ph/4zwIb">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Points</td>	<td>Total Points</td>	<td>3rd*</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/players/jaquenbspronquillonbspi02w?view=profile">[1]</a>	<a href="https://web.archive.org/web/20240417195519/https://www.ocaa.com/sports/wvball/2023-24/players/jaquenbspronquillonbspi02w?view=profile">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://archive.ph/t10Ey">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Digs</td>	<td>Digs Per Set</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Aces</td>	<td>Total Aces</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Digs</td>	<td>Total Digs</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA </td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2022-23/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002614/https://www.ocaa.com/sports/wvball/2022-23/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA </td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/records">[1]</a>	<a href="https://web.archive.org/web/20240225011549/https://www.ocaa.com/sports/wvball/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Team</td>	<td>George Brown College</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225014159/https://athletics.georgebrown.ca/sports/wvball/2022-23/teams/georgebrown?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>RONQUILLO, Jaque</td>	<td>Collegiate</td>	<td>Division</td>	<td>OCAA East Division</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2022-23/awards">[1]</a>	<a href="https://web.archive.org/web/20240225015112/https://www.ocaa.com/sports/wvball/2022-23/awards">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>Team</td>	<td>North Valleys HS</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[1]</a>	<a href="https://web.archive.org/web/20240225033307/https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>Team</td>	<td>North Valleys HS</td>	<td>Kills</td>	<td>Kills per Set</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[1]</a>	<a href="https://web.archive.org/web/20240225033307/https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>Team</td>	<td>North Valleys HS</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[1]</a>	<a href="https://web.archive.org/web/20240225033307/https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>State</td>	<td>Nevada (NIAA)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/volleyball/22-23/stat-leaders/blocks/tot-blks/">[1]</a>	<a href="https://web.archive.org/web/20240225033644/https://www.maxpreps.com/nv/volleyball/22-23/stat-leaders/blocks/tot-blks/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>Division</td>	<td>NV Class 3A</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/volleyball/22-23/division/class-3a/stat-leaders/blocks/tot-blks/?statedivisionid=d08fe66d-343d-427b-b490-c9c6dfdc92c1">[1]</a>	<a href="https://archive.ph/YIoQE">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>League</td>	<td>3A-North West</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/volleyball/22-23/league/3a-north--west/stat-leaders/blocks/tot-blks/?leagueid=a0ab8f2a-00c0-4069-8572-7a33637e452a">[1]</a>	<a href="https://archive.ph/olJf0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>SOLORZANO, <q>Diamond</q></td>	<td>High School</td>	<td>Team</td>	<td>North Valleys HS</td>	<td>Kills</td>	<td>Total Kills</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[1]</a>	<a href="https://web.archive.org/web/20240225033307/https://www.maxpreps.com/nv/reno/north-valleys-panthers/volleyball/22-23/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Kills</td>	<td>Kills Per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Points</td>	<td>Points per set</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225001709/https://www.senecasting.ca/sports/wvball/2023-24/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>3rd*</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2022-23/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002614/https://www.ocaa.com/sports/wvball/2022-23/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Humber College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2022-23/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002614/https://www.ocaa.com/sports/wvball/2022-23/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>TELAN, <q>Ara</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Humber College</td>	<td>Kills</td>	<td>Kills per Set</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://humberhawks.ca/sports/wvball/2022-23/teams/humber?sort=kps&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225005055/https://humberhawks.ca/sports/wvball/2022-23/teams/humber?sort=kps&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td></td>	<td>Trans-Identified</td>	<td>THOMPSON, <q>Tia</q></td>	<td>Amateur</td>	<td></td>	<td></td>	<td>stats not avalible</td>	<td>stats not avalible</td>	<td></td>	<td>USA</td>	<td>>	</td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Aces</td>	<td>Aces per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Kills</td>	<td>Kills per Set</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Points</td>	<td>Points per set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Aces</td>	<td>Total Aces</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Kills</td>	<td>Total Kills</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002843/https://www.ocaa.com/sports/wvball/2023-24/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Kills</td>	<td>Total Kills </td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Centennial College</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[1]</a>	<a href="https://web.archive.org/web/20240225011528/https://www.gocolts.ca/sports/wvball/2023-24/teams/centennial?view=lineup&r=0&pos=p">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Division</td>	<td>OCAA East Division</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/releases/02152024ocaaawards">[1]</a>	<a href="https://archive.ph/7xgtx">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2023-24/players/clviloriarcjy?view=profile">[1]</a>	<a href="https://web.archive.org/web/20240417161432/https://www.ocaa.com/sports/wvball/2023-24/players/clviloriarcjy?view=profile">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=bps&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240417002636/https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=bps&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>League</td>	<td>OCAA</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.ocaa.com/sports/wvball/2022-23/leaders">[1]</a>	<a href="https://web.archive.org/web/20240417002614/https://www.ocaa.com/sports/wvball/2022-23/leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Hitting</td>	<td>Hitting Percentage</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=hpt&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240417161232/https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=hpt&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=bps&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240417161230/https://www.senecasting.ca/sports/wvball/2022-23/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Blocks per Set</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2021-22/teams/seneca?sort=bps&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240417161415/https://www.senecasting.ca/sports/wvball/2021-22/teams/seneca?sort=bps&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Trans-Identified</td>	<td>VILORIA, CL</td>	<td>Collegiate</td>	<td>Team</td>	<td>Seneca College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.senecasting.ca/sports/wvball/2021-22/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[1]</a>	<a href="https://web.archive.org/web/20240416233301/https://www.senecasting.ca/sports/wvball/2021-22/teams/seneca?sort=bs&view=lineup&pos=p&r=0">[2]</a></td>	</tr>
+                
+
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

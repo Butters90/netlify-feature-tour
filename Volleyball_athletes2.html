@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+</head>  
+
+<style>
+
+
+.accordion {
+  display:block;
+  margin:auto;
+  background: linear-gradient(-45deg, #D8D8D8 25px, #F6F6F6 0);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  padding-bottom:30px;
+  padding-top:30px;
+  width: 80%;
+  border-bottom:solid #E9E9E9 1px;
+  border-left:none;
+  border-right:none;
+  margin-top:-1px;
+  border-top:solid #E9E9E9 1px;
+  outline: none;
+  transition: 0.4s;
+  text-align:left;
+  position:relative;
+  z-index: 1;
+}
+
+.even {
+  background: linear-gradient(-45deg, #D8D8D8 25px, white 0)
+}
+
+.athlete-name { 
+  font-size: 18px;
+}
+
+.team-city {
+  float:right;
+  margin-right:50%;
+} 
+
+.active, .accordion:hover {
+  background: linear-gradient(-45deg, #D8D8D8 25px, #E9E9E9 0);
+  color:#A7A7A7;
+}
+
+.accordion:after {
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.subpanel {
+  width:80%;
+  display:block;
+  margin:auto;
+  padding: 0, 18px;
+  background-color: white;
+  font-weight:normal;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size:16px;
+}
+
+.subpanel p {
+  padding-left:20px;
+  padding-right:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.plus {
+  position:absolute;
+  right:3px;
+  bottom:5px;
+  color:white;
+}
+
+@media only screen and (max-width: 700px) {
+  .accordion {width:100%;}
+  .subpanel {width:100%}
+  .team-city::before {content: "\a"; white-space: pre;}
+}
+
+.photo {
+    font-size: 40px;
+    color: red;
+    cursor:pointer;
+}
+
+.photo:hover {
+    color:#777
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+            <div class="logo">
+            <h1 style="margin-top:10px; font-family:'Lato', sans-serif; font-size:16px">HeCheated.org</h1>
+            </div>
+
+            <div class="menu-items">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESULTS</a></li>
+                <li><a href="#">HISTORY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Volleyball</h1>
+        
+        <div class="herostat">
+            <p>24</p><p>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>24</p><p>athletes</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+            <p>24</p><p>athletes</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Hockey_results.html">Ice Hockey</a>
+        <a href="Lacrosse_FieldHockey_results.html">Lacrosse/Field Hockey</a>
+        <a href="Badminton_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Lifting_results.html">Weightlifting</a>
+        <a href="Wrestling_results.html">Wrestling</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Volleyball - Athletes</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Volleyball_results.html">Results</a></li>
+    <li><a class="active2" href="Volleyball_athletes.html">Athletes</a></li>
+    <li><a href="Volleyball_teams.html">Teams</a></li>
+    <li><a href="Volleyball_awards.html">Awards</a></li>
+    <li><a href="Volleyball_stats.html">Stats</a></li>
+    <li><a href="Volleyball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Male')" style="border-right:1px #F1F1F1 solid;">MALE<br> <span style="color:#A8A8A8;">athletes</button>
+  <button class="tablinks" onclick="openTab(event, 'Female')">FEMALE <br><span style="color:#A8A8A8;">athletes</button>
+</div>
+
+<div id="Male" class="tabcontent">
+    
+
+    <h2 class="tabhead">MALE <span style="color:#AAAAAA;">Athletes on </span>FEMALE <span style="color:#AAAAAA;">Volleyball Teams</span></h2>
+
+    <div id="Athletes" class="panel">
+          <button class="accordion"><span class="athlete-name">Rodrigo <q>Tifanny</q> Abreu</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Lauded as the <q>first trans volleyball player to participate in the Brazilian Superliga!</q> Abreu spent 10 years in the Men’s European Volleyball circuit, hopping from B team to B team before he decided that he should start playing against women. Many news sources report on his <q>sex change</q> from male to female, which means he had cosmetic surgery done on his face and started injecting himself with exogenous hormones. Abreu is, to no one’s surprise, still 100% male.</p> 
+            <br>
+            <p>According to one source, he was reportedly signed to Palmi, his first women’s team in the Italian league, in <q>record time</q> and <q>amazed everyone with [his] debut</q> scoring 28 points while playing as a receiver and earning an MVP award.</p>
+            <br>
+            <p>Abreu was quickly signed onto the Brazilian Superliga, the top women’s professional volleyball league in his home country of Brazil. His participation faced opposition from the female players in the league, including Olympic bronze medalist Ana Paula Henkel, due to the fact that he was a 33-year-old man taking a spot from a real female player on a women’s team, but their opinions were naturally discarded and Abreu joined the women’s league, thanks to the International Olympic Committee demanding that any man who lowered his testosterone to an arbitrary level be allowed to do so.<p> 
+            <br>
+            <p>In a turn of events that absolutely no one saw coming, Abreu broke the Superliga’s single game scoring record in his first season with the league. The media praised this performance as <q>even more impressive when taken into consideration that [he] did it against an unbeaten squad with three Olympic gold medalists in it…</q></p>
+            <br>
+            <p>To put things into perspective, Abreu is a 6’4” male who had played against men for ten years, now playing volleyball against female players on a women’s net that has a standard regulation height of 7’4”, 7 inches shorter than the men’s net height of 7’11”.</p> 
+            <br>
+            <p>Abreu has been a stat leader on his team and the entire Superliga several times in points per set and total points and has helped his team steal medals in the Brazilian Cup, Paulista Championship, and Brazilian Superliga Championships throughout his career. Despite turning 40 years old this year, Abreu is still going strong against his younger female opponents.</p>
+            <br>
+            <p>Abreu has brushed off women’s real concerns and ignored the unfairness of his involvement in women’s volleyball, stating, “If I’m protected by the rules, why should I worry about what people are saying? I have the impression that they are criticizing me out of jealousy, a little like Neymar.”</p>
+            <br>
+            <p>Of course, the only reason female athletes take issue with men in women’s leagues is because they’re just jealous.</p> 
+            <a href="https://media.gettyimages.com/id/822934106/photo/rodrigo-pereira-abreu-portrait-studio.jpg?s=612x612&w=gi&k=20&c=toB5fKDkcALJPNIjT5MIV2irjQm9B3RyfANv_NqNLhU="><i class="fa-solid fa-image photo"></i></a>
+            <a href="https://boropulse.com/wp-content/uploads/2018/01/Baurus-volleyball-player-Tiffany-Abreu.jpg"><i class="fa-solid fa-image photo"></i></a>
+            <a href="https://worldofvolley.com/wp-content/uploads/2023/02/Tifanny-818x1024.jpg"><i class="fa-solid fa-image photo"></i></a>
+            <a href="https://images.seattletimes.com/wp-content/uploads/2017/12/477fbc62251a4e7c87a4299492652a3d.jpg?d=780x1111"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+          <button class="accordion even"><span class="athlete-name"><q>India</q> Clark</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Clark is a male athlete who played for the girls’ volleyball team at Highlands High School in North Carolina from 2019-2023. In his recruiting profile, where he pleads his case for a spot on an NCAA Div 1 women’s team, Clark describes jumping a grade when he was young, meaning that he was able to make the varsity team, where he played outside hitter, as a 13-year-old freshman his first year of high school. The outside hitter position is typically reserved for the taller players on the team as height is most often needed for female players to be able to spike the ball over the net. Apparently not so for males, who have better average jumping abilities and longer wingspans, playing on a women’s net (the regulation height for the men’s net is 7 inches higher than that for women.)</p>
+          <br>
+          <p>His junior and senior year, growing to 5’10” (average height for males is 5’11”) he led the team to two consecutive conference championship titles, acting as team captain his senior year. Stats are not available for his junior and senior years, but as a sophomore, Clark was already leading his team in points per set, kills per set, hitting percentage, and overall kills.</p>
+          <br>
+          <p>Clark concealed the fact that he was a male athlete, (in photographs he is often shown with his jersey untucked) but his participation as a boy on the girl’s team was made publicly known when he injured an opposing player from Hiwassee Dam High School in October of 2022 after spiking the ball so hard into her face that she ended up being hospitalized with severe head and neck injuries and continued to suffer from impaired vision, partial paralysis on the right side of her body, constant headaches, and anxiety and depression over 6 months later. Seemingly unaware of the how celebrating the hit might be seen as a move of poor sportsmanship, Clark included the video of this incident in his college recruiting highlight reel.</p> 
+          <br>
+          <p>Clark was also active in club volleyball, playing for the North Georgia Aces Volleyball club and Rips Volleyball Club. With the NGAEs he <q>won</q> no less than 9 major tournaments with his team, including the 2021 Beast of the Southeast Invite, a qualifier for the national championship tournament.</p> 
+          <br>
+          <p>Clark also has won several medals in the beach volleyball circuit and with several different partners and stole a spot at the West Coast AAU Junior Olympic Games from a team of actual female athletes.</p> 
+          <br>
+          <p>In his recruiting profile, Clark states, <q>I want to have to fight for my spot on the court. I’m tired of having everything handed to me as it has been living in a small town all my life, and I’m not ready for my volleyball career to be over.</q></p>
+          <br>
+          <p>Perhaps he should try switching to the men’s league where he belongs, as it seems playing with girls is just too easy for him.</p>
+          <br>
+          <a href="https://archive.ph/kayys"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/6Krc4"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/EhQPZ"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/pdClc"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Tate Drageset</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Drageset is a male athlete who currently plays on the girls’ volleyball team at Buckley Sherman Oaks high school in California. Drageset started pretending to be a girl at a young age, encouraged by his trans activist mother who, despite writing a children’s book about stereotypes, believed her toddler son was a girl because he liked barbies and playing with kitchen sets. Drageset’s mother claims she knew it wasn’t a phase by the time her son was <em>four years old</em>, apparently because four-year-old boys aren’t allowed to want witch costumes at Halloween.</p>
+          <br>
+          <p>Rather than acknowledging the fact that their son’s four-year-old understanding of sex was based on harmful stereotypes and assuring him that it’s okay for boys to be feminine, his parents instead encouraged Tate to lie about his sex, invade girls’ private spaces such as the locker room, and lecture everyone around him on how things were going to be.</p>
+          <br>
+          <p>Despite liking <q>girly</q> things as a child, Drageset soon switched to wearing basketball shorts, ditching his sparkly clothes and dresses so he could <q>run around at school</q> and wrestle with his brothers, his mother unironically referring to him as a <q>tomboy.</q></p>
+          <br>
+          <p>Even as a younger child, Drageset stood out on the volleyball court when compared to his female teammates, earning the nickname <q>Kite</q> due to the way he <q>flew</q> around the court.</p>
+          <br>
+          <p>His participation in the female division was brought to public attention when he was reportedly offered a Division 1 female athletic scholarship and verbally committed to play on the University of Washington women’s volleyball team. Reduxx (an online magazine that takes anonymous tips exposing the deeds of men who pretend to be women) reported that Drageset’s participation in girls’ volleyball as a boy was hidden from parents, coaches, and players, but that his unbelievable performance had drawn suspicion, describing how Drageset would play against 14-year-olds as a 12-year-old to offset his athletic advantages.</p>
+          <br>
+          <p>A parent told Reduxx, </q>You could tell even back then that he was different from the girls. As he got older, it became more obvious that something was off. Anytime the subject of [Drageset] would come up EVERY PARENT from any SCVA team already knew about him. Parents look around before they speak in hushed tones. Some will wait to discuss until outside the gym.</q></p>
+          <br>
+          <p>Reduxx said that the parent revealed that most families had been hesitant to speak out due to fears that their daughters would be penalized.</p>
+          <br>
+          <p><q>Everyone is scared of how their child will be treated if they speak up. It’s already so competitive to get on a good club team,</q> the parent said. <q>The stealing of positions and opportunities has been infuriating and so sad when you see how it affects the girls. There is no concern for their mental health or safety after being replaced.</q></p>
+          <br>
+          <p>And Drageset has stolen plenty from girls, including, but not limited to, two Liberty League MVP awards, one of which he won as a freshman playing his first year of varsity volleyball, a $2,000 Teqvly World Tour 2nd-place prize, several places on all-star/all-league teams, and the CIF Div. 5 Player of the Year award in the 2022-2023 season.</p> 
+          <br>
+          <p>In 2022, as a sophomore, the 6’0” male helped Buckley steal a spot in the CIF State Southern Regional Division III Championship game, the first time in school history they had made an appearance at state finals. Buckley’s head coach, Otis Glasgow, also managed to snag himself a CIF-SS Division 5 Coach of the Year award in his first season with the team.</p>
+          <br>
+          <p>In the spring of 2023, Drageset led his club team, Actyve Black Volleyball, to <q>win</q> the USAV Girls' 18s Junior National Championship and was named to the Girl’s All-Tournament Team, taking the place of a real female athlete.</p>
+          <br>
+          <p>With Drageset on the team, Buckley had a win-loss record of 23-3 in 2021, 28-4 in 2022, and 11-11 (10-1 in the conference) in 2023. With one year of eligibility remaining in both club and school volleyball, a teenage boy who has been raised to believe he's entitled to girl's opportunities, a coach racking up wins and awards to pad his resume, and a state government who values the desires of boys over the wellbeing of girls, we will surely have yet another year of this male athlete refusing to compete with his peers, stealing awards and opportunities from female athletes, and dominating the Liberty League Conference.</p>  
+          <br>
+          <a href="https://pbs.twimg.com/media/GBakRwDXIAE9-IM.jpg"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://www.dailynews.com/wp-content/uploads/2022/11/OCR-L-HSVOL-DIV5-1106.04-1.jpg?w=1024"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://www.ocregister.com/wp-content/uploads/2022/11/OCR-L-HSVOL-DIV5-1106.11.jpg?w=620"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://www.actyvevolleyball.com/15-black-players"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Aaron Lester</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>The son of social justice activist Lisa Phelan and musician John Lester, Aaron allegedly started pretending to be a girl sometime after 2020. He decided to join the girls’ varsity volleyball team at Half Moon Bay High School in the 2023-2024 school year as a sophomore, despite the existence of a boys’ team at Half Moon Bay open for him to join to play with his male peers. It is not clear whether or not Lester had played organized volleyball prior to his enlistment on the girl’s team.</p>
+          <br>
+          <p>Despite the team’s losing record, Lester was a standout. In his first season on the girls’ varsity team as a sophomore, Lester led the team in kills per set, hitting percentage, total kills, and total blocks.</p>
+          <br>
+          <p>Lester was identified as a boy on the girl’s team after he injured an opposing female player with a spike to the head. The player suffered a concussion and missed the rest of her senior year.</p>  
+          <br>
+          <p>The girl’s father spoke about his feelings regarding the unfairness of the situation: <q>I totally felt alone. Like this was a bad dream. My daughter knew how angry I was. The drive was telling as my daughter asked me not to make it a big deal. But to me, it was already a big deal,</q> he says. <q>She was playing for fun, and this was her final year doing it. She felt robbed. I felt deflated and powerless.</q></p>
+          <br>
+          <p>Lester has two years of eligibility remaining in high school volleyball. It is unlikely he will be convinced to stop cheating girls out of opportunities. It is even more unlikely that California will put the interests of female athletes before those of males anytime soon.</p>
+          <br>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Henry Hanlon</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Hanlon is a boy that calls himself a girl who plays on the San Francisco Waldorf High School girls’ volleyball team in California. Hanlon also participates as a member of the girls’ basketball and girls’ soccer teams for Waldorf. As a sophomore, Hanlon led the Waldorf girls’ volleyball team to a CIF North Coast Championship title and a 14-5 overall W-L record.</p>
+          <br>
+          <a href="https://pbs.twimg.com/media/GETE9FxbgAArFOU.jpg"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://pbs.twimg.com/media/GETE_PSa8AAAKxk.jpg"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://pbs.twimg.com/media/GETE95DbMAAilCU.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Franz Largadas</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Largadas was listed on the men’s volleyball roster at Seneca College in Ontario, Canada for the 2022-2023 season. The next year, 2023-2024, he had decided to switch to the women’s team to join two other male athletes, Ara Telan and Jess Garcia.</p>
+          <br>
+          <p>His sophomore season, Largadas led his team in points per set and would have also led the team in kills per set and hitting percentage if not for Telan and Garcia. With three male athletes on the team, Seneca College dominated their conference, going undefeated for most of the year and ending with a 20-2 overall win-loss record and moving on to the Ontario Colleges Athletic Association (OCAA) Provisional Championship title match where they lost to Humber College. Largadas was named an OCAA Championship All-Star.</p>
+          <br>
+          <p>Largadas’ participation on the women’s team gained widespread attention when a video was released online of a January 24th, 2024 volleyball match between Seneca and Centennial College, who also fielded two male players pretending to be women on the roster of their female team. The five male athletes spent the entire match on the floor, with Seneca’s three male athletes playing at the net, while female athletes were left on the bench, subbing in and out of the remaining five positions.</p> 
+          <br>
+          <p>Two days prior, on January 22nd, Largadas had given a female player from La Cite a concussion with a spike to the head.</p> 
+          <br>
+          <p>There are currently no regulations on male participation in female sports in Canada. Female teams are open to anyone and everyone who “identifies” as a “woman.” In other words, men are welcomed with open arms on women’s teams while women watch their own competitions from the bench.</p>
+          <br>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Jess Garcia</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Garcia is a man originally from the Philippines who pretends to be a woman and joined the Seneca College women’s volleyball team, located in Ontario Canada, in 2023-2024 for his freshman season. Garcia led the team in total kills and would have led in hitting percentage, kills per set, and points per set as well if not for fellow male athletes Franz Largadas and Ara Telan who also participated on the Seneca College women’s team.</p>
+          <br>
+          <p>With three male athletes on the team, Seneca College dominated their conference, going undefeated for most of the year and ending with a 20-2 overall win-loss record, and along with Largadas and Telan, Garcia led Seneca College to the Ontario Colleges Athletic Association (OCAA) Provisional Championship title match where they finally lost to Humber College.</p> 
+          <br>
+          <p>Garcia’s participation on the women’s team gained widespread attention when a video was released online of a January 24th, 2024 volleyball match between Seneca and Centennial College, who also fielded two male players pretending to be women on the roster of their female team. The five male athletes spent the entire match on the floor, with Seneca’s three male athletes playing at the net, while female athletes were left on the bench, subbing in and out of the remaining five positions.</p>
+          <br>
+          <p>There are currently no regulations on male participation in female sports in Canada. Female teams are open to anyone and everyone who “identifies” as a “woman.” In other words, men are welcomed with open arms on women’s teams while women watch their own competitions from the bench.</p> 
+          <br>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Jaque Ronquillo</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Ronquillo is a male athlete in Canada who decided to pretend to be a woman and play women’s volleyball his freshman year at George Brown College. Ronquillo led his team in kills, digs, blocks and total points that year, and led the entire Ontario Collegiate Athletic Association in kills and points, beating out real female athletes to win the OCAA Women’s Volleyball East Division Scoring Champion title (with 330 points) along with making the OCAA Women’s Volleyball East Division Second Team-All Star and All-Rookie Team. George Brown College ended the 2022-2023 season with a win-loss record of 12-6.</p>
+          <br>
+          <p>For the 2023-2024 season, Ronquillo transferred to Centennial College where he joined fellow male athlete, CL Viloria, on the women’s roster. Centennial College went 9-9 (two of those losses coming against a team fielding three male athletes) and once again, Ronquillo led the team in kills and would have led in total blocks and points as well if it weren’t for Viloria. While fellow male teammate, Viloria, took the OCAA Women’s Volleyball East Division Scoring Championship title (the second year in a row it was won by a man) Ronquillo made OCAA Women’s Volleyball East Division First Team All-Star.</p> 
+          <br>
+          <p>Ronquillo’s participation on the women’s team gained widespread attention when a video was released online of a January 24th, 2024 volleyball match between Centennial and Seneca College, who also fielded three male players pretending to be women on the roster of their female team. The five male athletes spent the entire match on the floor, with Seneca’s three male athletes playing at the net, while female athletes were left on the bench, subbing in and out of the remaining five positions.</p>
+          <br>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+        <button class="accordion even"><span class="athlete-name"><q>Tia</q> Thompson</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Thompson is a man pretending to be a woman who was approved by USA Volleyball (USAV) in 2017 to play in the women’s division after using hormones long enough to better disguise his male features. He competed at the Haili Volleyball Tournament on Hawaii's Big Island, a USAV sanctioned event. Thomson predictably ignored pushback from the community, especially from opposing female athletes and their parents, and went on to make the AA Women’s All-Star team in the tournament.</p> 
+          <br>
+          <p>Despite being 33 at the time and having no professional volleyball experience, Thompson declared his intentions to make the U.S. Women’s Olympic Volleyball team.</p>
+          <br>
+          <a href="https://archive.ph/HTeYt"><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+        <button class="accordion even"><span class="athlete-name"><q>Lazuli</q> Clark</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Clark is a male athlete who is on the girls’ volleyball, basketball, and track and field team at KIPP Academy Lynn Collegiate in Massachusetts. According to Massachusetts rules, boys are allowed to play on girls’ teams if the school does not field a boys’ team as well. In volleyball, male players are not allowed to block or hit from the front, unless they declare themselves a girl, as Clark does, in which case they are allowed to do as they please.</p>
+          <br>
+          <p>With Clark on the team, KIPP had a win-loss record of 13-9 overall and 6-2 in the conference. The girl’s KIPP volleyball team stats are not listed online, but Clark’s performance was good enough to earn him a spot on the Commonwealth Athletic Conference (CAC) All-Star team and no fewer than eight separate Player of the Match awards throughout the season.</p>
+          <br>
+          <p>Clark’s participation on girls’ teams at KIPP was brought to attention in February of 2024 during a basketball game when he caused an opposing team to forfeit at halftime after injuring three of their players in the first half of the game, the worst injury coming during a fight over possession where he tossed his female opponent around like a rag doll.</p> 
+          <br>
+          <p>Clark has also set KIPP girls’ school records in track and field. He is sure to participate again this spring.</p>
+          <br>
+          <a href="https://archive.ph/4Uoxj"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/Xi2n6"><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+        <button class="accordion even"><span class="athlete-name"><q>Diamond</q> Solorzano</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Solorzano is a male athlete who participated on the girls’ volleyball team at North Valley’s High School in Reno, Nevada during the 2022-2023 season. As expected, Solorzano led the team in total blocks and kills. Despite North Valley’s overall losing record of 8-12, Solorzano’s performance stood out enough to get him recruited for a spot on the Lassen Community College Women’s Volleyball team.</p>
+          <br>
+          <p>Solorzano also competed in track and field for North Valley, winning two state championship titles.</p>
+          <br>
+          <p>Solorzano does not appear on the 2023-2024 Lassen Community College women’s roster. One can only hope that he may have decided to stop cheating women out of athletic opportunities.<p> 
+          <br>
+          <a href="https://archive.ph/WK7bA"><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">CL Viloria</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Viloria is a male athlete who decided to join the Seneca College women’s volleyball team in 2021. He played with Seneca College for two years where he led the team in blocks both his freshman and sophomore year, doubling the numbers of the next female athlete below him. He ended his sophomore season with Seneca with a win-loss record of 14-4.</p> 
+          <br>
+          <p>His junior year, Viloria transferred to Centennial College where he led the team in 6 stats including blocks, aces, and points, and would have led the team in kills as well if not for fellow male teammate, Jaque Ronquillo. Viloria also lead the entire Ontario Collegiate Athletic Association (OCAA) East Division in total points with 304 and stole the honor of OCAA East Division Scoring Champion from a female athlete, an honor that Ronquillo had stolen the previous season, marking the second year in a row the OCAA female scoring champion was male. He was named an OCAA Women's Volleyball East Division Second-Team All-Star. </p>
+          <br>
+          <p>Centennial College ended the season with a 9-9 W-L record, with two of those losses coming against Seneca College, a women’s team with three male athletes pretending to be women on their roster. </p>
+          <br>
+          <p>Viloria’s participation on the women’s team gained widespread attention when a video was released online of a January 24th, 2024 volleyball match between Seneca and Centennial College. The five male athletes spent the entire match on the floor, with Seneca’s three male athletes playing at the net, while female athletes were left on the bench, subbing in and out of the remaining five positions.</p> 
+          <br>
+          <p>In November of 2023, while playing for Centennial, Viloria caused injury to an opposing player when he, <q>attacked the ball with heavy force and hit a La Cite volleyball player in the head.</q></p>
+          <br>
+          <p>Viloria still has one year of eligibility remaining, and as it’s not likely Canada will start respecting female athletes in the near future, he will continue to steal opportunities from women.</p> 
+          <br>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Ara Telan</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Telan is a male athlete who joined the women’s volleyball team at Humber College in Ontario, Canada for the 2022-2023 season. At Humber College, he was second in total kills and helped the women’s team to an Ontario Collegiate Athletic Association (OCAA) Provincial Championship title and the Canadian Collegiate Athletic Association (CCAA) National Championship title.  Telan was named Player of the Game, taking the honor away from a female athlete, in Humber’s CCAA quarter-final victory over the four-time defending national champion VIU Mariners team. Humber ended the year with a 19-4 overall W-L record.</p><br>
+          <p>The following season, Telan transferred to Seneca College where he joined fellow male athletes, Franz Largadas and Jess Garcia, on the women’s team. At Seneca, Telan led the team in hitting percentage, blocks per set, and kills per set, and would have led in points per set as well if not for Largadas.</p><br>
+          <p>With three male athletes on the team, Seneca College dominated their conference, going undefeated for most of the year and ending with a 20-2 overall win-loss record, and along with Largadas and Garcia, Telan led Seneca College to the Ontario Colleges Athletic Association (OCAA) Provisional Championship title match where they finally lost to Humber College.</p><br>
+          <p>Telan’s participation on the women’s team gained widespread attention when a video was released online of a January 24th, 2024 volleyball match between Seneca and Centennial College, who also fielded two male players pretending to be women on the roster of their female team. The five male athletes spent the entire match on the floor, with Seneca’s three male athletes playing at the net, while female athletes were left on the bench, subbing in and out of the remaining five positions.</p><br>  
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Dorian <q>Daisy</q> Norton</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>It’s unclear when Norton started pretending to be a girl, but it is clear that his parents had seen a feminine boy who didn’t understand the differences between males and females and decided to use that to get attention for themselves, parading their son around in public and using him as a political pawn as early as 2017 when he was just 10 years old. Norton has allegedly been allowed to encroach on girls’ teams his entire life, playing girls’ soccer, basketball, and softball from a young age rather than learning to accept those who are different than himself and trying get along with his male peers. He has also been using girls’ locker rooms despite being a male with a penis.</p><br>
+          <p>His participation garnered attention in November of 2023 when it was revealed that Norton, then a sophomore, had been participating on the girls’ volleyball team at Monarch High School in Coconut Grove since his freshmen year, a violation of Florida state law which specifies that only girls (female athletes) are allowed to participate on girl’s teams. </p><br>
+          <p>Despite knowing the law that had been in place since 2021, Jessica Norton, a teacher at Monarch, proceeded to conceal her son’s sex to sneak him onto the girls’ team instead of encouraging him to join the boys’ team that was offered at the school, a team that she also helped coach. Jessica had also been fully aware of the existence of the law as she had sued the school district over it previously when she found out the State of Florida wouldn’t allow her son to do whatever he wanted. </p><br>
+          <p>During that lawsuit, Norton’s lawyers argued that because he had participated on a girls’ teams without being caught, because his parents had given him drugs to prevent his healthy growth and sexual development through puberty, and because he liked to dress up as Katy Perry at Halloween, that he was, <q>not a boy</q> and thus should be allowed to violate girls’ privacy and take away their athletic opportunities. </p><br>
+          <p>Norton’s mother claimed his removal from the team was a direct attempt to put him in danger and that it was unfairly “outing” him despite the fact that she herself had had him speak at public events and in a televised meeting, calling him a “trans girl” as a child and opening a lawsuit to give him special privileges, after which she allowed him to join the girls’ volleyball team despite knowing its illegality and the risk of being caught and punished. </p><br> 
+          <p>Jessica and several other school officials were punished, the school was fined and put on probation, and Norton was removed from the girl’s team and given a year-long ban from athletics. </p><br> 
+          <p>The extent of Norton’s performance is not known at this time, although he managed to make varsity as a sophomore. His alleged use of puberty blocking drugs, known to actually increase height in males, would have certainly given him a leg up against his smaller female opponents. </p><br> 
+          <p>It remains to be seen whether he will eventually join a boys’ team or if his mother will move him somewhere where he can freely strip away athletic opportunities from female athletes and violate their privacy in the locker room. Norton is also active in club volleyball on the Riptide Blacksheep. </p><br>  
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Derek Cannuscio</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Cannuscio played for the girls’ volleyball team at the Landmark School in Prides Crossing, Massachusetts. Although Cannuscio doesn’t pretend to be a girl, according to Massachusetts rules, boys are allowed to play on girls’ teams if the school does not field a boys’ team as well. In volleyball, male players are not allowed to block or hit from the front, unless they declare themselves a girl, of course, in which case they are allowed to do as they please. </p><br>
+          <p>Cannuscio does not pretend to be a girl, but still decided to insert himself into women’s athletics. His participation drew criticism in the fall of 2023 during a heated match when he taunted opposing female players with lewd remarks, allegedly saying, <q>Did my penis scare you?” </q></p><br>
+          <p>At the end of the 2023-2024 season, the male player, also a captain of the female team, was given the Coaches/Sportsmanship Award despite his borderline sexual harassment of female players earlier in the season. </p><br>
+          
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Cade Barron</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Barron is a male athlete who played for the girls’ volleyball team at Shawsheen Valley Tech in Shawsheen, Massachusetts. Although Barron doesn’t pretend to be a girl, according to Massachusetts rules, boys are allowed to play on girls’ teams if the school does not field a boys’ team as well. In volleyball, male players are not allowed to block or hit from the front, unless they declare themselves a girl, of course, in which case they are allowed to do as they please. </p><br>
+          <p>Despite playing in numerous male leagues and on boys’ club teams throughout the year, Barron decided that he also needed to compete against girls. His senior year with Shawsheen in 2023-2024 (and with another male player, Caden Cooper, on the roster), Shawsheen Valley Tech had a win-loss record of 21-3. They went undefeated (12-0) in the conference, winning the CAC Conference Championship title for the first time since 2007 and advanced to the finals of the state’s vocational tournament. </p><br>
+          <p>Despite being limited in what he was allowed to do on the court, Barron still exceled as a player, earning a spot as team captain and racking up over 1,000 career assists, the first player in Shawsheen history to have done so. The Tewksbury Town Crier news outlet describes him as stringing his service points together in “demoralizing bunches.” </p><br>
+          <p>Barron laughs off the comments he hears from opposing fans, student, and parents, not once seeming to give any thought at all to how unfair his presence is on the court and the opportunities he is taking away from female athletes when they are already offered so few and so little support in athletics. </p><br>          
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Harry <q>Hazel</q> Robinson-Cox</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Cox is a male athlete who pretends to be a woman and plays for the Adelaide University Volleyball Club in Adelaide, Australia. It’s not clear when he began pretending to be a woman, but he set up a Go-Fund-Me to beg for money to fund his cosmetic surgeries in 2021. Information on his performance is limited, but Cox has won several local competitions including several rounds in the Derriumut South Australia Beach Volleyball Series (DVBS) playing against female opponents. </p><br>
+          <p>Cox believes that being told he cannot play against women means he can no longer play volleyball, as he would rather never play volleyball again than with his male peers. When women do not have options for female teams (as happens in many cases when female participation drops off as we age) we have no issue finding co-ed or men’s leagues that allow us to join. Like many men who pretend to be women, Cox seems to play volleyball more for the “validation” and the opportunity to beat real women than the sport itself. </p><br>           
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name"><q>Chloe</q> Anderson</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Anderson is a 6’0” male who played volleyball for the Santa Ana Community College Dons from 2014-2016 and the Santa Cruz Slugs his junior year of college in 2017, on the women’s team of course. Anderson describes being bullied as a child, leading him to isolate in his room where he partook in the very feminine activities of playing video games and working on his computer all day. He describes discovering he was actually “a girl all along” his junior year of high school after seeing a video about other boys pretending to be girls (apparently relating more to other males more than the actual girls around himself) and that he had in fact always “identified” as a woman, he just hadn’t known it yet. </p><br> 
+          <p>Anderson has described how he was a poor athlete in high school, coming in last behind other boys in drills and struggling to keep up because of his asthma. He believes it’s a misconception that he has an unfair physical advantage against female athletes and claimed to have “the least testosterone of anyone on the team." (Per IOC guidelines, men who pretend to be women are required to reduce their testosterone levels to less than 288 ng/dL (10nmol/L) for one year, a number 7-19 times higher than the female-typical range of 15-40 ng/dL.) Anderson overlooks the fact that our bodies are not hormone levels and aside from likely having a much higher level of testosterone than his female opponents and teammates, contrary to his own claims, he also has an entirely male body including a male skeletal and muscular anatomy. </p><br> 
+          <p>Although Anderson describes himself as being a terrible athlete even before “lowering his testosterone” and having absolutely no advantages compared to female athletes, he somehow managed to make it onto an NCAA volleyball team, something less than 7% of high school athletes are able to do, after he decided to play against women instead of his male peers. He joined the Santa Ana team four years out of high school, out of practice, and out of shape. At Santa Ana, he led the team in kills, blocks, and points during his freshman and sophomore year. </p><br> 
+          <p>When Anderson joined the women’s team, he was hailed as one of the first male athletes to do so, praised for “breaking barriers,” (in other words, opening the door for other men to invade women’s teams and trespass their boundaries). Although the Dons had a lackluster record, Anderson exceled in the beach volleyball scene, where he was half of the Dons number 1 pairing, one of only two of the Don’s duos to advance in the Orange Empire Conference (OEC) individual championships in the conference’s inaugural beach volleyball season his freshman year. Anderson’s invasion of women’s rights framed as “progress” was also chronicled as the focus of an episode of the Olympic Channel’s “Identify” series. </p><br>
+          <p>In his free time, Anderson enjoys LARPing, an activity in which one dresses up and pretends to be something they’re not. How fitting. </p><br> 
+          <a href="https://archive.ph/9LcjG"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/fcC7V"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://www.ocregister.com/wp-content/uploads/migration/nqm/nqmudr-b88444196z.120150627191551000gc6agq39.10.jpg?w=620"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://archive.ph/IlgXi"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Alessio <q>Alessia</q> Ameri</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+          <p>Ameri is praised as the first man to play professional women’s volleyball in Italy. Ameri grew up as the only boy in a family with four older sisters. Having previously played on the men’s Italian volleyball league, Ameri decided to start pretending to be a woman and play women’s volleyball instead, abandoning his male peers in 2015. The details on his performance are limited, but he bounced around the B and A circuits, stealing places from female volleyball players on at least nine different teams. </p><br>
+          <p>Ameri was also active in the beach volleyball circuit, competing in the Campionato Italiano Assoluto beach volleyball tournaments. At 38 years old, he is still going strong in women’s volleyball. </p><br>
+          <p>Outside of volleyball, Ameri capitalizes on his implants, working as a model where he specializes in sexual poses of himself in his volleyball gear and women’s lingerie, as we have seen many other examples of in male athletes (and non-athletes) who pretend to be women. A calendar, full of nude photos of himself in sexual poses is available for purchase on his website.</p><br>           
+          <a href="https://archive.ph/6UaSR"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://citynews-perugiatoday.stgy.ovh/~media/horizontal-hi/1725781777378/Alessia_Ameri.jpg"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://amerialessia.com/media/widgetkit/fash3%20(1024x1024)-f99533f63d79499cbeb36ae3ff6b3cf9.jpg"><i class="fa-solid fa-image photo"></i></a>
+          <a href="https://web.archive.org/web/20160314170108im_/http://www.west-info.eu/files/Alessia.Mauri_.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name"><q>Omaira</q> Perdomo</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+           
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+        <button class="accordion even"><span class="athlete-name"><q>Antía</q> Fernández</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+           
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+        <button class="accordion even"><span class="athlete-name"><q>Isabelle</q> Neris</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+           
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+          <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+</div>
+
+<div id="Female" class="tabcontent">
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>

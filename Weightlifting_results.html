@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+            
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Weightlifting</h1>
+        
+        <div class="herostat">
+            <p>7</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>82</p><p>unfair<br>victories</p>
+        </div>
+
+        <div class="herostat">
+            <p>30</p><p>broken<br>records</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Weightlifting - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Weightlifting_results">Results</a></li>
+    <li><a href="Weightlifting_athletes.html">Athletes</a></li>
+    <li><a href="Weightlifting_records.html">Records</a></li>
+    <li><a href="Weightlifting_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="ANDRES, Anne">ANDRES, "Anne"</option>
+              <option value="COOPER, Jaycee">COOPER, "Jaycee"</option>
+              <option value="FLORES, Angel">FLORES, "Angel"</option>
+              <option value="GREGORY, Mary">GREGORY, "Mary"</option>
+              <option value="HUBBARD, Gavin Laurel">HUBBARD, Gavin "Laurel"</option>
+              <option value="PIPER, Vicki">PIPER, "Vicki"</option>
+              <option value="YUN, Audrey">YUN, "Audrey"</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+                <p class="filter-label">Sport:</p>
+                <select class="filter" data-field="SPORT">
+                  <option value="">All</option>
+                  <option value="Weightlifting">Weigthlifting</option>
+                  <option value="Powerlifting">Powerlifting</option>
+                  <option value="Strongman">Strongman</option>
+                </select>
+                </div>
+
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="9th">10th Place</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+            </select>
+            </div>
+
+            <div class="filter-menu">
+                <p class="filter-label">Event:</p>
+                <select class="filter" data-field="EVENT">
+                  <option value="">All</option>
+                  <option value="Snatch">Snatch</option>
+                  <option value="Clean & Jerk">Clean & Jerk</option>
+                  <option value="Bench Press">Bench Press</option>
+                  <option value="Squat">Squat</option>
+                  <option value="Deadlift">Deadlift</option>
+                  <option value="Total">Total</option>
+                </select>
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Competition Type:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="Provincial/State">Provincial/State Championship</option>
+              <option value="National">National Championship</option>
+              <option value="Continental">Continental Championship</option>
+              <option value="World">World Championship</option>
+              <option value="Olympic">Olympic Championship</option>
+             </select> 
+            </div>
+            
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>SPORT</th> 
+                    <th>LEVEL</th> 
+                    <th>COMPETITION</th>
+                    <th>CLASS</th>
+                    <th>EVENT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>  <td></td> <td>2024</td> <td>2024-Mar-21-24</td> <td>PIPER, <q>Vicki</q></td>  <td>Weightlifting</td>  <td>National</td> <td>2024 USA Masters Nationals, Reno, NV (55-59)</td> <td>76kg</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://drive.google.com/drive/folders/1oiKS89-cHIiVLfp_JWgmfxDAIldLRUqm">[1]</a>  </td> </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Mar-21-24</td> <td>PIPER, <q>Vicki</q></td>  <td>Weightlifting</td>  <td>National</td> <td>2024 USA Masters Nationals, Reno, NV (55-59)</td> <td>76kg</td> <td>Clean & Jerk</td> <td>1st</td>  <td>United States</td>  <td><a href="https://drive.google.com/drive/folders/1oiKS89-cHIiVLfp_JWgmfxDAIldLRUqm">[1]</a>  </td> </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Mar-21-24</td> <td>PIPER, <q>Vicki</q></td>  <td>Weightlifting</td>  <td>National</td> <td>2024 USA Masters Nationals, Reno, NV (55-59)</td> <td>76kg</td> <td>Snatch</td> <td>1st</td>  <td>United States</td>  <td><a href="https://drive.google.com/drive/folders/1oiKS89-cHIiVLfp_JWgmfxDAIldLRUqm">[1]</a>  </td> </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Feb-17</td>  <td>YUN, <q>Audrey</q></td> <td>Powerlifting</td> <td>Other</td>  <td>CPU BCPA Winter Open Powerlifting and Bench Only Championships</td> <td>185lbs+</td>  <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[1]</a>  <a href="https://web.archive.org/web/20240303024353/https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Feb-17</td>  <td>YUN, <q>Audrey</q></td> <td>Powerlifting</td> <td>Other</td>  <td>CPU BCPA Winter Open Powerlifting and Bench Only Championships</td> <td>185lbs+</td>  <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[1]</a>  <a href="https://web.archive.org/web/20240303024353/https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Feb-17</td>  <td>YUN, <q>Audrey</q></td> <td>Powerlifting</td> <td>Other</td>  <td>CPU BCPA Winter Open Powerlifting and Bench Only Championships</td> <td>185lbs+</td>  <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[1]</a>  <a href="https://web.archive.org/web/20240303024353/https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2024</td> <td>2024-Feb-17</td>  <td>YUN, <q>Audrey</q></td> <td>Powerlifting</td> <td>Other</td>  <td>CPU BCPA Winter Open Powerlifting and Bench Only Championships</td> <td>185lbs+</td>  <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[1]</a>  <a href="https://web.archive.org/web/20240303024353/https://www.openpowerlifting.org/m/cpu/2024-02-17b/by-division">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Sept-23</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210513/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Sept-23</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210513/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Sept-23</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Squat</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210513/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Sept-23</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210513/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20CPU%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-26</td>  <td>YUN, <q>Audrey</q></td> <td>Strongman</td>  <td>Other</td>  <td>BC's Strongest</td> <td>Heavyweight</td>  <td></td> <td>2nd</td>  <td>Canada</td> <td><a href="https://www.facebook.com/photo?fbid=791133079472080&set=a.457239679528090">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-19</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Powerella - Masters (40-49)</td>  <td>90kg</td> <td> Total</td> <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2930#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322132926/https://www.openpowerlifting.org/m/uspa/2930#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-19</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Powerella</td>  <td>90kg</td> <td></td> <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2930#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322132926/https://www.openpowerlifting.org/m/uspa/2930#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Western Canadian Championship - Master 1</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[1]</a>  <a href="https://web.archive.org/web/20240315205909/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Western Canadian Championship - Master 1</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[1]</a>  <a href="https://web.archive.org/web/20240315205909/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Western Canadian Championship - Master 1</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[1]</a>  <a href="https://web.archive.org/web/20240315205909/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Aug-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Western Canadian Championship - Master 1</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[1]</a>  <a href="https://web.archive.org/web/20240315205909/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Westerns%202023">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Jul-22</td>  <td>YUN, <q>Audrey</q></td> <td>Strongman</td>  <td>Provincial/State</td> <td>Vancouver Strength Championship</td>  <td></td> <td></td> <td>2nd</td>  <td>Canada</td> <td>  </td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Jun-09</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315205711/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Jun-09</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315205711/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Jun-09</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315205711/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Jun-09</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315205711/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2023%20Alberta%20Powerlifting%20Union%20Provincial%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-25</td>  <td>YUN, <q>Audrey</q></td> <td>Strongman</td>  <td>Other</td>  <td>King and Queen of the Throne</td> <td>Novice</td> <td></td> <td>1st</td>  <td>Canada</td> <td><a href="https://docs.google.com/spreadsheets/d/1nb_9yku5gkh9zJky3joGKuCdHORkClAMM3t-x0oh69A/edit#gid=688074238">[1]</a>  <a href="https://web.archive.org/web/20240315204729/https://docs.google.com/spreadsheets/d/1nb_9yku5gkh9zJky3joGKuCdHORkClAMM3t-x0oh69A/edit#gid=688074238">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-24</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>National</td> <td>AMP Classic National Championship</td>  <td>185lbs</td> <td>Total</td>  <td>G</td>  <td>United States</td>  <td><a href="https://www.openipf.org/m/amp/2023-NS-03#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322133034/https://www.openipf.org/m/amp/2023-NS-03#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>National</td> <td>CPU Nationals</td>  <td>84kg+ </td> <td>Total</td>  <td>3rd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[1]</a> <a href="https://web.archive.org/web/20240315205715/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>National</td> <td>CPU Nationals</td>  <td>84kg+ </td> <td>Dead Lift</td>  <td>3rd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[1]</a> <a href="https://web.archive.org/web/20240315205715/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>National</td> <td>CPU Nationals</td>  <td>84kg+ </td> <td>Squat</td>  <td>5th</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[1]</a> <a href="https://web.archive.org/web/20240315205715/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2023</td> <td>2023-Feb-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>National</td> <td>CPU Nationals</td>  <td>84kg+ </td> <td>Bench Press</td>  <td>3rd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[1]</a> <a href="https://web.archive.org/web/20240315205715/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=CPU%20Nationals%202023">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Oct-21</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>AMP Stars and Stripes - Masters (45-49)</td>  <td>185lbs</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openipf.org/m/amp/2022-PA-03#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240303062213/https://www.openipf.org/m/amp/2022-PA-03#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Oct-21</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>AMP Stars and Stripes</td>  <td>185lbs</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openipf.org/m/amp/2022-PA-03#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240303062213/https://www.openipf.org/m/amp/2022-PA-03#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Jul-08</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>APU Provincial Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210800/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Jul-08</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>APU Provincial Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210800/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Jul-08</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>APU Provincial Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210800/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Jul-08</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>APU Provincial Powerlifting and Bench Press Championships</td>  <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315210800/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2022%20APU%20Provincial%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Apr-03</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Power Surge XI</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[1]</a>  <a href="https://web.archive.org/web/20240315210514/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Apr-03</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Power Surge XI</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[1]</a>  <a href="https://web.archive.org/web/20240315210514/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Apr-03</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Power Surge XI</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[1]</a>  <a href="https://web.archive.org/web/20240315210514/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Apr-03</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Power Surge XI</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[1]</a>  <a href="https://web.archive.org/web/20240315210514/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=PowerSurge%20XI">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2022</td> <td>2022-Apr-01</td>  <td>COOPER, <q>Jaycee</q></td>  <td>Powerlifting</td> <td>National</td> <td>2022 AMP Classic Open Nationals</td>  <td>84kg+ </td> <td>Total</td>  <td>3rd</td>  <td>United States</td>  <td><a href="https://barbend.com/2022-powerlifting-america-classic-open-nationals-results/">[1]</a> <a href="https://web.archive.org/web/20240315204353/https://barbend.com/2022-powerlifting-america-classic-open-nationals-results/">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2022-Jan-29</td>  <td>FLORES, <q>Angel</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2022 USPA Drug Tested Violet Crown Classic**</td> <td></td> <td>Bench</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[1]</a> <a href="https://web.archive.org/web/20240322133041/https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2022-Jan-29</td>  <td>FLORES, <q>Angel</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2022 USPA Drug Tested Violet Crown Classic**</td> <td></td> <td>Squat</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[1]</a> <a href="https://web.archive.org/web/20240322133041/https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2022-Jan-29</td>  <td>FLORES, <q>Angel</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2022 USPA Drug Tested Violet Crown Classic**</td> <td></td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[1]</a> <a href="https://web.archive.org/web/20240322133041/https://www.openpowerlifting.org/m/uspa/2381#angelflores1">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Dec-05</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[1]</a> <a href="https://web.archive.org/web/20240315210355/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Dec-05</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[1]</a> <a href="https://web.archive.org/web/20240315210355/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Dec-05</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[1]</a> <a href="https://web.archive.org/web/20240315210355/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Dec-05</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Alberta Provincial Championships</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[1]</a> <a href="https://web.archive.org/web/20240315210355/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Alberta%20Provincials">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Nov-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Championships</td> <td>84kg+ </td> <td>Total</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315204633/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Nov-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Championships</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315204633/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Nov-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Championships</td> <td>84kg+ </td> <td>Squat</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315204633/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Nov-13</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>CPU Western Canadian Championships</td> <td>84kg+ </td> <td>Bench Press</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[1]</a> <a href="https://web.archive.org/web/20240315204633/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=2021%20Western%20Canadian%20Powerlifting%20and%20Bench%20Press%20Championships">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2021-Sept-18</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Cowtown Showdown</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[1]</a> <a href="https://web.archive.org/web/20240315210512/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Sept-18</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Cowtown Showdown</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[1]</a> <a href="https://web.archive.org/web/20240315210512/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Sept-18</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Cowtown Showdown</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[1]</a> <a href="https://web.archive.org/web/20240315210512/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Sept-18</td> <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Cowtown Showdown</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[1]</a> <a href="https://web.archive.org/web/20240315210512/https://www.powerlifting.ca/lifter_database/external/contest_results.php?contest=Cowtown%20Showdown">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Jul-7-Aug-08</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Olympic</td>  <td>2020 Olympic Games</td> <td>87kg+</td>  <td>Total</td>  <td>DNF</td>  <td>New Zealand</td>  <td><a href="https://olympics.com/en/olympic-games/tokyo-2020/results/weightlifting/women-s-over-87kg">[1]</a>  <a href="https://web.archive.org/web/20240315205824/https://olympics.com/en/olympic-games/tokyo-2020/results/weightlifting/women-s-over-87kg">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Aug-07</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Drug Tested Nightmare Muscle Classic - Masters (45-49)</td> <td>90kg</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2167#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322133941/https://www.openpowerlifting.org/m/uspa/2167#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2021</td> <td>2021-Aug-07</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Drug Tested Nightmare Muscle Classic</td> <td>90kg</td> <td></td> <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2167#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322133941/https://www.openpowerlifting.org/m/uspa/2167#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2021-Mar-20</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Femme Fatale - Masters (45-49)</td> <td>90kg</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2017#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322132912/https://www.openpowerlifting.org/m/uspa/2017#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2021-Mar-20</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>Femme Fatale</td> <td>90kg</td> <td></td> <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/2017#marygregory">[1]</a>  <a href="https://web.archive.org/web/20240322132912/https://www.openpowerlifting.org/m/uspa/2017#marygregory">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Oct-10</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Continental</td>  <td>USPA North  American Championship - Masters (45-49)</td>  <td>90kg</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/1888">[1]</a>  <a href="https://web.archive.org/web/20240322133017/https://www.openpowerlifting.org/m/uspa/1888">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Oct-10</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Continental</td>  <td>USPA North American Championship</td> <td>90kg</td> <td>Total</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/1888">[1]</a>  <a href="https://web.archive.org/web/20240322133017/https://www.openpowerlifting.org/m/uspa/1888">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Oct-10</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Continental</td>  <td>USPA North American Championship</td> <td>90kg</td> <td>Dead Lift</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/1888">[1]</a>  <a href="https://web.archive.org/web/20240322133017/https://www.openpowerlifting.org/m/uspa/1888">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Oct-10</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Continental</td>  <td>USPA North American Championship</td> <td>90kg</td> <td>Bench Press</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/1888">[1]</a>  <a href="https://web.archive.org/web/20240322133017/https://www.openpowerlifting.org/m/uspa/1888">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Oct-10</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Continental</td>  <td>USPA North American Championship</td> <td>90kg</td> <td>Squat</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://www.openpowerlifting.org/m/uspa/1888">[1]</a>  <a href="https://web.archive.org/web/20240322133017/https://www.openpowerlifting.org/m/uspa/1888">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-27-31</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>Roma 2020 World Cup</td>  <td>87kg+</td>  <td>Clean & Jerk</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=496">[1]</a> <a href="https://web.archive.org/web/20240315204758/https://iwf.sport/results/results-by-events/?event_id=496">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-27-31</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>Roma 2020 World Cup</td>  <td>87kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=496">[1]</a> <a href="https://web.archive.org/web/20240315204758/https://iwf.sport/results/results-by-events/?event_id=496">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-27-31</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>Roma 2020 World Cup</td>  <td>87kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=496">[1]</a> <a href="https://web.archive.org/web/20240315204758/https://iwf.sport/results/results-by-events/?event_id=496">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-18</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>UBC New Year's Powerlifting Championships</td>  <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[1]</a> <a href="https://web.archive.org/web/20240315210515/https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-18</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>UBC New Year's Powerlifting Championships</td>  <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[1]</a> <a href="https://web.archive.org/web/20240315210515/https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-18</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>UBC New Year's Powerlifting Championships</td>  <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[1]</a> <a href="https://web.archive.org/web/20240315210515/https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2020</td> <td>2020-Jan-18</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>UBC New Year's Powerlifting Championships</td>  <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[1]</a> <a href="https://web.archive.org/web/20240315210515/https://bc-powerlifting.com/wp-content/uploads/2020/01/2020-UBC-New-Years-Powerlifting-Championships-Full-Results.pdf">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-16</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2nd Iron Asylum Classic - Masters (40-44)</td>  <td>181lbs</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://uspa.net/event/2nd-iron-asylum-classic-2019-11-16t00-00-00/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-16</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2nd Iron Asylum Classic</td>  <td>181lbs</td> <td>Total</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://uspa.net/event/2nd-iron-asylum-classic-2019-11-16t00-00-00/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-16</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2nd Iron Asylum Classic</td>  <td>181lbs</td> <td>Deadlift</td> <td>2nd</td>  <td>United States</td>  <td><a href="https://uspa.net/event/2nd-iron-asylum-classic-2019-11-16t00-00-00/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-16</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2nd Iron Asylum Classic</td>  <td>181lbs</td> <td>Squat</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://uspa.net/event/2nd-iron-asylum-classic-2019-11-16t00-00-00/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-16</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>Other</td>  <td>2nd Iron Asylum Classic</td>  <td>181lbs</td> <td>Bench Press</td>  <td>2nd</td>  <td>United States</td>  <td><a href="https://uspa.net/event/2nd-iron-asylum-classic-2019-11-16t00-00-00/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Lift at the Rock</td> <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303045936/https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Lift at the Rock</td> <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303045936/https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Lift at the Rock</td> <td>84kg+ </td> <td>Squat</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303045936/https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Nov-10</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Lift at the Rock</td> <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303045936/https://bc-powerlifting.com/wp-content/uploads/2019/11/2019-Lift-the-Rock-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Oct-12</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>BCPA Fall Classic</td>  <td>84kg+ </td> <td>Total</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303050252/https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Oct-12</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>BCPA Fall Classic</td>  <td>84kg+ </td> <td>Dead Lift</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303050252/https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Oct-12</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>BCPA Fall Classic</td>  <td>84kg+ </td> <td>Squat</td>  <td>2nd</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303050252/https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Oct-12</td>  <td>ANDRES, <q>Anne</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>BCPA Fall Classic</td>  <td>84kg+ </td> <td>Bench Press</td>  <td>1st</td>  <td>Canada</td> <td><a href="https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[1]</a>  <a href="https://web.archive.org/web/20240303050252/https://bc-powerlifting.com/wp-content/uploads/2019/10/2019-BCPA-Fall-Classic-Full-Results.pdf">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Sept-18-27</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>IWF World Championships 2019</td> <td>87kg+</td>  <td>Clean & Jerk</td> <td>8th</td>  <td>New Zealand</td>  <td><a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[1]</a>  <a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Sept-18-27</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>IWF World Championships 2019</td> <td>87kg+</td>  <td>Snatch</td> <td>4th</td>  <td>New Zealand</td>  <td><a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[1]</a>  <a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Sept-18-27</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>IWF World Championships 2019</td> <td>87kg+</td>  <td>Total</td>  <td>6th</td>  <td>New Zealand</td>  <td><a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[1]</a>  <a href="https://web.archive.org/web/20200525034039/https://www.iwf.net/new_bw/results_by_events/?event=472">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-7-20</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Samoa 2019 Pacific Games</td> <td>89kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.samoa2019.ws/games/weightlifting/">[1]</a> <a href="https://web.archive.org/web/20240315204806/https://www.samoa2019.ws/games/weightlifting/">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-7-20</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Samoa 2019 Pacific Games</td> <td>89kg+</td>  <td>Clean & Jerk</td> <td>2nd</td>  <td>New Zealand</td>  <td><a href="https://www.samoa2019.ws/games/weightlifting/">[1]</a> <a href="https://web.archive.org/web/20240315204806/https://www.samoa2019.ws/games/weightlifting/">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-7-20</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Samoa 2019 Pacific Games</td> <td>89kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.samoa2019.ws/games/weightlifting/">[1]</a> <a href="https://web.archive.org/web/20240315204806/https://www.samoa2019.ws/games/weightlifting/">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Oceania Championships</td>  <td>87kg+</td>  <td>Clean & Jerk</td> <td>2nd</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=464">[1]</a> <a href="https://web.archive.org/web/20240315205248/https://iwf.sport/results/results-by-events/?event_id=464">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Oceania Championships</td>  <td>87kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=464">[1]</a> <a href="https://web.archive.org/web/20240315205248/https://iwf.sport/results/results-by-events/?event_id=464">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>Oceania Championships</td>  <td>87kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=464">[1]</a> <a href="https://web.archive.org/web/20240315205248/https://iwf.sport/results/results-by-events/?event_id=464">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2019 Commonwealth Weightlifting Championships</td>  <td>87kg+</td>  <td>Clean & Jerk</td> <td>2nd</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=467">[1]</a> <a href="https://web.archive.org/web/20240315205212/https://iwf.sport/results/results-by-events/?event_id=467">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2019 Commonwealth Weightlifting Championships</td>  <td>87kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=467">[1]</a> <a href="https://web.archive.org/web/20240315205212/https://iwf.sport/results/results-by-events/?event_id=467">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jul-9-13</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2019 Commonwealth Weightlifting Championships</td>  <td>87kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/?event_id=467">[1]</a> <a href="https://web.archive.org/web/20240315205212/https://iwf.sport/results/results-by-events/?event_id=467">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jun-27</td>  <td>COOPER, <q>Jaycee</q></td>  <td>Powerlifting</td> <td>National</td> <td>USPA National Championships</td>  <td>84kg+</td>  <td>Total</td>  <td>4th</td>  <td>United States</td>  <td>  </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-May-04</td>  <td>COOPER, <q>Jaycee</q></td>  <td>Powerlifting</td> <td>Other</td>  <td>Southside Spring Showdown</td>  <td>84kg+</td>  <td>Total</td>  <td>1st</td>  <td>United States</td>  <td>  </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Apr-27</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>National</td> <td>Masters Nationals (40-44)</td>  <td>181lbs</td> <td>Total</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://rawpowerlifting.com/2019-results/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Apr-27</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>National</td> <td>Masters Nationals (40-44)</td>  <td>181lbs</td> <td>Bench Press</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://rawpowerlifting.com/2019-results/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Apr-27</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>National</td> <td>Masters Nationals (40-44)</td>  <td>181lbs</td> <td>Deadlift</td> <td>1st</td>  <td>United States</td>  <td><a href="https://rawpowerlifting.com/2019-results/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Apr-27</td>  <td>GREGORY, <q>Mary</q></td> <td>Powerlifting</td> <td>National</td> <td>Masters Nationals (40-44)</td>  <td>181lbs</td> <td>Squat</td>  <td>1st</td>  <td>United States</td>  <td><a href="https://rawpowerlifting.com/2019-results/">[1]</a> </td> </tr>
+                <tr>  <td></td> <td>2019</td> <td>2019-Jan-26</td>  <td>COOPER, <q>Jaycee</q></td>  <td>Powerlifting</td> <td>Provincial/State</td> <td>Minnesota State Championships</td>  <td>84kg+</td>  <td>Total</td>  <td>1st</td>  <td>United States</td>  <td>  </td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Dec-05</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>IWF World Championships 2017</td> <td>90kg+</td>  <td>Snatch</td> <td>2nd</td>  <td>New Zealand</td>  <td><a href="https://www.insidethegames.biz/games/29/results">[1]</a> <a href="https://web.archive.org/web/20240315204815/https://www.insidethegames.biz/games/29/results">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Dec-05</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>IWF World Championships 2017</td> <td>90kg+</td>  <td>Total</td>  <td>2nd</td>  <td>New Zealand</td>  <td><a href="https://www.insidethegames.biz/games/29/results">[1]</a> <a href="https://web.archive.org/web/20240315204815/https://www.insidethegames.biz/games/29/results">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Oceania Championships</td> <td>90kg+</td>  <td>Clean & Jerk</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[1]</a>  <a href="https://web.archive.org/web/20240315205231/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Oceania Championships</td> <td>90kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[1]</a>  <a href="https://web.archive.org/web/20240315205231/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Oceania Championships</td> <td>90kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[1]</a>  <a href="https://web.archive.org/web/20240315205231/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=396">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Commonwealth Weightlifting Championships</td>  <td>90kg+</td>  <td>Clean & Jerk</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[1]</a>  <a href="https://web.archive.org/web/20240315205339/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Commonwealth Weightlifting Championships</td>  <td>90kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[1]</a>  <a href="https://web.archive.org/web/20240315205339/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Sept-09</td> <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Continental</td>  <td>2017 Commonwealth Weightlifting Championships</td>  <td>90kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[1]</a>  <a href="https://web.archive.org/web/20240315205339/https://iwf.sport/results/results-by-events/results-by-events-old-bw/?event_id=395">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Apr-29</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>World Masters Games 2017  WMG Auckland, New Zealand</td>  <td>90kg+</td>  <td>Clean & Jerk</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.imwla.com/results">[1]</a> <a href="https://web.archive.org/web/20240303041345/https://www.imwla.com/results">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Apr-29</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>World Masters Games 2017  WMG Auckland, New Zealand</td>  <td>90kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.imwla.com/results">[1]</a> <a href="https://web.archive.org/web/20240303041345/https://www.imwla.com/results">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Apr-29</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>World</td>  <td>World Masters Games 2017  WMG Auckland, New Zealand</td>  <td>90kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.imwla.com/results">[1]</a> <a href="https://web.archive.org/web/20240303041345/https://www.imwla.com/results">[2]</a></td> </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Mar-17</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>National</td> <td>2017 Australian International & Australian Open</td>  <td>90kg+</td>  <td>Clean & Jerk</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[1]</a>  <a href="https://web.archive.org/web/20240303031940/https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[2]</a></td>  </tr>
+                <tr>  <td></td> <td>2017</td> <td>2017-Mar-17</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>National</td> <td>2017 Australian International & Australian Open</td>  <td>90kg+</td>  <td>Snatch</td> <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[1]</a>  <a href="https://web.archive.org/web/20240303031940/https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[2]</a></td>  </tr>
+                                <tr>  <td></td> <td>2017</td> <td>2017-Mar-17</td>  <td>HUBBARD, Gavin <q>Laurel</q></td> <td>Weightlifting</td>  <td>Other</td>  <td>2017 Australian International & Australian Open</td>  <td>90kg+</td>  <td>Total</td>  <td>1st</td>  <td>New Zealand</td>  <td><a href="https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[1]</a>  <a href="https://web.archive.org/web/20240303031940/https://www.awf.com.au/Portals/0/news/2017/2017%20Australian%20International%20-%20Australian%20Open.pdf?ver=2017-03-20-001039-810">[2]</a></td>  </tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

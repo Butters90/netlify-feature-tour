@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+.filter-table tr > *:nth-child(3) {
+  min-width: 90px;
+}
+
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(5) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(10) {
+  text-align: center;
+}
+@media screen and (max-width: 800px){
+  .filter-table tr > *:nth-child(3) {
+  min-width: 50px;
+} 
+}
+.hero-text {
+    width:600px !important;
+}
+
+
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Track and Field</h1>    
+        <div class="herostat">
+            <p>36</p><p>male<br>athletes</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>151+</p><p>records<br>set</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Track and Field - Records</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="TrackandField_results.html">Results</a></li>
+    <li><a href="TrackandField_athletes.html">Athletes</a></li>
+    <li><a href="TrackandField_awards.html">Awards</a></li>
+    <li><a class="active2" href="TrackandField_records.html">Records</a></li>
+    <li><a href="TrackandField_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Records set by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BARNES, Clyde Chloe">BARNES, Clyde "Chloe</option>
+              <option value="BARRETT, Lorelei">BARRETT, "Lorelei"</option>
+              <option value="BIDWELL, Lucas Lizzy">BIDWELL, Lucas "Lizzy"</option>
+              <option value="CHAND, Dutee">CHAND, Dutee</option>
+              <option value="CLARK, Gabriel Lazuli">CLARK, Gabriel "Lazuli"</option>
+              <option value="DIOUF, Halba">DIOUF, "Halba"</option>
+              <option value="EASTWOOD, Jonathan June">EASTWOOD, Jonathan "June"</option>
+              <option value="HOFFMAN, Aspen">HOFFMAN, Aspen</option>
+              <option value="HUCKMAN, Sarah">HUCKMAN, "Sarah"</option>
+              <option value="IMALI, Maximila">IMALI, Maximila</option>
+              <option value="ISHA, Ryia">ISHA, "Ryia"</option>
+              <option value="JAQUES, Maelle">JAQUES, "Maelle</option>
+              <option value="KATHENYA, Evangeline Makena">KATHENYA, Evangeline Makena</option>
+              <option value="LAYT, Kyle Caroline">LAYT, Kyle "Caroline"</option>
+              <option value="MARTINEZ-PATINO, Maria Jose">MARTINEZ-PATINO, Maria Jose</option>
+              <option value="MASILINGI, Beatrice">MASILINGI, Beatrice</option>
+              <option value="MBOMA, Christine">MBOMA, Christine</option>
+              <option value="MILLER, Terry">MILLER, Terry</option>
+              <option value="NEGESA, Annet">NEGESA, Annet</option>
+              <option value="NEWELL, Tiffany">NEWELL, "Tiffany"</option>
+              <option value="NIYONSABA, Francine">NIYONSABA, Francine</option>
+              <option value="PEPPER-JACKSON, Becky">PEPPER-JACKSON, "Becky"</option>
+              <option value="PETRILLO, Fabrizio Valentina">PETRILLO, Fabrizio "Valentina"</option>
+              <option value="PIL, Eris">PIL, "Eris"</option>
+              <option value="RATJEN, Hermann Dora">RATJEN, Hermann "Dora"</option>
+              <option value="RYAN, Athena">RYAN, "Athena"</option>
+              <option value="SCHREINER, Camden Sadie">SCHREINER, Camden "Sadie"</option>
+              <option value="SEMENYA, Caster">SEMENYA, "Caster"</option>
+              <option value="SEYNI, Aminatou">SEYNI, Aminatou</option>
+              <option value="SOLORZANO, Diamond">SOLORZANO, "Diamond"</option>
+              <option value="SOUNDARAJAN, Santhi">SOUNDARAJAN, Santhi</option>
+              <option value="SULLIVAN, Redmond">SULLIVAN, Redmond</option>
+              <option value="TELFER, Craig CeCe">TELFER, Craig "CeCe"</option>
+              <option value="WAMBUI, Margaret Nyairera">WAMBUI, Margaret Nyairera</option>
+              <option value="WANGYOT, Nattaphon Ice">WANGYOT, Nattaphon "Ice"</option>
+              <option value="YEARWOOD, Amadi Andraya">YEARWOOD, Amadi "Andraya"</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Record:</p>
+            <select class="filter" data-field="RECORD TYPE">
+              <option value="">All</option>
+              <option value="Meet Record">1st Place</option>
+              <option value="Competition Record">2nd Place</option>
+              <option value="Games Record">3rd Place</option>
+              <option value="Championship Record">4th Place</option>
+              <option value="Club Record">Other</option>
+              <option value="School Record">5th Place</option>
+              <option value="Meet Record">6th Place</option>
+              <option value="League Record">7th Place</option>
+              <option value="Regional Record">8th Place</option>
+              <option value="Division Record">9th Place</option>
+              <option value="State Record">10th Place</option>
+              <option value="National Record">Did not Start</option>
+              <option value="Continental Record">Did not Finish</option>
+              <option value="World Record">Disqualified</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+            </select>
+            </div>
+
+            <div class="filter-menu">
+                <p class="filter-label">Event:</p>
+                <select class="filter" data-field="EVENT">
+                  <option value="">All</option>
+                  <option value="55m">55 Meters</option>
+                  <option value="60m">60 Meters</option>
+                  <option value="100m">100 Meters</option>
+                  <option value="200m">200 Meters</option>
+                  <option value="300m">300 Meters</option>
+                  <option value="400m">400 Meters</option>
+                  <option value="600m">600 Meters</option>
+                  <option value="800m">800 Meters</option>
+                  <option value="1000m">1000 Meters</option>
+                  <option value="1500m">1500 Meters</option>
+                  <option value="1600m">1600 Meters</option>
+                  <option value="2000m">2000 Meters</option>
+                  <option value="3000m">3000 Meters</option>
+                  <option value="3200m">3200 Meters</option>
+                  <option value="5000 Meters">5000 Meters</option>
+                  <option value="10,000m">10,000 Meters</option>
+                  <option value="1 mile">1 mile</option>
+                  <option value="2 miles">2 miles</option>
+                  <option value="4x100">4x100m Relay</option>
+                  <option value="4x200">4x200m Relay</option>
+                  <option value="4x400">4x400m Relay</option>
+                  <option value="4x800">4x800m Relay</option>
+                  <option value="SMR">Sprint Medley Relay</option>
+                  <option value="DMR">Distance Medley Relay</option>
+                  <option value="SWR">Swedish Relay</option>
+                  <option value="55H">55 Meter Hurdles</option>
+                  <option value="60H">60 Meter Hurdles</option>
+                  <option value="100H">100 Meter Hurdles</option>
+                  <option value="300H">300 Meter Hurdles</option>
+                  <option value="400H">400 Meter Hurdles</option>
+                  <option value="2k SC">2k Steeplechase</option>
+                  <option value="3k SC">3k Steeplechase</option>
+                  <option value="HJ">High Jump</option>
+                  <option value="LJ">Long Jump</option>
+                  <option value="TJ">Triple Jump</option>
+                  <option value="Shotput">Shotput</option>
+                  <option value="Discus">Discus</option>
+                  <option value="Javelin">Javelin</option>
+                  <option value="HT 4kg">4kg Hammer Throw</option>
+                  <option value="HT 9kg">9kg Hammer Throw</option>
+                  <option value="WT">Weight Throw</option>
+                  <option value="Pent">Pentathalon</option>
+                  <option value="3k Walk">3k Walk</option>
+                </select>
+                </div>
+
+                <div class="filter-menu">
+                  <p class="filter-label">ID:</p>
+                  <select class="filter" data-field="ID">
+                    <option value="">All</option>
+                    <option value="Trans-identified">"Trans"-identified Male</option>
+                    <option value="DSD">Male with DSD</option>
+                    <option value="Other">Other</option>
+                   </select> 
+                  </div>
+
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th>
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>ID</th> 
+                    <th>COMPETITION</th>
+                    <th>RECORD TYPE</th>
+                    <th>RECORD</th>
+                    <th>EVENT</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-02</td>	<td>SCHREINER, Camden <q>Sadie</q></td>	<td>Trans-identified</td>	<td>All-Atlantic Region Indoor Track & Field Championships</td>	<td>Facility Record</td>	<td>Facility Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://www.leonetiming.com/2024/Indoor/AARTFC/Results.pdf">[1]</a>	<td></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-02</td>	<td>SCHREINER, Camden <q>Sadie</q></td>	<td>Trans-identified</td>	<td>All-Atlantic Region Indoor Track & Field Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://www.leonetiming.com/2024/Indoor/AARTFC/Results.pdf">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-10</td>	<td>SCHREINER, Camden <q>Sadie</q></td>	<td>Trans-identified</td>	<td>Boston University David Hemery Valentine Invitational </td>	<td>School Record</td>	<td>RIT School Record</td>	<td>400m</td>	<td>USA</td>	<td><a href="https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[1]</a>	<a href=“https://web.archive.org/web/20240214022907/https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-10</td>	<td>SCHREINER, Camden <q>Sadie</q></td>	<td>Trans-identified</td>	<td>Boston University David Hemery Valentine Invitational </td>	<td>School Record</td>	<td>RIT School Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[1]</a>	<a href=“https://web.archive.org/web/20240214022907/https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-26</td>	<td>SCHREINER, Camden <q>Sadie</q></td>	<td>Trans-identified</td>	<td>RIT January Friday Meet</td>	<td>School Record</td>	<td>RIT School Record</td>	<td>300m</td>	<td>USA</td>	<td><a href="https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[1]</a>	<a href=“https://web.archive.org/web/20240214022907/https://ritathletics.com/sports/2022/1/7/wtrack-indoor-records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Dec-17</td>	<td>DIOUF, <q>Halba</q></td>	<td>Trans-identified</td>	<td>Départementaux 13 Individuels - CA à MA, Miramas</td>	<td>Regional Record</td>	<td>PCA Regional Record - U23</td>	<td>200m</td>	<td>FRA</td>	<td><a href="https://bases.athle.fr/asp.net/liste.aspx?frmbase=records&frmmode=1&frmespace=&frmexploitation=actuel&frmcategorie=ES&frmsexe=F&frmniveau=RG&frmniveaulig=OCC&frmniveaudpt=&frmposition=2">[1]</a>	<a href=“https://web.archive.org/web/20240219033916/https://bases.athle.fr/asp.net/liste.aspx?frmbase=records&frmmode=1&frmespace=&frmexploitation=actuel&frmcategorie=ES&frmsexe=F&frmniveau=RG&frmniveaulig=OCC&frmniveaudpt=&frmposition=2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Dec-16</td>	<td>DIOUF, <q>Halba</q></td>	<td>Trans-identified</td>	<td>Départementaux 13 Individuels - CA à MA, Miramas</td>	<td>Regional Record</td>	<td>PCA Regional Record - U23</td>	<td>60m</td>	<td>FRA</td>	<td><a href="https://bases.athle.fr/asp.net/liste.aspx?frmbase=records&frmmode=1&frmespace=&frmexploitation=actuel&frmcategorie=ES&frmsexe=F&frmniveau=RG&frmniveaulig=OCC&frmniveaudpt=&frmposition=2">[1]</a>	<a href=“https://web.archive.org/web/20240219033916/https://bases.athle.fr/asp.net/liste.aspx?frmbase=records&frmmode=1&frmespace=&frmexploitation=actuel&frmcategorie=ES&frmsexe=F&frmniveau=RG&frmniveaulig=OCC&frmniveaudpt=&frmposition=2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jun-22</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenyan Championships, Nyayo National Stadium, Nairobi</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>Long Jump</td>	<td>KEN</td>	<td><a href="https://www.run123.one/rec/KEN/KEN-W.html">[1]</a>	<a href="https://web.archive.org/web/20231129051710/https://www.run123.one/rec/KEN/KEN-W.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-30</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>Trans-identified</td>	<td>Lynn All-City Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>400 H</td>	<td>USA</td>	<td><a href="https://itemlive.com/2023/05/30/st-marys-boys-and-lynn-tech-girls-crowned-champions-of-city-meet/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-30</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>Trans-identified</td>	<td>Lynn All-City Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>Shotput</td>	<td>USA</td>	<td><a href="https://itemlive.com/2023/05/30/st-marys-boys-and-lynn-tech-girls-crowned-champions-of-city-meet/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-22</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>World Indoor Tour Madrid 2023, Gallur, Madrid (i) - World Athletics Indoor Tour</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>60m</td>	<td>NER</td>	<td><a href="https://www.watchathletics.com/article/12355/hurske-storms-to-finnish-60m-hurdles-record-nuguse-defeats-katir-in-1500m-in-madrid">[1]</a>	<a href="https://web.archive.org/web/20231001000000*/https://www.watchathletics.com/article/12355/hurske-storms-to-finnish-60m-hurdles-record-nuguse-defeats-katir-in-1500m-in-madrid">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-22</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>World Indoor Tour Madrid 2023, Gallur, Madrid (i) - World Athletics Indoor Tour</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>60m</td>	<td>NER</td>	<td><a href="https://www.runblogrun.com/2023/02/five-meeting-records-hurske-7-79-nr.html">[1]</a>	<a href="https://web.archive.org/web/20230325035913/https://www.runblogrun.com/2023/02/five-meeting-records-hurske-7-79-nr.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-18</td>	<td>Beatrice Masilingi</td>	<td>DSD</td>	<td>Curro Podium, Pilditch Stadium, Pretoria</td>	<td>Continental Record</td>	<td>African Record</td>	<td>300m</td>	<td>NAM</td>	<td><a href="https://newtonagency.co.za/masilingi-coetzee-break-300m-records/">[1]</a>	<a href=“https://web.archive.org/web/20230612102231/https://newtonagency.co.za/masilingi-coetzee-break-300m-records/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-18</td>	<td>Beatrice Masilingi</td>	<td>DSD</td>	<td>Curro Podium, Pilditch Stadium, Pretoria</td>	<td>National Record</td>	<td>Namibian National Record</td>	<td>300m</td>	<td>NAM</td>	<td><a href="https://newtonagency.co.za/masilingi-coetzee-break-300m-records/">[1]</a>	<a href=“https://web.archive.org/web/20230612102231/https://newtonagency.co.za/masilingi-coetzee-break-300m-records/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-26</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Athletissima Lausanne</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>3000m</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-26</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Athletissima Lausanne, Stade Olympique de la Pontaise, Lausanne - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>3000m</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Silesia/user_upload/REVISED_Results.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240119034559/https://www.diamondleague.com/fileadmin/IDL_Silesia/user_upload/REVISED_Results.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jul-21</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>World Athletics Championships, Oregon 2022, Hayward Field, Eugene, OR</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href="https://media.aws.iaaf.org/competitiondocuments/pdf/7137279/AT-200-W-h----.RS4.pdf">[1]</a>	<a href=“https://web.archive.org/web/20220719082157/https://media.aws.iaaf.org/competitiondocuments/pdf/7137279/AT-200-W-h----.RS4.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-25</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenyan Trials for World Championships and Commonwealth Games 2022, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>100m</td>	<td>KEN</td>	<td><a href="https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-breaks-national-100m-record-3859714">[1]</a>	<a href=“https://web.archive.org/web/20220818091611/https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-breaks-national-100m-record-3859714">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-24</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenyan Trials for World Championships and Commonwealth Games 2022, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>200m</td>	<td>KEN</td>	<td><a href="https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-shatters-own-200m-kenyan-record-3858648">[1]</a>	<a href=“https://web.archive.org/web/20220714062520/https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-shatters-own-200m-kenyan-record-3858648">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-08</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>African Athletics Championships, Cote d'Or National Sports Complex, St Pierre</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>100m</td>	<td>KEN</td>	<td><a href="https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-breaks-national-100m-record-3859714">[1]</a>	<a href=“https://web.archive.org/web/20220818091611/https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-breaks-national-100m-record-3859714">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-08</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>African Athletics Championships, Cote d'Or National Sports Complex, St Pierre</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>100m</td>	<td>NER</td>	<td><a href=“https://web.archive.org/web/20220925205239/https://www.africathle.com/2022/06/08/african-championships-cote-dor-mauritius-8-12-06-2022/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-31</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>61st Golden Spike, Mestský Stadion, Ostrava</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-continental-tour/news/bol-girma-ostrava-golden-spike-2022">[1]</a>	<a href=“https://web.archive.org/web/20220704034535/https://worldathletics.org/competitions/world-athletics-continental-tour/news/bol-girma-ostrava-golden-spike-2022">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-27</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Prefontaine Classic, Hayward Field, Eugene, OR - Promotional Events</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>2 miles</td>	<td>BDI</td>	<td><a href="https://worldathletics.org/competitions/diamond-league/news/mahuchikh-taye-duplantis-eugene-prefontaine-classic">[1]</a>	<a href=“https://web.archive.org/web/20240215005947/https://worldathletics.org/competitions/diamond-league/news/mahuchikh-taye-duplantis-eugene-prefontaine-classic">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-27</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Hayward Field, Eugene, OR (USA)</td>	<td>League Record</td>	<td>Diamond League Record</td>	<td>2 mile</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-27</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Eugene Prefontaine Classic</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>2 mile</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-13</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Ooredoo Doha Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>3000m</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Zurich/user_upload/RecordSet.PDF">[1]</a>	<a href=“https://web.archive.org/web/20240119034531/https://www.diamondleague.com/fileadmin/IDL_Zurich/user_upload/RecordSet.PDF">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-07</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>Kip Keino Classic, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-continental-tour/news/kip-keino-classic-nairobi-fraser-pryce-omanyala">[1]</a>	<a href=“https://web.archive.org/web/20220609184827/https://worldathletics.org/competitions/world-athletics-continental-tour/news/kip-keino-classic-nairobi-fraser-pryce-omanyala">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-30</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Gaborone International Meet, National Stadium, Gaborone</td>	<td>Continental Record</td>	<td>African U20 Record</td>	<td>100m</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/news/report/world-u20-records-knighton-19-49-tebogo-9-96">[1]</a>	<a href=“https://web.archive.org/web/20230425193929/https://worldathletics.org/news/report/world-u20-records-knighton-19-49-tebogo-9-96">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-30</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Gaborone International Meet, National Stadium, Gaborone</td>	<td>National Record</td>	<td>Namibian National Record</td>	<td>100m</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/news/report/world-u20-records-knighton-19-49-tebogo-9-96">[1]</a>	<a href=“https://web.archive.org/web/20230325175043/https://worldathletics.org/news/report/world-u20-records-knighton-19-49-tebogo-9-96">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-27</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenyan Championships, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>200m</td>	<td>KEN</td>	<td><a href="https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-shatters-own-200m-kenyan-record-3858648">[1]</a>	<a href=“https://web.archive.org/web/20220714062520/https://nation.africa/kenya/sports/athletics/ak-national-trials-imali-shatters-own-200m-kenyan-record-3858648">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Feb-13</td>	<td>NEWELL, <q>Tiffany</q></td>	<td>Trans-identified</td>	<td>Ontario Winter Mini Meet #3</td>	<td>National Record</td>	<td>Canadian National Masters Record - 45-49</td>	<td>5000m</td>	<td>CAN</td>	<td><a href="https://canadianmasters.ca/wp-content/uploads/2024/01/2024-01-09CMAIndoorTrackandJumpsRecords.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240214004952/https://canadianmasters.ca/wp-content/uploads/2024/01/2024-01-09CMAIndoorTrackandJumpsRecords.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Feb-11</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>BU Valentine Invite</td>	<td>Club Record</td>	<td>Club Record</td>	<td>60 HH</td>	<td>USA </td>	<td><a href="https://www.gbtc.org/page/2021-2022%20Indoor%20Season">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-28</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>BU Terrier Invite</td>	<td>Club Record</td>	<td>Club Record</td>	<td>60 HH</td>	<td>USA</td>	<td><a href="https://www.gbtc.org/page/2021-2022%20Indoor%20Season">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-14</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Memorial Borisa Hanžekovića, Sports Park Mladost, Zagreb</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>2000m</td>	<td>BDI</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-continental-tour/news/hanzekovic-memorial-zagreb-niyonsaba-world-2000m-record">[1]</a>	<a href="https://www.diamondleague.com/fileadmin/IDL_Zurich/user_upload/RecordSet_Paris_2021.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-14</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Memorial Borisa Hanžekovića, Sports Park Mladost, Zagreb</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>2000m</td>	<td>BDI</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-continental-tour/news/hanzekovic-memorial-zagreb-niyonsaba-world-2000m-record">[1]</a>	<a href="https://www.diamondleague.com/fileadmin/IDL_Zurich/user_upload/RecordSet_Paris_2021.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-14</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Memorial Borisa Hanžekovića, Sports Park Mladost, Zagreb</td>	<td>World Record</td>	<td>World Record</td>	<td>2000m</td>	<td>BDI</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-continental-tour/news/hanzekovic-memorial-zagreb-niyonsaba-world-2000m-record">[1]</a>	<a href=“https://web.archive.org/web/20240215020542/https://worldathletics.org/competitions/world-athletics-continental-tour/news/hanzekovic-memorial-zagreb-niyonsaba-world-2000m-record">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-09</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline</td>	<td>Continental Record</td>	<td>African Record</td>	<td>200m</td>	<td>NAM</td>	<td><a href=“https://web.archive.org/web/20230406180346/https://livecache.sportresult.com/node/binaryData/ATH_PROD/ZURICH2021/PDF_RE1020040.PDF?h=dPE4a7pmMdQX+jocgmEIRKWxRTM=">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-09</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline</td>	<td>National Record</td>	<td>Namibian National Record</td>	<td>200m</td>	<td>NAM</td>	<td><a href=“https://web.archive.org/web/20230406180346/https://livecache.sportresult.com/node/binaryData/ATH_PROD/ZURICH2021/PDF_RE1020040.PDF?h=dPE4a7pmMdQX+jocgmEIRKWxRTM=">[1]</a>	<a href=“https://web.archive.org/web/20230325175043/https://worldathletics.org/news/report/world-u20-records-knighton-19-49-tebogo-9-96">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-09</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline</td>	<td>World Record</td>	<td>World U20 Record</td>	<td>200m</td>	<td>NAM</td>	<td><a href=“https://web.archive.org/web/20230406180346/https://livecache.sportresult.com/node/binaryData/ATH_PROD/ZURICH2021/PDF_RE1020040.PDF?h=dPE4a7pmMdQX+jocgmEIRKWxRTM=">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-08</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Weltklasse Zurich</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>5km Road</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-03</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Allianz Memorial Van Damme, Boudewijnstadion, Bruxelles - Diamond Discipline</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>5000m</td>	<td>BDI</td>	<td><a href="https://static.sportresult.com/sports/at/data/2021/brussels/re1170040.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215005845/https://static.sportresult.com/sports/at/data/2021/brussels/re1170040.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-28</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Meeting de Paris, Stade Charléty, Paris - Diamond Discipline</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>3000m</td>	<td>BDI</td>	<td><a href="https://static.sportresult.com/sports/at/data/2021/paris/re1160040.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215010211/https://static.sportresult.com/sports/at/data/2021/paris/re1160040.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-28</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Meeting de Paris, Stade Charléty, Paris - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>3000m</td>	<td>BDI</td>	<td><a href="https://static.sportresult.com/sports/at/data/2021/paris/re1160040.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215010211/https://static.sportresult.com/sports/at/data/2021/paris/re1160040.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-22</td>	<td>Beatrice Masilingi</td>	<td>DSD</td>	<td>World Athletics U20 Championships, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Namibian National Record</td>	<td>4x100 Relay</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-u20-championships/world-athletics-u20-championships-7136587/results/women/4x100-metres-relay/final/result">[1]</a>	<a href=“https://web.archive.org/web/20230418110803/https://media.aws.iaaf.org/competitiondocuments/pdf/7136587/AT-4X1-W-f----.RS6.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-22</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>World Athletics U20 Championships, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>National Record</td>	<td>Namibian National U20 Record</td>	<td>4x100 Relay</td>	<td>NAM</td>	<td><a href="https://media.aws.iaaf.org/competitiondocuments/pdf/7136587/AT-4X1-W-f----.RS6.pdf">[1]</a>	<a href=“https://web.archive.org/web/20211027213933/https://worldathletics.org/competitions/world-athletics-u20-championships/world-athletics-u20-championships-7136587/results/women/4x100-metres-relay/final/result">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-21</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>World Athletics U20 Championships, Moi International Sports Centre, Kasarani, Nairobi</td>	<td>Championship Record</td>	<td>Championship Record</td>	<td>200m</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/competitions/world-athletics-u20-championships/world-athletics-u20-championships-7136587/results/women/200-metres/final/result">[1]</a>	<a href=“https://web.archive.org/web/20220808140832/https://worldathletics.org/competitions/world-athletics-u20-championships/world-athletics-u20-championships-7136587/results/women/200-metres/final/result">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-07</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Ethiopian Trials, FBK Stadium, Hengelo</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>10,000m</td>	<td>BDI</td>	<td><a href=“https://web.archive.org/web/20210807120652/https://olympics.com/tokyo-2020/olympic-games/resOG2020-/pdf/OG2020-/ATH/OG2020-_ATH_C73G_ATHW10000M------------FNL-000100--.pdf">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-03</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td></td>	<td>World Record</td>	<td>World U20 Record</td>	<td>200m</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/records/by-category/world-u20-records">[1]</a>	<a href=“https://web.archive.org/web/20240218070212/https://worldathletics.org/records/by-category/world-u20-records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-02</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>The XXXII Olympic Games, National Stadium, Tokyo</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href=“https://web.archive.org/web/20210803183707/https://olympics.com/tokyo-2020/olympic-games/resOG2020-/pdf/OG2020-/ATH/OG2020-_ATH_C74A_ATHW200M--------------SFNL--------.pdf">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-30</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Irena Szewinska Memorial / Bydgoszcz Cup, Zdzisław Krzyszkowiak Stadium, Bydgoszcz</td>	<td>World Record</td>	<td>World U20 Record</td>	<td>400m</td>	<td>NAM</td>	<td><a href="https://worldathletics.org/competitions/wct-gold/news/fajdek-wlodarczyk-bydgoszcz-szewinska-memorial">[1]</a>	<a href=“https://web.archive.org/web/20230406180343/https://worldathletics.org/competitions/wct-gold/news/fajdek-wlodarczyk-bydgoszcz-szewinska-memorial">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-21</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td></td>	<td></td>	<td>AIU Record</td>	<td>100m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2022/05/Final-Results-Kiug-2021.pdf">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-21</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Patiala</td>	<td>National Record</td>	<td>Indian National Record</td>	<td>100m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2023/11/NATIONAL-SENIOR-RECORDS-as-of-10th-November-2023-.pdf">[1]</a>	<a href="https://indianathletics.in/wp-content/uploads/2023/11/NATIONAL-SENIOR-RECORDS-as-of-10th-November-2023-.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-21</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Patiala</td>	<td>National Record</td>	<td>Indian National Record</td>	<td>4x400 Relay</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2023/11/NATIONAL-SENIOR-RECORDS-as-of-10th-November-2023-.pdf">[1]</a>	<a href="https://indianathletics.in/wp-content/uploads/2023/11/NATIONAL-SENIOR-RECORDS-as-of-10th-November-2023-.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-20</td>	<td>PETRILLO, Fabrizio <q>Valentina</q></td>	<td>Trans-identified</td>	<td>Meeting Assoluto, Campus Pino Dordoni, Piacenza</td>	<td>National Record</td>	<td>Italian National Paralympic Record</td>	<td>400m T13</td>	<td>ITA</td>	<td><a href="https://fispes.it/news/atletica-paralimpica-ancora-record-italiano-petrillo-nei-400-e-tonetto-nel-disco">[1]</a>	<a href=“https://web.archive.org/web/20240215020034/https://fispes.it/news/atletica-paralimpica-ancora-record-italiano-petrillo-nei-400-e-tonetto-nel-disco">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-May-27</td>	<td>NEGESA, Annet</td>	<td>DSD</td>	<td>Hengelo Fanny Blankers-Koen Games, FBK Stadium, Hengelo</td>	<td>National Record</td>	<td>Ugandan National Record</td>	<td>800m</td>	<td>UGA</td>	<td><a href="https://www.run123.one/rec/UGA/UGA-W.html">[1]</a>	<a href=“https://web.archive.org/web/20231129050539/https://www.run123.one/rec/UGA/UGA-W.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Apr-25</td>	<td>PETRILLO, Fabrizio <q>Valentina</q></td>	<td>DSD</td>	<td>42nd FIDAL Liberation Trophy</td>	<td>National Record</td>	<td>Italian National Paralympic Record</td>	<td>400m T13</td>	<td>ITA</td>	<td><a href="https://fispes.it/news/atletica-paralimpica-valentina-petrillo-record-italiano-nei-400?fbclid=IwAR3vOfyWZyQKhjGJKHW3q_WGvGIWgYTCUWtZ7bnO_MBvlJ2JXV4MowHwHhg">[1]</a>	<a href=“https://web.archive.org/web/20230718162302/https://fispes.it/news/atletica-paralimpica-valentina-petrillo-record-italiano-nei-400?fbclid=IwAR3vOfyWZyQKhjGJKHW3q_WGvGIWgYTCUWtZ7bnO_MBvlJ2JXV4MowHwHhg">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Apr-17</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Namibian Championships, Independence Stadium, Windhoek</td>	<td>National Record</td>	<td>Namibian National Record</td>	<td>400m</td>	<td>NAM</td>	<td><a href="https://athleticsweekly.com/event-reports/junior-records-for-athing-mu-and-christine-mboma-weekly-round-up-1039943956/">[1]</a>	<a href=“https://web.archive.org/web/20230323173113/https:/athleticsweekly.com/event-reports/junior-records-for-athing-mu-and-christine-mboma-weekly-round-up-1039943956/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Apr-17</td>	<td>MBOMA, Christine</td>	<td>DSD</td>	<td>Namibian Championships, Independence Stadium, Windhoek</td>	<td>World Record</td>	<td>World U20 Record</td>	<td>400m</td>	<td>NAM</td>	<td><a href="https://athleticsweekly.com/event-reports/junior-records-for-athing-mu-and-christine-mboma-weekly-round-up-1039943956/">[1]</a>	<a href=“https://web.archive.org/web/20230323173113/https://athleticsweekly.com/event-reports/junior-records-for-athing-mu-and-christine-mboma-weekly-round-up-1039943956/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Mar-21</td>	<td>PETRILLO, Fabrizio <q>Valentina</q></td>	<td>Trans-identified</td>	<td>FIDAL Italian Masters Indoor Championships</td>	<td>National Record</td>	<td>Italian National Indoor Paralympic Record</td>	<td>200m T12</td>	<td>ITA</td>	<td><a href="https://fispes.it/news/atletica-paralimpica-valentina-petrillo-record-italiano-indoor-nei-200">[1]</a>	<a href=“https://web.archive.org/web/20240215015144/https://fispes.it/news/atletica-paralimpica-valentina-petrillo-record-italiano-indoor-nei-200">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-14</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Newton Classic Shoot-out, Johannesburg</td>	<td>National Record</td>	<td>South African National Record</td>	<td>300m</td>	<td>ZAF</td>	<td><a href="https://runningmagazine.ca/the-scene/caster-semenya-returns-to-racing-sets-south-african-300m-record/">[1]</a>	<a href=“https://web.archive.org/web/20240214231451/https://runningmagazine.ca/the-scene/caster-semenya-returns-to-racing-sets-south-african-300m-record/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-01</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>IAAF World Championships in Athletics, Khalifa International Stadium, Doha</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href="https://media.aws.iaaf.org/competitiondocuments/pdf/6033/AT-200-W-h----.RS4.pdf">[1]</a>	<a href=“https://web.archive.org/web/20220210181734/https://media.aws.iaaf.org/competitiondocuments/pdf/6033/AT-200-W-h----.RS4.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jul-25</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>West African Championships, Niamey</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>100m</td>	<td>NER</td>	<td><a href="https://web.archive.org/web/20230324095634/https://www.africathle.com/2019/08/02/west-african-championships-niamey-niger-25-27-07-2019/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jul-21</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>Solidarity Tournament, Niamey</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>200m</td>	<td>NER</td>	<td><a href=“https://web.archive.org/web/20220523120546/https://www.africathle.com/2019/07/21/solidarity-tournament-niamey-niger-19-21-07-2019/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jul-05</td>	<td>SEYNI, Aminatou</td>	<td>DSD</td>	<td>IAAF Diamond League, Lausanne - Diamond Discipline</td>	<td>National Record</td>	<td>Niger National Record</td>	<td>400m</td>	<td>NER</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2019/Lausanne/RecordSet.pdf">[1]</a>	<a href="https://web.archive.org/web/20240119034417/https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2019/Lausanne/RecordSet.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jun-20</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>African Games Trials, Karasani</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>Long Jump</td>	<td>KEN</td>	<td><a href="https://www.athleticskenya.or.ke/wp-content/uploads/2019/06/TRIALS-FOR-AFRICA-GAMES-RESULTS-2019.pdf">[1]</a>	<a href=“https://web.archive.org/web/20230324111441/https://www.athleticskenya.or.ke/wp-content/uploads/2019/06/TRIALS-FOR-AFRICA-GAMES-RESULTS-2019.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-31</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined Class S Championship </td>	<td>School Record</td>	<td>Bloomfield HS Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[1]</a>	<a href=“https://web.archive.org/web/20240000000000*/https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-31</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined Class S Championship </td>	<td>Division Record</td>	<td>CIAC Class S Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180435/https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-31</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined Class S Championship </td>	<td>Division Record</td>	<td>CIAC Class S Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180435/https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-31</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined Class S Championship </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180435/https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-31</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined Class S Championship </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180435/https://ct.milesplit.com/meets/361681-ciac-state-championships-2019/results/656905/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-29</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>CIAC State Championships</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>4x100 Relay</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-23</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>NCAA Division II Outdoor Track & Field Championships </td>	<td>School Record</td>	<td>Franklin Pierce University School Record</td>	<td>400m Hurdles</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-22</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>Shoreline Conference Championship</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>4x400 Relay</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-22</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>Shoreline Conference Championship</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>Triple Jump</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-10</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>New England Outdoor Championship - NEICAAA </td>	<td>School Record</td>	<td>Franklin Pierce University School Record</td>	<td>100m Hurdles</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-04</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>Northeast-10 Outdoor Track & Field Championships  </td>	<td>School Record</td>	<td>Franklin Pierce University School Record</td>	<td>400m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-May-03</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>IAAF Diamond League, Khalifa International Stadium, Doha - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://doha.diamondleague.com/programme-results/results-archive/">[1]</a>	<a href=“https://web.archive.org/web/20240216054204/https://doha.diamondleague.com/programme-results/results-archive/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Apr-06</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>SNHU Spring Invitational </td>	<td>School Record</td>	<td>Franklin Pierce University School Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Mar-22</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>2019 UTA Bobby Lane Invitational </td>	<td>School Record</td>	<td>Franklin Pierce University School Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Mar-08</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>New Balance Nationals Indoor</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>60m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-16</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined State Open Championships </td>	<td>School Record</td>	<td>Bloomfield HS Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[1]</a>	<a href=“https://web.archive.org/web/20240213162443/https:/www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-16</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>CIAC State Open Indoor</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-16</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined State Open Championships </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[1]</a>	<a href=“https://web.archive.org/web/20240213162443/https://www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-16</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Combined State Open Championships </td>	<td>State Record</td>	<td>State Open Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[1]</a>	<a href=“https://web.archive.org/web/20240213162443/https://www.runnerspace.com/eprofile.php?event_id=1081&do=news&news_id=561533">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-07</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Class S Indoor Championships</td>	<td>Division Record</td>	<td>CIAC Class S Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/335710-ciac-class-s-championships-2019/results/626446/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180825/https://ct.milesplit.com/meets/335710-ciac-class-s-championships-2019/results/626446/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-07</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC Class S Indoor Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/335710-ciac-class-s-championships-2019/results/626446/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213180825/https://ct.milesplit.com/meets/335710-ciac-class-s-championships-2019/results/626446/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-02</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>NEICAAA Indoor Track & Field Championships </td>	<td>School Record</td>	<td>Franklin Pierce University School Record (Indoor)</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-26</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CCC Indoor Track and Field Championships</td>	<td>Conference Record</td>	<td>CCC Conference Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[1]</a>	<a href=“https://web.archive.org/web/20240213151342/https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-26</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CCC Indoor Track and Field Championships</td>	<td>Conference Record</td>	<td>CCC Conference Record</td>	<td>300m</td>	<td>USA</td>	<td><a href="https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[1]</a>	<a href=“https://web.archive.org/web/20240213151342/https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-26</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>Northeast-10 Outdoor Track & Field Championships </td>	<td>School Record</td>	<td>Franklin Pierce University School Record (Indoor)</td>	<td>400m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-26</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CCC Indoor Track and Field Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[1]</a>	<a href=“https://web.archive.org/web/20240213151342/https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-26</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CCC Indoor Track and Field Championships</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>300m</td>	<td>USA</td>	<td><a href="https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[1]</a>	<a href=“https://web.archive.org/web/20240213151342/https://centralconnecticutconference.org/championship-archives-indoor-track-g/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-19</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>East Coast Invitational</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://ri.milesplit.com/meets/335718-east-coast-invitational-2019/results/624983/raw">[1]</a>	<a href=“https://web.archive.org/web/20240401000000*/https://ri.milesplit.com/meets/335718-east-coast-invitational-2019/results/624983/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-13</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>Shoreline Coaches Invitational</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>55m Hurdles</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-15</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>Hillhouse Invitational</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>55m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/323497-hillhouse-invitational-2019/results/622777/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213182509/https://ct.milesplit.com/meets/323497-hillhouse-invitational-2019/results/622777/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-15</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>Hillhouse Invitational</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>300m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/323497-hillhouse-invitational-2019/results/622777/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213182509/https://ct.milesplit.com/meets/323497-hillhouse-invitational-2019/results/622777/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-07</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>Elm City Challenge</td>	<td>School Record</td>	<td>Franklin Pierce University School Record (Indoor)</td>	<td>60m 55</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-07</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>Elm City Challenge</td>	<td>School Record</td>	<td>Franklin Pierce University School Record (Indoor)</td>	<td>Pentathalon</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-01</td>	<td>TELFER, Craig <q>CeCe</q></td>	<td>Trans-identified</td>	<td>UMass Boston Indoor Open </td>	<td>School Record</td>	<td>Franklin Pierce University School Record (Indoor)</td>	<td>60m Hurdles</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[1]</a>	<a href=“https://web.archive.org/web/20240216033119/https://drive.google.com/file/d/1oBMjdKS69oZS5R2-dAGyWHp4-TN08Hmk/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Sept-08</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Ostrava IAAF Continental Cup, Ostrava</td>	<td>National Record</td>	<td>South African National Record</td>	<td>400m</td>	<td>ZAF</td>	<td><a href="https://media.aws.iaaf.org/competitiondocuments/pdf/6020/AT-400-W-f----.RS6.pdf?v=1420144018">[1]</a>	<a href=“https://web.archive.org/web/20240214232144/https://media.aws.iaaf.org/competitiondocuments/pdf/6020/AT-400-W-f----.RS6.pdf?v=1420144018">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Sept-02</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Berlin ISTAF, Olympiastadion, Berlin</td>	<td>National Record</td>	<td>South African National Record</td>	<td>1000m</td>	<td>ZAF</td>	<td><a href="https://www.letsrun.com/news/2018/09/2018-istaf-berlin-caster-semenya-clocks-fifth-fastest-1000m-230-70-robert-harting-kim-collins-call-career/">[1]</a>	<a href=“https://web.archive.org/web/20240219040620/https://www.letsrun.com/news/2018/09/2018-istaf-berlin-caster-semenya-clocks-fifth-fastest-1000m-230-70-robert-harting-kim-collins-call-career/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Aug-05</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>African Championships, Stephen Keshi Stadium, Asaba</td>	<td>Championship Record</td>	<td>African Championship Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://worldathletics.org/news/report/african-championships-asaba-final-day">[1]</a>	<a href=“https://web.archive.org/web/20240215004116/https://worldathletics.org/news/report/african-championships-asaba-final-day">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Aug-03</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>African Championships, Stephen Keshi Stadium, Asaba</td>	<td>National Record</td>	<td>South African National Record</td>	<td>400m</td>	<td>ZAF</td>	<td><a href="https://www.teamsa.co.za/semenya-scorches-to-sa-400m-record/">[1]</a>	<a href=“https://web.archive.org/web/20240215002120/https://www.teamsa.co.za/semenya-scorches-to-sa-400m-record/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-20</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Monaco Herculis, Stade Louis II, Monaco - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-13</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Promotional Events</td>	<td>League Record</td>	<td>Diamond League Record</td>	<td>1000m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Rabat/Results.pdf">[1]</a>	<a href=“https://web.archive.org/web/20230425045250/https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Rabat/Results.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-13</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Promotional Events</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>1000m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Rabat/Results.pdf">[1]</a>	<a href=“https://web.archive.org/web/20230425045250/https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Rabat/Results.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-30</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Meeting de Paris, Stade Charléty, Paris - Diamond Discipline</td>	<td>League Record</td>	<td>Diamond League Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-30</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Meeting de Paris, Stade Charléty, Paris - Diamond Discipline</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://static.sportresult.com/sports/at/data/2018/paris/re1110040.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240214232853/https://static.sportresult.com/sports/at/data/2018/paris/re1110040.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-30</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Meeting de Paris, Stade Charléty, Paris - Diamond Discipline</td>	<td>National Record</td>	<td>South African National Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://static.sportresult.com/sports/at/data/2018/paris/re1110040.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240214232853/https://static.sportresult.com/sports/at/data/2018/paris/re1110040.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-14</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenya Police Service Athletics Championships</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>100m</td>	<td>KEN</td>	<td><a href="https://nation.africa/kenya/sports/athletics/maximilla-imali-breaks-national-100m-record-54792">[1]</a>	<a href=“https://web.archive.org/web/20240219040119/https://nation.africa/kenya/sports/athletics/maximilla-imali-breaks-national-100m-record-54792">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-04</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td> CIAC State Open Championships</td>	<td>State Record</td>	<td>CIAC State Open Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://content.ciacsports.com/ot18o.shtml">[1]</a>	<a href=“https://web.archive.org/web/20240213155339/https://content.ciacsports.com/ot18o.shtml">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-04</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC State Open Championships</td>	<td>State Record</td>	<td>CIAC State Open Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://content.ciacsports.com/ot18o.shtml">[1]</a>	<a href=“https://web.archive.org/web/20240213155339/https://content.ciacsports.com/ot18o.shtml">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-04</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>CIAC State Open Outdoor Championships</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-May-29</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC State Class M Outdoor</td>	<td>Division Record</td>	<td>CIAC Class M Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://drive.google.com/file/d/1t_dUVnnVt6MmNX51ICATU8bwi0AbEgal/view">[1]</a>	<a href=“https://web.archive.org/web/20240214225030/https://drive.google.com/file/d/1t_dUVnnVt6MmNX51ICATU8bwi0AbEgal/view">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-May-29</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>CIAC State Class M Outdoor</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://content.ciacsports.com/ot18m.shtml">[1]</a>	<a href=“https://web.archive.org/web/20240213050105/https://content.ciacsports.com/ot18m.shtml">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-May-12</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>Greater Hartford Outdoor Invite </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/303760-greater-hartford-invitational-2018/results/593008/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213181648/https://ct.milesplit.com/meets/303760-greater-hartford-invitational-2018/results/593008/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-May-04</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Doha IAAF Diamond League, Suhaim bin Hamad Stadium, Doha - Diamond Discipline</td>	<td>National Record</td>	<td>South African National Record</td>	<td>1500m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Doha/RecordSet.pdf">[1]</a>	<a href=“https://web.archive.org/web/20220316020503/https://www.diamondleague.com/fileadmin/IDL_Default/files/documents/2018/Doha/RecordSet.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-27</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>Greater Bristol Outdoor Invite</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213181312/https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-27</td>	<td>MILLER, Terry</td>	<td>Trans-identified</td>	<td>Greater Bristol Outdoor Invite</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213181312/https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-27</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>Greater Bristol Outdoor Invite</td>	<td>Meet Record</td>	<td>Meet Record (Beaten by other male)</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213181312/https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-27</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>Greater Bristol Outdoor Invite</td>	<td>Meet Record</td>	<td>Meet Record (Beaten by other male)</td>	<td>200m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[1]</a>	<a href=“https://web.archive.org/web/20240213181312/https://ct.milesplit.com/meets/308543-greater-bristol-invitational-2018/results/587841/raw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-14</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Gold Coast Commonwealth Games, Gold Coast</td>	<td>Games Record</td>	<td>Commonwealth Games Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://results.birmingham2022.com/#/athletic-sports-records/current/ATH/*">[1]</a>	<a href=“https://web.archive.org/web/20240215004333/https://results.birmingham2022.com/#/athletic-sports-records/current/ATH/*">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-14</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Gold Coast Commonwealth Games, Gold Coast</td>	<td>Games Record</td>	<td>Commonwealth Games Record</td>	<td>1500m</td>	<td>ZAF</td>	<td><a href="https://results.birmingham2022.com/#/athletic-sports-records/current/ATH/*">[1]</a>	<a href=“https://web.archive.org/web/20240215004333/https://results.birmingham2022.com/#/athletic-sports-records/current/ATH/*">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Mar-08</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Pretoria Athletix Grand Prix Series, Pretoria</td>	<td>National Record</td>	<td>South African National Record</td>	<td>1000m</td>	<td>ZAF</td>	<td><a href="https://worldathletics.org/news/report/seven-early-season-world-leads-set-in-pretori">[1]</a>	<a href=“https://web.archive.org/web/20240214232745/https://worldathletics.org/news/report/seven-early-season-world-leads-set-in-pretori">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Feb-10</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>Trans-identified</td>	<td>CIAC Class S Championships</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>300m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Aug-27</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Berlin ISTAF, Olympiastadion, Berlin</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>600m</td>	<td>BDI</td>	<td><a href="https://www.wikiwand.com/en/List_of_Burundian_records_in_athletics">[1]</a>	<a href="https://web.archive.org/web/20240219211915/https://www.wikiwand.com/en/List_of_Burundian_records_in_athletics">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Aug-27</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Berlin ISTAF, Olympiastadion, Berlin</td>	<td>National Record</td>	<td>South African National Record</td>	<td>600m</td>	<td>ZAF</td>	<td><a href="https://www.wikiwand.com/en/List_of_South_African_records_in_athletics#Women">[1]</a>	<a href=“https://web.archive.org/web/20240214232432/https://www.wikiwand.com/en/List_of_South_African_records_in_athletics#Women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Aug-27</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Berlin ISTAF, Olympiastadion, Berlin</td>	<td>World Record</td>	<td>World Record</td>	<td>600m</td>	<td>ZAF</td>	<td><a href="https://africa.espn.com/espn/story/_/id/20481783/caster-semenya-breaks-600m-world-record?device=featurephone">[1]</a>	<a href=“https://web.archive.org/web/20240215011625/https://worldathletics.org/news/report/semenya-breaks-600m-world-best-berlin">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jul-21</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Monaco Herculis, Stade Louis II, Monaco - Diamond Discipline</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>800m</td>	<td>BDI</td>	<td><a href=“https://web.archive.org/web/20230404161334/https://livecache.sportresult.com/node/binaryData/AT_PROD/MONACO2017/PDF_RE1110040.PDF?h=y5q+IdckuRbXCrayRmmfKTQv2t4=">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jul-21</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Monaco Herculis, Stade Louis II, Monaco - Diamond Discipline</td>	<td>League Record</td>	<td>Diamond League Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jun-10</td>	<td>YEARWOOD, Amadi <q>Andraya</q></td>	<td>DSD</td>	<td>New England Championship</td>	<td>School Record</td>	<td>Cromwell HS Record*</td>	<td>100m</td>	<td>USA</td>	<td><a href="https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[1]</a>	<a href=“https://web.archive.org/web/20240216024614/https://ct.milesplit.com/teams/11942-cromwell-high-school/records">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jun-10</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>Kenyan Championships, Nairobi</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>400m</td>	<td>KEN</td>	<td><a href="https://www.athleticskenya.or.ke/national-records/">[1]</a>	<a href=“https://web.archive.org/web/20240129215932/https://www.athleticskenya.or.ke/national-records/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Apr-22</td>	<td>IMALI, Maximila</td>	<td>DSD</td>	<td>IAAF World Relays, T. Robinson Stadium, Nassau</td>	<td>National Record</td>	<td>Kenyan National Record</td>	<td>4x200 Relay</td>	<td>KEN</td>	<td><a href="https://www.athleticskenya.or.ke/national-records/">[1]</a>	<a href=“https://web.archive.org/web/20240129215932/https://www.athleticskenya.or.ke/national-records/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Jul-15</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Monaco Herculis, Stade Louis II, Monaco - Diamond Discipline</td>	<td>League Record</td>	<td>Diamond League Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.diamondleague.com/lists-results/statistics/">[1]</a>	<a href=“https://web.archive.org/web/20240214233819/https://www.diamondleague.com/lists-results/statistics/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Jun-26</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Durban African Championships, Durban</td>	<td>National Record</td>	<td>South African National Record</td>	<td>4x400 Relay</td>	<td>ZAF</td>	<td><a href="https://www.news24.com/Sport/semenya-takes-gold-for-sa-to-end-african-champs-20160627">[1]</a>	<a href=“https://web.archive.org/web/20240215001550/https://www.news24.com/Sport/semenya-takes-gold-for-sa-to-end-african-champs-20160627">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>New Dehli National Federation Cup </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>100m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2021/03/FedCupRec_31DEC2020.pdf">[1]</a>	<a href="https://web.archive.org/web/20240404014147/https://indianathletics.in/wp-content/uploads/2021/03/FedCupRec_31DEC2020.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Mar-30</td>	<td>LAYT, Kyle <q>Caroline</q></td>	<td>Trans-identified</td>	<td>World Indoor Masters Championships</td>	<td>National Record</td>	<td>Australian National Masters Indoor Record - 45</td>	<td>4x200 Relay</td>	<td>AUS</td>	<td><a href="https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215131109/https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Mar-30</td>	<td>LAYT, Kyle <q>Caroline</q></td>	<td>Trans-identified</td>	<td>World Indoor Masters Championships </td>	<td>National Record</td>	<td>Australian National Masters Indoor Record - 45</td>	<td>Shotput</td>	<td>AUS</td>	<td><a href="https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215131109/https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Junior Federation Cup </td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>100m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2019/05/Federation-cup-junior-chmps.pdf">[1]</a>	<a href="https://web.archive.org/web/20240404014335/https://indianathletics.in/wp-content/uploads/2019/05/Federation-cup-junior-chmps.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Junior Federation Cup Chennai</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>200m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2019/05/Federation-cup-junior-chmps.pdf">[1]</a>	<a href="https://web.archive.org/web/20240404014335/https://indianathletics.in/wp-content/uploads/2019/05/Federation-cup-junior-chmps.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-01</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Prefontaine Classic, Hayward Field, Eugene, OR - Diamond League</td>	<td>Meet Record</td>	<td>Meet Record</td>	<td>800m</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Eugene/user_upload/2016_Pre_Classic_Results.pdf">[1]</a>	<a href=“https://web.archive.org/web/20220706170724/https://www.diamondleague.com/fileadmin/IDL_Eugene/user_upload/2016_Pre_Classic_Results.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-01</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Prefontaine Classic, Hayward Field, Eugene, OR - Diamond League</td>	<td>Track Record</td>	<td>Track Record</td>	<td>800m</td>	<td>BDI</td>	<td><a href="https://www.diamondleague.com/fileadmin/IDL_Eugene/user_upload/2016_Pre_Classic_Results.pdf">[1]</a>	<a href=“https://web.archive.org/web/20220706170724/https://www.diamondleague.com/fileadmin/IDL_Eugene/user_upload/2016_Pre_Classic_Results.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Mar-23</td>	<td>NIYONSABA, Francine</td>	<td>DSD</td>	<td>Bujumbura, Burundi</td>	<td>National Record</td>	<td>Burundi National Record</td>	<td>400m</td>	<td>BDI</td>	<td><a href="https://www.wikiwand.com/en/List_of_Burundian_records_in_athletics">[1]</a>	<a href="https://web.archive.org/web/20240219211915/https://www.wikiwand.com/en/List_of_Burundian_records_in_athletics">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Bengalru</td>	<td>National Record</td>	<td>Indian National Record - Youth Girls</td>	<td>100m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2022/09/NYACrec_12SEP2022-1.pdf">[1]</a>	<a href="https://web.archive.org/web/20240404013623/https://indianathletics.in/wp-content/uploads/2022/09/NYACrec_12SEP2022-1.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012</td>	<td>CHAND, Dutee</td>	<td>DSD</td>	<td>Bengalru</td>	<td>National Record</td>	<td>Indian National Record - Youth Girls</td>	<td>200m</td>	<td>IND</td>	<td><a href="https://indianathletics.in/wp-content/uploads/2022/09/NYACrec_12SEP2022-1.pdf">[1]</a>	<a href="https://web.archive.org/web/20240404013623/https://indianathletics.in/wp-content/uploads/2022/09/NYACrec_12SEP2022-1.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-May-29</td>	<td>NEGESA, Annet</td>	<td>DSD</td>	<td>Hengelo Fanny Blankers-Koen Games, FBK Stadium, Hengelo</td>	<td>National Record</td>	<td>Ugandan National Record</td>	<td>800m</td>	<td>UGA</td>	<td><a href="https://www.run123.one/rec/UGA/UGA-W.html">[1]</a>	<a href=“https://web.archive.org/web/20231129050539/https://www.run123.one/rec/UGA/UGA-W.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-May-15</td>	<td>NEGESA, Annet</td>	<td>DSD</td>	<td>Gaborone African Junior Championships, Gaborone</td>	<td>National Record</td>	<td>Ugandan National Record</td>	<td>1500m</td>	<td>UGA</td>	<td><a href="https://www.run123.one/rec/UGA/UGA-W.html">[1]</a>	<a href=“https://web.archive.org/web/20231129050539/https://www.run123.one/rec/UGA/UGA-W.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Mar-06</td>	<td>LAYT, Kyle <q>Caroline</q></td>	<td>Trans-identified</td>	<td>World Indoor Masters Championships </td>	<td>National Record</td>	<td>Australian National Masters Indoor Record - 35</td>	<td>4x200 Relay</td>	<td>AUS</td>	<td><a href="https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215131109/https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jul-13</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Bambous African Junior Championships, Bambous</td>	<td>Continental Record</td>	<td>African Junior Championship Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[1]</a>	<a href=“https://web.archive.org/web/20211028010439/https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jul-13</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Bambous African Junior Championships, Bambous</td>	<td>Continental Record</td>	<td>African Junior Championship Record</td>	<td>1500m</td>	<td>ZAF</td>	<td><a href="https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[1]</a>	<a href=“https://web.archive.org/web/20211028010439/https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jul-13</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Bambous African Junior Championships, Bambous</td>	<td>National Record</td>	<td>South African Junior National Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href="https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[1]</a>	<a href=“https://web.archive.org/web/20211028010439/https://www.sport-olympic.gr/sp/index.php/athletics/records-in-athletics/226-games-records/6272-african-junior-championships-records-men-and-women-6272">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Oct-16</td>	<td>SEMENYA, Caster</td>	<td>DSD</td>	<td>Pune Commonwealth Youth Games, Pune</td>	<td>Games Record</td>	<td>Commonwealth Youth Games Record</td>	<td>800m</td>	<td>ZAF</td>	<td><a href=“https://web.archive.org/web/20170409081213/https://en.wikipedia.org/wiki/Athletics_at_the_Commonwealth_Youth_Games">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Mar-22</td>	<td>LAYT, Kyle <q>Caroline</q></td>	<td>Trans-identified</td>	<td>World Indoor Masters Championships </td>	<td>National Record</td>	<td>Australian National Masters Indoor Record - 40</td>	<td>4x200 Relay</td>	<td>AUS</td>	<td><a href="https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[1]</a>	<a href=“https://web.archive.org/web/20240215131109/https://vicmastersaths.org.au/wp-content/uploads/2021/10/Aust-Indoor-Records.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1938</td>	<td>1938-Sept-18</td>	<td>RATJEN, Hermann <q>Dora</q></td>	<td>Other</td>	<td>Wien Women's European Championships</td>	<td>World Record</td>	<td>World Record</td>	<td>High Jump</td>	<td>DEU</td>	<td><a href="https://rarehistoricalphotos.com/dora-ratjen-german-olympic-athlete-arrested-train-station-suspicion-man-dress-1938/">[1]</a>	<a href=“https://web.archive.org/web/20230801000000*/https://rarehistoricalphotos.com/dora-ratjen-german-olympic-athlete-arrested-train-station-suspicion-man-dress-1938/">[2]</a></td>	</tr>
+              
+  
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>
