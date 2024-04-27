@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(5) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(8) {
+  text-align: center;
+}
+
+
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Soccer</h1>
+        
+        <div class="herostat">
+            <p>10</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+          <p>36+</p><p>stolen<br>awards</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Soccer - Awards</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Soccer_results.html">Results</a></li>
+    <li><a href="Soccer_athletes.html">Athletes</a></li>
+    <li><a href="Soccer_teams.html">Teams</a></li>
+    <li><a class="active2" href="Soccer_awards.html">Awards</a></li>
+    <li><a href="Soccer_records.html">Records</a></li>
+    <li><a href="Soccer_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Awards given to </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BANDA, Barbra">BANDA, Barbra</option>
+              <option value="DEL ROSARIO, Athena">DEL ROSARIO, "Athena"</option>
+              <option value="DENNIS, Justin Riley">DENNIS, Justin "Riley"</option>
+              <option value="GOMEZ, Mara">GOMEZ, "Mara"</option>
+              <option value="HAAGENSEN, Raili">HAAGENSEN, "Raili"</option>
+              <option value="MASSINGHAM, Josephine">MASSINGHAM, Josephine"</option>
+              <option value="NOBLE, Mattie">NOBLE, "Mattie"</option>
+              <option value="PALACIOS, Alvaro Alba">PALACIOS, Alvaro "Alba"</option>
+              <option value="RIBAROLA, Michelle">RIBAROLA, "Michelle"</option>
+              <option value="SINCLAIR, Lian">SINCLAIR, "Lian"</option>
+
+            </select>
+          </div>
+            <div class="filter-menu">
+              <p class="filter-label">ID:</p>
+              <select class="filter" data-field="ID">
+                <option value="">All</option>
+                <option value="Trans-identified">"Trans"-identified</option>
+                <option value="DSD">DSD</option>
+              </select>
+              </div>       
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+            </div>
+
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>ID</th>
+                    <th>TEAM</th> 
+                    <th>AWARD</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>Flying Bats FC (5 male players)</td>	<td>Trans-identified</td>	<td>Flying Bats FC</td>	<td>Beryl Ackroyd Cup Grand Final - $1,000</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2023-2024</td>	<td>WASHINGTON, <q>Natalie</q></td>	<td>Trans-identified</td>	<td>Rushmoore Community FC</td>	<td>Player of the Match</td>	<td>GBR</td>	<td><a href="https://fulltime.thefa.com/statLeaders.html?itemsPerPage=100&selectedDivision=349155011&selectedOrgStatRecordingTypeID_ForSort=999725630&teamID=&selectedStatisticDisplayMode=1&selectedSeason=684754111&selectedFixtureGroupAgeGroup=0&sortAsc=true">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Nov-09</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Diamond TV Female Sports Personality of the Year</td>	<td>ZMB</td>	<td><a href="https://www.instagram.com/p/Czb-vtGITMY/">[1]</a>	<a href="https://archive.ph/lQwFB">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-18</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Copper Queens (Zambia National Team)</td>	<td>Team of the Year</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/photo.php?fbid=739171634881281&id=100063653528312&set=a.448344257297355&locale=en_GB">[1]</a>	<a href="https://archive.ph/AFdun">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>IFFHS World's Best International Goal Scorer: 2023</td>	<td>ZMB</td>	<td><a href="https://iffhs.com/posts/3292">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>1,000th Goal in Women's World Cup History</td>	<td>ZMB</td>	<td><a href="https://www.instagram.com/p/CvXR48ur6xK/?img_index=1">[1]</a>	<a href="https://archive.ph/RgQN2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Zee Woman In Sport</td>	<td>ZMB</td>	<td><a href="https://kalemba.news/sports/2023/03/09/barbra-banda-wins-zee-womans-in-sports-awards/comment-page-1/">[1]</a>	<a href="https://web.archive.org/web/20240404221150/https://kalemba.news/sports/2023/03/09/barbra-banda-wins-zee-womans-in-sports-awards/comment-page-1/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Oct-07</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Diamond TV Female Sports Personality of the Year</td>	<td>ZMB</td>	<td><a href="https://zedscoop.com/full-winners-list-diamond-tv-2022-personality-of-the-year-awards/?fbclid=IwAR2C95rExrdxjXhQBTd97RxWNZ4zDjYs9yu1FW93JJmUJbcx6UhIzK5RqxY_aem_AfA9im_SX6Tp7SJrzYFNkkGzQXY_kKx-jXXvKRECEGekqz8YlK5vlwPmdngx6CP9f0JqDtYJwYBssIhneJmliLD9">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Sept-01</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>COSAFA Women's Championship Player of the Match </td>	<td>ZMB</td>	<td><a href="https://www.instagram.com/p/Ch-CMw8qW74/?img_index=1">[1]</a>	<a href="https://archive.ph/C9YUE">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-25</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Anakazi Women in Sports Personality Award</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/Barbrabanda11/posts/382216567242176/?locale=ms_MY&paipv=0&eav=AfbGT154HmVAaYKPMEWmnQd5kmTjBcAiENplJzWUNgqVmjOC_pYlbRHnVXbddGWyQY4&_rdr">[1]</a>	<a href="https://archive.ph/X9GV9">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>COSAFA Women's Championship Top scorer: 2022</td>	<td>ZMB</td>	<td><a href="">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Golden Ball Best Player of the Tournament</td>	<td>ZMB</td>	<td><a href="https://zambia24.com/double-delight-for-barbra-banda-as-copper-queens-sweep-cosafa-individual-awards/">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Hollywoodbets COSAFA Women's Championship 2022 Best 11</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/Barbrabanda11/posts/pfbid0cAixJgj9XZHbDeiAurN9oNKYvdmorj2NTV2AftvFbGnDUksi694cuDUuWxy4Uza1l">[1]</a>	<a href="https://archive.ph/lNIyW">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2021-2022</td>	<td>PALACIOS, Alvaro <q>Alba</q></td>	<td>Trans-identified</td>	<td>TORRELODONES CF</td>	<td>Top Scorer</td>	<td>ESP</td>	<td><a href="http://www.adnuevoversalles-loranca.es/pnfg/NPcd/NFG_CMP_Goleadores?cod_primaria=1000120&CodJornada=1&codcompeticion=15248372&codtemporada=17&codgrupo=15248378">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>The Guardian 100 Best Women Footballers - 67</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/Barbrabanda11/posts/pfbid04hc2shbaccopHLWQ8rqyCj5SGHXUYVGkv6APiULwJkjSpXJ4pk7LUTUY1bb6Ni2Sl">[1]</a>	<a href="https://archive.ph/FsJA6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Diamond TV Female Sports Personality of the Year</td>	<td>ZMB</td>	<td><a href="https://tgzmag.com/here-are-the-winners-of-the-potyas-2021/">[1]</a>	<a href="https://web.archive.org/web/20240404224541/https://tgzmag.com/here-are-the-winners-of-the-potyas-2021/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Olympic Team Captain</td>	<td>ZMB</td>	<td><a href="https://olympics.com/en/news/ronaldo-inspired-zambia-striker-barbra-banda">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Nov-04</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>Player of the Match vs. Lesotho</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/Barbrabanda11/posts/pfbid07LAv64bqPYQA3mKLRH2TunqDMC4tnsJyNPVDsXUUH8CVPvw9HXoD8XxXZkKh7Ud6l">[1]</a>	<a href="https://archive.ph/Vq9iX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Shanghai Shengli</td>	<td>Chinese Women's Super League Top scorer: 2020</td>	<td>ZMB</td>	<td><a href="https://twitter.com/CHNWNT/status/1315294569840476161">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Shanghai Shengli</td>	<td>Chinese Women's Super League Best Female Footballer</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/Barbrabanda11/posts/pfbid026uGduPyxSzUJRnXA8jp7o12vTuifhvCQzsPVEJiGzWELJuwF6VF2AizFMCpKiNdvl">[1]</a>	<a href="https://archive.ph/Tbz0Q">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>AFI Las Malvinas</td>	<td>Campeón Apertura 2019 - Top Scorer (Goleador)</td>	<td>ARG</td>	<td><a href="https://www.infobae.com/deportes/2020/12/07/mara-gomez-debuto-y-se-convirtio-en-la-primera-jugadora-trans-de-la-primera-division-del-futbol-argentino/">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>AFI Las Malvinas</td>	<td>Campeón Clausura 2019 - Top Scorer (Goleador)</td>	<td>ARG</td>	<td><a href="https://www.infobae.com/deportes/2020/12/07/mara-gomez-debuto-y-se-convirtio-en-la-primera-jugadora-trans-de-la-primera-division-del-futbol-argentino/">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/B261vksJjbt/?hl=en">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>Torneo Copa del Rey - Top Scorer (Goleador)</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/BxqwEQYpTIU/?hl=en&img_index=1">[1]</a>	<a href="https://archive.ph/m2sLd">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>RIBAROLA, <q>Michelle</q></td>	<td>Trans-identified</td>	<td>APOPS FC</td>	<td>Seleccionado de Escobar (All-League Team)</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/diegofutbolplaya/posts/pfbid0q8JgA2yXXff55tMsEGAGhpKdUavxrqxptrinhx1UX29W4Bqi1Tc62r5T1A6PcuHDl">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Zambia National Team</td>	<td>PUSH Women's Sports Award</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/FootballAssociationZambia/posts/barbara-wins-push-women-awardbarbara-banda-received-the-sports-award-at-the-2019/2245411088847923/">[1]</a>	<a href="https://archive.ph/zwyYG">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/BrlvSUqgLpj/?hl=en">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/BrJWd_rgWvD/?hl=en">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/Bku-3nYAZ3_/?hl=en">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td></td>	<td>Torneo Inclusión - Top Scorer</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/photo/?fbid=1502765373159738&set=pcb.1502765449826397">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>BANDA, Barbra</td>	<td>Trans-identified</td>	<td>Zambia National Team</td>	<td>Player of the Match vs. Cameroon</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0XXXBh7Jh6gLjvBfAjgGfFWdte3mX9B16GKJdZDG7g41MApjRBrTi75yQGPs2pydcl&id=252886901527435">[1]</a>	<a href="https://archive.ph/QWJyg">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017</td>	<td>CONROY, Dave <q>Holly</q></td>	<td>Trans-identified</td>	<td>Wagga United FC</td>	<td>Women's Best Player 2017</td>	<td>AUS</td>	<td><a href="https://www.facebook.com/holly.conroy.58/posts/pfbid0oCUUAW8JsxQUAYu15wQg9o78GnZh6Yp9Y4XM5DoCH6abazWn16KZFsvd6VApY64yl">[1]</a>	<a href="https://archive.ph/VX7nv">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015</td>	<td>DEL ROSARIO, <q>Athena</q></td>	<td>Trans-identified</td>	<td>UC Santa Cruz</td>	<td>All-Independants Second Team</td>	<td>USA</td>	<td><a href="https://goslugs.com/news/2016/11/17/11_17_2016_1711.aspx">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014</td>	<td>DEL ROSARIO, <q>Athena</q></td>	<td>Trans-identified</td>	<td>LA Valley College</td>	<td>Team MVP</td>	<td>USA</td>	<td><a href="https://goslugs.com/sports/womens-soccer/roster/athena-del-rosario/3585">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014</td>	<td>DEL ROSARIO, <q>Athena</q></td>	<td>Trans-identified</td>	<td>LA Valley College</td>	<td>Western State Conference South - 1st Team All-Conference</td>	<td>USA</td>	<td><a href="https://www.westernstateconference.com/sports/wsoc/2014-15/files/2014_Western_State_Conference_Women-s_Soccer_All-Conference_List_South_Division.pdf">[1]</a>	<a href="https://web.archive.org/web/20240331000837/https://www.westernstateconference.com/sports/wsoc/2014-15/files/2014_Western_State_Conference_Women-s_Soccer_All-Conference_List_South_Division.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013</td>	<td>DEL ROSARIO, <q>Athena</q></td>	<td>Trans-identified</td>	<td>LA Valley College</td>	<td>Freshman of the Year</td>	<td>USA</td>	<td><a href="https://goslugs.com/sports/womens-soccer/roster/athena-del-rosario/3585">[1]</a>	<a href="">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

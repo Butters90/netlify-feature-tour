@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(10) {
+  display: none;
+}
+.filter-table tr > *:nth-child(11) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(12) {
+  text-align: center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Skateboarding</h1>
+        
+        <div class="herostat">
+            <p>5</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>8+</p><p>unfair<br>victories</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+          <p>$11,750</p><p>stolen<br>in prizes</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Skateboarding - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Skateboarding_results.html">Results</a></li>
+    <li><a href="Skateboarding_athletes.html">Athletes</a></li>
+    <li><a href="Skateboarding_awards.html">Awards</a></li>
+    <li><a href="Skateboarding_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BATRES, Richard Ricci Tres">BATRES, Richard "Ricci Tres"</option>
+              <option value="GALAGHER, Lillian">GALAGHER, "Lillian"</option>
+              <option value="PETTONE, Alexa">PETTONE, "Alexa"</option>
+              <option value="REIKDAL, Joao Maria Joaquina">REIKDAL, Joao "Maria Joaquina"</option>
+              <option value="WHYTE, Violet">WHYTE, "Violet"</option>
+
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Sport:</p>
+            <select class="filter" data-field="SPORT">
+              <option value="">All</option>
+              <option value="Skateboarding">Skateboarding</option>
+              <option value="Roller Skating">Roller Skating</option>
+            </select>
+            </div>
+
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>SPORT</th> 
+                    <th>LEVEL</th>
+                    <th>CATEGORY</th> 
+                    <th>COMPETITION</th>
+                    <th>EVENT</th>
+                    <th>PLACE SORT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-23</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>National</td>	<td>Amateur</td>	<td>Canada Skateboard National Street Championships</td>	<td></td>	<td>7th</td>	<td>7th</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/12070/Canada-Skateboard-National-Street-Championships---Womens-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321172047/https://theboardr.com/results/12070/Canada-Skateboard-National-Street-Championships---Womens-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Nov-05</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Exposure Street Open-Pro Qualifiers</td>	<td></td>	<td>7th</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/11338/Exposure-Street-Open-Pro-Qualifiers%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164306/https://theboardr.com/results/11338/Exposure-Street-Open-Pro-Qualifiers%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-23</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Skate DSM Streetstyle Open Lauridsen Womens Finals</td>	<td></td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/11445/Skate-DSM-Streetstyle-Open-Lauridsen-Womens-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321162517/https://theboardr.com/results/11445/Skate-DSM-Streetstyle-Open-Lauridsen-Womens-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-19</td>	<td>REIKDAL, Joao <q>Maria Joaquina</q></td>	<td>Roller Skating</td>	<td>World</td>	<td>Amateur</td>	<td>Artistic Skating World Championships, Ibague</td>	<td>Inline Free Skating</td>	<td>1st</td>	<td>1st</td>	<td>BRA</td>	<td><a href="https://www.worldskate.org/artistic/news-artistic/3555-inline-free-skating-podiums-at-the-artistic-world-championships-in-ibagu%C3%A8,-colombia.html">[1]</a>	<a href="https://web.archive.org/web/20240321172103/https://www.worldskate.org/artistic/news-artistic/3555-inline-free-skating-podiums-at-the-artistic-world-championships-in-ibagu%C3%A8,-colombia.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-09</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Slurpee Canada Skateboard Open&#160, Calgary</td>	<td>Park</td>	<td>3rd</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/11050/Slurpee-Canada-Skateboard-Open%C2%A0Calgary---Park-Womens-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164228/https://theboardr.com/results/11050/Slurpee-Canada-Skateboard-Open%C2%A0Calgary---Park-Womens-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-08</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Slurpee Canada Skateboard Open&#160, Calgary</td>	<td>Street</td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/11058/Slurpee-Canada-Skateboard-Open%C2%A0Calgary---Street-Womens-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164340/https://theboardr.com/results/11058/Slurpee-Canada-Skateboard-Open%C2%A0Calgary---Street-Womens-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jun-04</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Slurpee Canada Skateboard Open at Plaza</td>	<td></td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/10839/Slurpee-Canada-Skateboard-Open-at-Plaza-Womens-Open-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164331/https://theboardr.com/results/10839/Slurpee-Canada-Skateboard-Open-at-Plaza-Womens-Open-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-26</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Cowtown's PHXAM - Women&#39;s</td>	<td></td>	<td>4th</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/10379/Cowtown's-PHXAM---Women's-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321162442/https://theboardr.com/results/10379/Cowtown%27s-PHXAM---Women%27s-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Nov-19</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Miami Open Womens Finals</td>	<td></td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/9770/Miami-Open-Womens-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321162438/https://theboardr.com/results/9770/Miami-Open-Womens-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Oct-03</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Exposure Street Open-Pro Finals</td>	<td></td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/9606/Exposure-Street-Open-Pro-Finals%7D">[1]</a>	<a href="https://web.archive.org/web/20240321162436/https://theboardr.com/results/9606/Exposure-Street-Open-Pro-Finals%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-13</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Slurpee Canada Skateboard Open Calgary</td>	<td>Park</td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/9637/Slurpee-Canada-Skateboard-Open-Calgary---Womens-Park%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164252/https://theboardr.com/results/9637/Slurpee-Canada-Skateboard-Open-Calgary---Womens-Park%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-13</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Slurpee Canada Skateboard Open Calgary</td>	<td>Street</td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/9630/Slurpee-Canada-Skateboard-Open-Calgary---Womens-Street%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164320/https://theboardr.com/results/9630/Slurpee-Canada-Skateboard-Open-Calgary---Womens-Street%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-25</td>	<td>BATRES, Richard <q>Ricci Tres</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>The Boardr Open at New York City Womens FINALS</td>	<td></td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://theboardr.com/results/9288/The-Boardr-Open-at-New-York-City-Womens-FINALS-Presented-by-DC%7D">[1]</a>	<a href="https://web.archive.org/web/20240321162420/https://theboardr.com/results/9288/The-Boardr-Open-at-New-York-City-Womens-FINALS-Presented-by-DC%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-04</td>	<td>WHYTE, <q>Violet</q></td>	<td>Skateboarding</td>	<td>National</td>	<td>Amateur</td>	<td>Canada Skateboard Open at Hastings</td>	<td></td>	<td>2nd</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://theboardr.com/results/9219/Canada-Skateboard-Open-at-Hastings-Womens%7D">[1]</a>	<a href="https://web.archive.org/web/20240321164310/https://theboardr.com/results/9219/Canada-Skateboard-Open-at-Hastings-Womens%7D">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-20</td>	<td>EVERETT, <q>Ahria</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Donna Buang, Yarrah Ranges  Downhill Festival</td>	<td>Women's Skate</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://www.basementskate.com.au/blog/2022/03/31/donna-buang-downhill-festival-march-18-20-2022/">[1]</a>	<a href="https://web.archive.org/web/20240303235123/https://www.basementskate.com.au/blog/2022/03/31/donna-buang-downhill-festival-march-18-20-2022/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Dec-05</td>	<td>GALAGHER, <q>Lillian</q></td>	<td>Skateboarding</td>	<td>National</td>	<td>Amateur</td>	<td>Red Bull Cornerstone Skate Series - Final</td>	<td></td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://skatenugg.com/red-bull-cornerstone-2021-full-series-recap/">[1]</a>	<a href="https://web.archive.org/web/20240321162412/https://skatenugg.com/red-bull-cornerstone-2021-full-series-recap/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Dec-04</td>	<td>GALAGHER, <q>Lillian</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Red Bull Cornerstone Skate Series - Lincoln Qualifier</td>	<td></td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.dailymail.co.uk/news/article-10837837/Moment-transgender-skateboarder-takes-position-winners-podium-2021-event.html">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-27</td>	<td>REIKDAL, Joao <q>Maria Joaquina</q></td>	<td>Roller Skating</td>	<td>World</td>	<td>Amateur</td>	<td>Artistic Skating World Championships, Asuncion</td>	<td>Inline Free Skating</td>	<td>2nd</td>	<td>2nd</td>	<td>BRA</td>	<td><a href="https://www.cbhp.com.br/2021/MUNDIAL/210-INLINE-JUNIOR-FEM-CURTO.pdf">[1]</a>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-03</td>	<td>GALAGHER, <q>Lillian</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Summer Series Stop #4: Chanhassen SkatePark</td>	<td></td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://cdn.shopify.com/s/files/1/0329/5041/files/Chanhassen_Summer_Series_Results.pdf?v=1626291924">[1]</a>	<a href="https://web.archive.org/web/20240304005715/https://cdn.shopify.com/s/files/1/0329/5041/files/Chanhassen_Summer_Series_Results.pdf?v=1626291924">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-27</td>	<td>GALAGHER, <q>Lillian</q></td>	<td>Skateboarding</td>	<td>Other</td>	<td>Amateur</td>	<td>Red Bull Cornerstone Finals, Minneapolis</td>	<td></td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.skateboarding.com/videos/red-bull-cornerstone-finals-familia-hq-minneapolis">[1]</a>	<a href="https://web.archive.org/web/20240321162458/https://www.skateboarding.com/videos/red-bull-cornerstone-finals-familia-hq-minneapolis">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>PETTONE, <q>Alexa</q></td>	<td>Roller Skating</td>	<td>National</td>	<td>Amateur</td>	<td>Nationals</td>	<td>300m</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.laopinionsemanario.com.ar/noticia/la-historia-deportiva-de-alexa-pettone-en-pagina-12-tenia-miedo-a-ser-rechazada-pero-nunca-me-paso-en-las-competencias">[1]</a>	<a href="https://web.archive.org/web/20240321172037/https://www.laopinionsemanario.com.ar/noticia/la-historia-deportiva-de-alexa-pettone-en-pagina-12-tenia-miedo-a-ser-rechazada-pero-nunca-me-paso-en-las-competencias">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019</td>	<td>PETTONE, <q>Alexa</q></td>	<td>Roller Skating</td>	<td>National</td>	<td>Amateur</td>	<td>Nationals</td>	<td>500m</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.laopinionsemanario.com.ar/noticia/la-historia-deportiva-de-alexa-pettone-en-pagina-12-tenia-miedo-a-ser-rechazada-pero-nunca-me-paso-en-las-competencias">[1]</a>	<a href="https://web.archive.org/web/20240321172037/https://www.laopinionsemanario.com.ar/noticia/la-historia-deportiva-de-alexa-pettone-en-pagina-12-tenia-miedo-a-ser-rechazada-pero-nunca-me-paso-en-las-competencias">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015</td>	<td>PETTONE, <q>Alexa</q></td>	<td>Roller Skating</td>	<td>Other</td>	<td>Amateur</td>	<td>Looking for the Fastest and the Furiest</td>	<td></td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://lavaca.org/mu135/rapida-y-furiosa-alexa-pettone/">[1]</a>	<a href="https://web.archive.org/web/20240321172056/https://lavaca.org/mu135/rapida-y-furiosa-alexa-pettone/">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

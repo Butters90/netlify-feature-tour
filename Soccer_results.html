@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+.filter-table tr > *:nth-child(5) {
+  display: none;
+}
+.filter-table tr > *:nth-child(8) {
+  display: none;
+}
+.filter-table tr > *:nth-child(9) {
+  display: none;
+}
+.filter-table tr > *:nth-child(11) {
+  display: none;
+}
+.filter-table tr > *:nth-child(12) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(13) {
+  text-align: center;
+}
+
+
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Soccer</h1>
+        
+        <div class="herostat">
+            <p>10</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+          <p>22+</p><p>tournament<br>victories</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Soccer - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Soccer_results.html">Results</a></li>
+    <li><a href="Soccer_athletes.html">Athletes</a></li>
+    <li><a href="Soccer_teams.html">Teams</a></li>
+    <li><a href="Soccer_awards.html">Awards</a></li>
+    <li><a href="Soccer_records.html">Records</a></li>
+    <li><a href="Soccer_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BANDA, Barbra">BANDA, Barbra</option>
+              <option value="DEL ROSARIO, Athena">DEL ROSARIO, "Athena"</option>
+              <option value="DENNIS, Justin Riley">DENNIS, Justin "Riley"</option>
+              <option value="GOMEZ, Mara">GOMEZ, "Mara"</option>
+              <option value="HAAGENSEN, Raili">HAAGENSEN, "Raili"</option>
+              <option value="MASSINGHAM, Josephine">MASSINGHAM, Josephine"</option>
+              <option value="NOBLE, Mattie">NOBLE, "Mattie"</option>
+              <option value="PALACIOS, Alvaro Alba">PALACIOS, Alvaro "Alba"</option>
+              <option value="RIBAROLA, Michelle">RIBAROLA, "Michelle"</option>
+              <option value="SINCLAIR, Lian">SINCLAIR, "Lian"</option>
+
+            </select>
+            </div>
+
+            <div class="filter-menu">
+              <p class="filter-label">ID:</p>
+              <select class="filter" data-field="ID">
+                <option value="">All</option>
+                <option value="Trans-identified">"Trans"-identified</option>
+                <option value="DSD">DSD</option>
+              </select>
+              </div>
+
+              <div class="filter-menu">
+                <p class="filter-label">Sport:</p>
+                <select class="filter" data-field="SPORT">
+                  <option value="">All</option>
+                  <option value="Soccer">Soccer</option>
+                  <option value="Beach Soccer">Beach Soccer</option>
+                </select>
+                </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE SORT">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+              <option value="DNP">Did not Place</option>
+              <option value="Other">Other</option>
+            </select>
+            </div>
+
+            
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+            </div>
+
+            
+            <div class="filter-menu">
+            <p class="filter-label">Level:</p>
+            <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Club">Club/Amateur</option>
+              <option value="Masters">Masters</option>
+              <option value="High School">High School</option>
+              <option value="Collegiate">Collegiate</option>
+              <option value="Professional">Professional</option>
+             </select> 
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Meet Type:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="League Tournament">League Tournament</option>
+              <option value="International Tournament">International Tournament</option>
+              <option value="Conference Championship">Conference Championship</option>
+              <option value="League Championship">League Championship</option>
+              <option value="National Championship">National Championship</option>
+              <option value="International Championship">World Championship</option>
+              <option value="Olympic">Olympic Championship</option>
+              <option value="Other">Other</option>
+             </select> 
+            </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th>
+                    <th>ID</th>
+                    <th>SPORT</th>
+                    <th>TEAM</th> 
+                    <th>LEVEL</th>
+                    <th>CATEGORY</th> 
+                    <th>COMPETITION</th>
+                    <th>PLACE SORT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Apr-09</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>International Tournament</td>	<td>Professional</td>	<td>CAF Women's Olympic qualifying tournament</td>	<td>Other</td>	<td>Qualified</td>	<td>ZMB</td>	<td><a href="https://www.forbes.com/sites/neelshelat/2024/04/10/caf-womens-olympic-qualifying-nigeria-finally-seal-return-zambia-qualify-again/?sh=3dee69d37d59">[1]</a>	<a href="https://web.archive.org/web/20240423003410/https://www.forbes.com/sites/neelshelat/2024/04/10/caf-womens-olympic-qualifying-nigeria-finally-seal-return-zambia-qualify-again/?sh=3fefe6337d59">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>DENNIS, Justin <q>Riley</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Flying Bats FC</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>NWSF Beryl Ackroyd Cup</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>HAAGENSEN, <q>Raili</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Flying Bats FC</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>NWSF Beryl Ackroyd Cup</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>MASSINGHAM, <q>Josephine</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Flying Bats FC</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>NWSF Beryl Ackroyd Cup</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>NOBLE, <q>Mattie</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Flying Bats FC</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>NWSF Beryl Ackroyd Cup</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-24</td>	<td>SINCLAIR, <q>Lian</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Flying Bats FC</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>NWSF Beryl Ackroyd Cup</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[1]</a>	<a href="https://web.archive.org/web/20240329015704/https://sports.yahoo.com/web/20240329015704/https://sports.yahoo.com/women-team-five-transgender-players-134934772.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-31</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Internatational Championship</td>	<td>Professional</td>	<td>FIFA Women's World Cup</td>	<td>DNP</td>	<td>DNP</td>	<td>ZMB</td>	<td><a href="https://www.espn.com/soccer/story/_/id/37633108/2023-women-world-cup-finals-bracket-fixtures-schedule">[1]</a>	<a href="https://web.archive.org/web/20240423002944/https://www.espn.com/soccer/story/_/id/37633108/2023-women-world-cup-finals-bracket-fixtures-schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-21</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>International Tournament</td>	<td>Professional</td>	<td>Turkish Women's Cup</td>	<td>3rd</td>	<td>3rd</td>	<td>ZMB</td>	<td><a href="https://globalsportsarchive.com/competition/soccer/turkish-womens-cup-2023/group-a/77029/">[1]</a>	<a href="https://archive.ph/uBmkF">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Sept-09</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Continental Championship</td>	<td>Professional</td>	<td>COSAFA Women's Championship</td>	<td>1st</td>	<td>1st</td>	<td>ZMB</td>	<td><a href="https://www.insidethegames.biz/articles/1127956/cosafa-womens-championship-zambia">[1]</a>	<a href="https://web.archive.org/web/20240423002341/https://www.insidethegames.biz/articles/1127956/cosafa-womens-championship-zambia">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-22</td>	<td>PALACIOS, Alvaro <q>Alba</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Torrelodones CF</td>	<td>League Championship</td>	<td>Professional</td>	<td>First Women's National - Final Tournament</td>	<td>1st</td>	<td>1st</td>	<td>ESP</td>	<td><a href="http://www.adnuevoversalles-loranca.es/pnfg/NPcd/NFG_CmpJornada?cod_primaria=1000120&CodCompeticion=15248372&CodGrupo=15248378&CodTemporada=17&CodJornada=3&Sch_Tipo_Juego=">[1]</a>	<a href="https://web.archive.org/web/20240423001701/http://www.adnuevoversalles-loranca.es/pnfg/NPcd/NFG_CmpJornada?cod_primaria=1000120&CodCompeticion=15248372&CodGrupo=15248378&CodTemporada=17&CodJornada=3&Sch_Tipo_Juego=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2021-2022</td>	<td>PALACIOS, Alvaro <q>Alba</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Torrelodones CF</td>	<td>League</td>	<td>Professional</td>	<td>Tercera Federación Femenina - Group 5</td>	<td>2nd</td>	<td>2nd</td>	<td>ESP</td>	<td><a href="https://www.resultados-futbol.com/segunda_division_femenina2022/grupo5">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Nov-30</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Shanghai Shengli</td>	<td>League Championship</td>	<td>Professional</td>	<td>China Taiping Women's Super League</td>	<td>3rd</td>	<td>3rd</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/chinawomensfootballteam/posts/pfbid0K4zD4Fym1JQ25xGsEc3DhietEYnDk2hTsmgZHmFwNozyg2JoRiUZBLr5X1FZrmBMl">[1]</a>	<a href="https://archive.ph/log93">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-24</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Olympic </td>	<td>Amateur</td>	<td>2020 Tokyo Olympics</td>	<td>9th</td>	<td>9th</td>	<td>ZMB</td>	<td><a href="https://olympics.com/en/olympic-games/tokyo-2020/results/football/women">[1]</a>	<a href="https://web.archive.org/web/20230724122441/https://olympics.com/en/olympic-games/tokyo-2020/results/football/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Feb-27</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Villa San Carlos</td>	<td>Other</td>	<td>Amateur</td>	<td>Las Bonitas Cup</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://diariohoy.net/el-clasico/villa-san-carlos-supero-1-a-0-cambaceres-en-la-final-de-la-copa-preparacion-las-bonitas-157209">[1]</a>	<a href="https://web.archive.org/web/20240330151303/https://diariohoy.net/el-clasico/villa-san-carlos-supero-1-a-0-cambaceres-en-la-final-de-la-copa-preparacion-las-bonitas-157209">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2020-2021</td>	<td>PALACIOS, Alvaro <q>Alba</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Torrelodones CF</td>	<td>League</td>	<td>Professional</td>	<td>Tercera Federación Femenina - Group 5</td>	<td>5th</td>	<td>5th</td>	<td>ESP</td>	<td><a href="https://www.resultados-futbol.com/segunda_division_femenina2021/grupo7">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Nov-04</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Continental Championship</td>	<td>Professional</td>	<td>COSAFA Women's Championship</td>	<td>4th</td>	<td>4th</td>	<td>ZMB</td>	<td><a href="https://cosafa.com/2020-cosafa-womens-u17/">[1]</a>	<a href="https://web.archive.org/web/20240315172008/https://cosafa.com/2020-cosafa-womens-u17/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Oct-11</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Shanghai Shengli</td>	<td>League Championship</td>	<td>Professional</td>	<td>China Taiping  Women's Super League Championships</td>	<td>3rd</td>	<td>3rd</td>	<td>ZMB</td>	<td><a href="https://www.oddsportal.com/football/china/super-league-women-2020/standings/zPHTp6db/">[1]</a>	<a href="https://www.soccer24.com/china/super-league-women-2020/results/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Mar-10</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>International Tournament</td>	<td>Professional</td>	<td>CAF Women's Olympic qualifying tournament</td>	<td>1st</td>	<td>1st</td>	<td>ZMB</td>	<td><a href="https://www.insidethegames.biz/articles/1091753/zambia-womens-football-tokyo-2020">[1]</a>	<a href="https://web.archive.org/web/20240423002851/https://www.insidethegames.biz/articles/1091753/zambia-womens-football-tokyo-2020">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Dec-17</td>	<td>RIBAROLA, <q>Michelle</q></td>	<td>Trans-identified</td>	<td>Beach Soccer</td>	<td>APOPS FC</td>	<td>League Championship</td>	<td>Amateur</td>	<td>Escobar - Torneo Clausura</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/photo/?fbid=907523192978834&set=a.414663988931426&locale=es_LA">[1]</a>	<a href="https://archive.ph/AxedQ">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Nov-27</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Las Malvinas</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>Campeón Clausura 2019</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.infobae.com/deportes/2020/12/07/mara-gomez-debuto-y-se-convirtio-en-la-primera-jugadora-trans-de-la-primera-division-del-futbol-argentino/">[1]</a>	<a href="https://web.archive.org/web/20240330041614/https://www.infobae.com/deportes/2020/12/07/mara-gomez-debuto-y-se-convirtio-en-la-primera-jugadora-trans-de-la-primera-division-del-futbol-argentino/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-19</td>	<td>RIBAROLA, <q>Michelle</q></td>	<td>Trans-identified</td>	<td>Beach Soccer</td>	<td>APOPS FC</td>	<td>International Tournament</td>	<td>Amateur</td>	<td>South American Beach Games - Rosario</td>	<td>Other</td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/diegofutbolplaya/posts/pfbid02hmwxDbbDk84aHay4u8Qq6iRqCYv7WCkG5gLHEvuY9EscFHu99zbr7FC1TXA2Lyz3l">[1]</a>	<a href="https://archive.ph/o2l33">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Aug-11</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Continental Championship</td>	<td>Professional</td>	<td>COSAFA Women's Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>ZMB</td>	<td><a href="https://cosafa.com/2019-cosafa-womens/">[1]</a>	<a href="https://web.archive.org/web/20240315173416/https://cosafa.com/2019-cosafa-womens/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Aug-09</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Las Malvinas</td>	<td>League Tournament</td>	<td>Amateur</td>	<td>Campeón Apertura 2019</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.youtube.com/watch?v=IZpNl_mpw3w">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jul-15</td>	<td>RIBAROLA, <q>Michelle</q></td>	<td>Trans-identified</td>	<td>Beach Soccer</td>	<td>APOPS FC</td>	<td>League Championship</td>	<td>Amateur</td>	<td>Escobar - Torneo Apertura </td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/diegofutbolplaya/posts/pfbid07fParKbZjzbWPPrWbBagx4azgsrLiJys1eugGFGhB5jgQjJFNvXn1AUfFS6MCJyDl">[1]</a>	<a href="https://archive.ph/dk8iz">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>n/a</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>n/a</td>	<td>Other</td>	<td>Amateur</td>	<td>Torneo Relampago</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/Bsl6QRVgmhx/?hl=en">[1]</a>	<a href="https://archive.ph/XeS48">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-08</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Ensenada</td>	<td>Other</td>	<td>Amateur</td>	<td>Torneo Inclusión</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid026wLp8bqyDCft4oJwaZxopoLXXAHtog8Emz6sYfuFGkHKZvWWwvBLURNCkAXv3zXvl&id=544761012626000">[1]</a>	<a href="https://archive.ph/4vKGT">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Sept-18</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Continental Championship</td>	<td>Professional</td>	<td>COSAFA Women's Championship</td>	<td>4th</td>	<td>4th</td>	<td>ZMB</td>	<td><a href="https://cosafa.com/fixtures/2018-cosafa-womens/">[1]</a>	<a href="https://web.archive.org/web/20240423001658/https://cosafa.com/fixtures/2018-cosafa-womens/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Aug-12</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Las Malvinas</td>	<td>League Championship</td>	<td>Amateur</td>	<td>Campeón Apertura 2018</td>	<td>2nd</td>	<td>2nd</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/lapfutbol/posts/pfbid026wn9fQs4vV5Nix7kxf4UujuYr4Weisv5cGDAHcSoHQ7bePtiTVd13RGfXpMQggsUl">[1]</a>	<a href="https://www.facebook.com/photo?fbid=1036406693204615&set=pcb.1036407036537914">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Aug-06</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Defensores de Cambaceres</td>	<td>Other</td>	<td>Amateur</td>	<td>n/a</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/BmJOcFRg-2l/?hl=en">[1]</a>	<a href="https://archive.ph/5dU98">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-05</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Sacashispas</td>	<td>Other </td>	<td>Amateur</td>	<td>Torneo Copa del Rey</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/watch/?v=1811420172277790">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-10</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>International Tournament</td>	<td>Professional</td>	<td>Women's Africa Cup of Nations qualification</td>	<td>Other</td>	<td>Qualified</td>	<td>ZMB</td>	<td><a href="https://www.besoccer.com/match/seleccion-zimbabue-femenino/seleccion-zambia-femenino/2018786961/rounds">[1]</a>	<a href="https://web.archive.org/web/20240423001729/https://www.besoccer.com/match/seleccion-zimbabue-femenino/seleccion-zambia-femenino/2018786961/rounds">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>Las Malvinas</td>	<td>Other</td>	<td>Amateur</td>	<td>Tormeo Copa del Rey - Mixito</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/photo/?fbid=2277609192325550&set=ms.c.eJxFmEluBDEIRW8UMQ~%3B3v1gErk9LyeaJwkwG3CKZ3hntEUSqf7KgKDy8uwOAbUHVAX8gATpEJTyfjiBmGYloApAeCTUAka5uaYoPKK0ODuhQtQXqAFaj1NwAfJUyQ6lRjtKUApBaQAlgewoJTvFcpSJQ6q2i4pUwLHS95YCO8I0HG05JHks93Q~%3B0AzAsJcYOowbwHB1k90npAoZEsY~_OOG9LJi~%3BVZ1iVjIQXDOt3rONYJtI5llUAlEbCtAFiPzHCJ8xr6dnBQhsPiQAQqW5uVoD2AYXcsvJKFILMqjw6WAug1w7KPjCJ4tTPF7bnC50vJhOx0nSAHAlr1Bi70UhIwFufPy8x~%3BkBsTK0QU558hxcZPsm0BaggLlnnFDXGZZOU7DgwF8izFd5WrvsSB7oXKELYtKb76Wgd57Lic05IpqTM7AfyAQHQ1WH66RCmialpNIBMSWXkAYsFHgBrG3UawKaSGqkU2eJPR~%3BGL2B4rchJbyelnqfS4T2Wf~_6I2VUjZMF2DFiCVohELznSd~%3B7kup~_MZlmeY8dzb1ILpFrWfEAPkNAMKL4CqBQZfrO0BfOK1drj1gVGqVSfR660QTI~%3BeT~_5GSZI9wAem6DQDlmboArQ~_Kdo0qEKithlE4xJK1cRDvRCPJl4QdWDiEdXQ0S4LcIGUbKNO7QA5NaZ6gEkWINnK2~%3Bkjvs4~%3BwB84iXdK3CnCGzFxBph2sVcIwGJAVQN47if81Year~%3BuKNKjTKJUOKPVtBiGoIHVd9wVBVs~_5DVOJHwhfCTZIJPECFIwm1RhmAudy7n614e7r69pxXVuLJy8SDucq9thAo9faHuSNGtPKXoDmqK0bDz5L2ya34uhB2raG8UW95wJV87k~%3B920ADDPaohNDPIz2Ik83AIicTwgVZFSrg~%3Bx0dOwnqFPjFw9CPIy3KYmiKRn7nnJXzHgj5nGGyZpelT~_wxVCYL6bywB2rNtUhLD8w8ahEPEydH4C3mr4ADdZsh6crhqeZro5o6LCcGuNuBphmUBWoQnNew4Khw~_XpwHZh3lO4Lsi~_xc4oTswoi~_IFuFEW7QvQgi15fTE58E6xO~_UNLb~_hZdmTylKMV6vpuFWCjms1nVz4Z2nF3Gzr3yf5gBzop~_NOaZIFmHPWMsXPbgdsStvKD6TNJ4x7azsFhS2~%3BU5x48mJZAbAlxTfnnNZbyx~_oze1tBk7tKwHnnHU~%3BicQn~%3BHIryK3zy4sgL871JNDoXWjtuGXCZTuMOW6UK~_0pTpB4~_6ndfuoau78ZhpbrbAY1F~%3BYDse2CCgXj0fvJrbSeOiVlhNHomWPY7G0fmE2rK6~_xbbzmLAuAza3eWjyL4QKYHqxTQdF9EkkLsJAE77Ag6QO1OkKgQ6j3E1zT0F031PzATnW6qT5NaEEc0FqA4Rn27IizY~%3BIwAMPiHeAq6GPhu6DNkg~%3Bg65znSZSvBCfALAI1cf9AbAUpo4IiNg3KSEPEc5~%3BP~%3BX0EcN8jIFJzgZ7EXELuq9PI2R0qFLtD9E6gEEygif984vTlNkl1gGGVzNlveloQAdRKKG5U8s45Scy55G0oQbAj2Qd454ENkAQf2LVHAmtPyry0yq9dpOyjSNwO9NrB6LipvDqsoGP6eJf~%3BDPPdLkTQ19PnenA1rkf6ti0RtK30aSg8rf8DYXsKIw2Zu3~_4Yf~_opKkPZjx5KnVCaPYDOaZnfC~%3BgqNdg7RpsdU45UMln2IziAYHMtegUPznGWitNfSSjktttchuNRt~%3BeUzBRKLqeqE6LxIrfPe5b12dHvmc137M6aVufNVpfEs~_yyaHfNB3QK~%3BG18WTaNAj2oGTfGrP~_aiw5t~_Oyfh03ueapwRbfbRggK3FKa0uK5Sup5LYpfvMvQCUyd58Mr6QSmXmbVN~_8nUGTA~%3BJrSjOKaj6h75qW7BOQFE~%3BAEp~%3BfIpL8K7p5C9oC5gOzWSb~%3BJGwlrCGR7qM02QBmEiZhyynZF58GXnwzZ3k~_QfHX1P5IVMKwrge~_Z1Mptc0neM6WstACuK~_sNMcSnURU9RRBAkxZRmOI1zwp5xR3SEjusa44dh9n0Xicleq8G3RmN0CsHUyww~_YGxoTogD4gAOYD8GtPvQVe4~_eLzZIXHd9tKLV1X~%3Brct17nQvMfk8bM8A~-~-.bps.a.2277595405660262">[1]</a>	<a href="https://archive.ph/m2sLd">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018</td>	<td>GOMEZ, <q>Mara</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>n/a</td>	<td>Other</td>	<td>Amateur</td>	<td>Torneo Relampago</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.instagram.com/p/BrwCKgrgGFS/?hl=en&img_index=1">[1]</a>	<a href="https://archive.ph/Aziq8">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Sept-24</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Continental Championship</td>	<td>Professional</td>	<td>COSAFA Women’s Championship</td>	<td>3rd</td>	<td>3rd</td>	<td>ZMB</td>	<td><a href="https://cosafa.com/2017-cosafa-womens-championship-day-eight-review-day-nine-preview/">[1]</a>	<a href="https://web.archive.org/web/20230323041016/https://cosafa.com/2017-cosafa-womens-championship-day-eight-review-day-nine-preview/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Dec-17</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Green Buffalos WFC</td>	<td>National Championship</td>	<td>Amateur</td>	<td>FAZ National Championships</td>	<td>1st</td>	<td>1st</td>	<td>ZMB</td>	<td><a href="https://www.facebook.com/FootballAssociationZambia/posts/pfbid0SzsU3hAiNLMFX5myTWiCcZEaioviW6JtyaLfBoRz7TdSBo9rBCcYcH4HMDZ63n7ul">[1]</a>	<a href="https://archive.ph/nwMzM">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2016-Nov-16</td>	<td>RIBAROLA, <q>Michelle</q></td>	<td>Trans-identified</td>	<td>Beach Soccer</td>	<td>APOPS FC</td>	<td>League Championship</td>	<td>Amateur</td>	<td>Escobar 1st Stage Championships</td>	<td>1st</td>	<td>1st</td>	<td>ARG</td>	<td><a href="https://www.facebook.com/diegofutbolplaya/posts/pfbid01svz92ESTo97tE1EExnAmPqzh38uT4H8dZJ5W1PioQnPosaUDsNn5uocipoceS5l">[1]</a>	<a href="https://archive.ph/SFUOw">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Nov-08</td>	<td>DEL ROSARIO, <q>Athena</q></td>	<td>Trans-identified</td>	<td>Soccer</td>	<td>UC Santa Cruz</td>	<td>Conference Championship</td>	<td>Collegiate</td>	<td>Great South Athletic Conference Championships</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.santacruzsentinel.com/2015/11/09/local-roundup-slugs-headed-to-nationals-after-winning-gsac-title/">[1]</a>	<a href="https://web.archive.org/web/20240330232934/https://www.santacruzsentinel.com/2015/11/09/local-roundup-slugs-headed-to-nationals-after-winning-gsac-title/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-04</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>Internatational Championship</td>	<td>Professional</td>	<td>FIFA U-17 Women's World Cup</td>	<td>DNP</td>	<td>DNP</td>	<td>ZMB</td>	<td><a href="https://ru.qa.fifa.com/tournaments/womens/u17womensworldcup/costarica2014/teams/1915239">[1]</a>	<a href="https://web.archive.org/web/20240423002504/https://ru.qa.fifa.com/tournaments/womens/u17womensworldcup/costarica2014/match-center">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Nov</td>	<td>BANDA, Barbra</td>	<td>DSD</td>	<td>Soccer</td>	<td>Zambia National Team</td>	<td>International Tournament</td>	<td>Professional</td>	<td>African U-17 Women's World Cup Qualifying Tournament </td>	<td>Other</td>	<td>Qualified</td>	<td>ZMB</td>	<td><a href="https://www.rsssf.org/tablesa/afr-wom-u17-2013.html">[1]</a>	<a href="https://archive.ph/20131203060639/http://www.zambianfootball.co.zm/?p=7808">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>
