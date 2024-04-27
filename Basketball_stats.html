@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(4) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(9) {
+  text-align:center;
+}
+.filter-table tr > *:nth-child(10) {
+  text-align:center;
+}
+
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Basketball</h1>
+        
+        <div class="herostat">
+            <p>8</p><p>male<br>athletes</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>98+</p><p>led<br>stats</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Basketball - Stats</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Basketball_results.html">Results</a></li>
+    <li><a href="Basketball_athletes.html">Athletes</a></li>
+    <li><a href="Basketball_teams.html">Teams</a></li>
+    <li><a href="Basketball_awards.html">Awards</a></li>
+    <li><a class="active2" href="Basketball_stats.html">Stats</a></li>
+    <li><a href="Basketball_records.html">Records</a></li>
+    <li><a href="Basketball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">MALE <span style="color:#AAAAAA;">Stat Leaders in the </span>FEMALE <span style="color:#AAAAAA;">Division</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="ATHLETE">
+              <option value="">All</option>
+              <option value="CLARK, Gabriel Lazuli">CLARK, Gabriel "Lazuli"</option>
+              <option value="HANLON, Henry">HANLON, Henry</option>
+              <option value="HUSKEY, Donavion Navi">HUSKEY, Donavion "Navi"</option>
+              <option value="JOHNSON, Rose">JOHNSON, "Rose"</option>
+              <option value="LUDWIG, Robert Gabrielle">LUDWIG, Robert "Gabrielle"</option>
+              <option value="MACKENZIE, Declan Harriette">MACKENZIE, Declan "Harriette"</option>
+              <option value="PEREZ, Augustina">PEREZ, "Augustina"</option>
+              <option value="WARD, Billy Kayla">WARD, Billy "Kayla"</option>
+            </select>
+            </div>
+              
+              <div class="filter-menu">
+              <p class="filter-label">Season:</p>
+              <select class="filter" data-field="SEASON">
+              <option value="">All</option>
+              <option value="2023-2024">2023-2024</option>
+              <option value="2022-2023">2022-2023</option>
+              <option value="2021-2022">2021-2022</option>
+              <option value="2020-2021">2020-2021</option>
+              <option value="2019-2020">2019-2020</option>
+              <option value="2013-2014">2013-2014</option>
+              <option value="2012-2013">2012-2013</option>
+              <option value="Fall 2023">Fall 2023</option>
+              </select>
+              </div>
+              
+              <div class="filter-menu">
+              <p class="filter-label">Stat:</p>
+              <select class="filter" data-field="STATTYPE">
+              <option value="">All</option>
+              <option value="Points">Points</option>
+              <option value="Field Goals">Field Goals</option>
+              <option value="Free Throws">Free Throws</option>
+              <option value="Rebounds">Rebounds</option>
+              <option value="Blocks">Blocks</option>
+              <option value="Assists">Assists</option>
+              <option value="Steals">Steals</option>
+              <option value="Shooting">Shooting</option>
+              <option value="3-Points">3-Points</option>
+              </select>
+              </div>
+              
+              <div class="filter-menu">
+                <p class="filter-label">Level:</p>
+                <select class="filter" data-field="LEVEL">
+                <option value="">All</option>
+                <option value="Amateur">Amateur</option>
+                <option value="High School">High School</option>
+                <option value="Collegiate">Collegiate</option>
+                </select> 
+                </div>
+
+              <div class="filter-menu">
+              <p class="filter-label">Category:</p>
+              <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Team">Team</option>
+              <option value="League">League</option>
+              <option value="Conference">Conference</option>
+              <option value="Division">Division</option>
+              <option value="State">State</option>
+              </select> 
+              </div>
+              
+              <div class="filter-menu">  
+              <p class="filter-label">Ranking:</p>
+              <select class="filter" data-field="RANK">
+              <option value="">All</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+              <option value="5th">5th</option>
+              <option value="6th">6th</option>
+              </select> 
+              </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>SEASON</th> 
+                    <th>MALE ATHLETE</th>
+                    <th>LEVEL</th> 
+                    <th>CATEGORY</th>
+                    <th>ORGANIZATION</th>
+                    <th>STATTYPE</th>
+                    <th>STAT</th>
+                    <th>RANK</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=drebpg&view=&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Def Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Def Reb</td>	<td>5th</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=drebpg&view=&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Conference</td>	<td>Bay Counties-Central (11th)</td>	<td>Field Goals</td>	<td>FG made</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/basketball/girls/23-24/league/bay-counties--central/stat-leaders/field-goals/fgm/?leagueid=1f1bc343-6226-42c9-936e-0691ca73a03d">[1]</a>	<a href="https://web.archive.org/web/20240311231439/https://www.maxpreps.com/ca/basketball/girls/23-24/league/bay-counties--central/stat-leaders/field-goals/fgm/?leagueid=1f1bc343-6226-42c9-936e-0691ca73a03d">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Team</td>	<td>San Francisco Waldorf HS (11th)</td>	<td>Field Goals</td>	<td>FG%</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[1]</a>	<a href="https://web.archive.org/web/20240311230530/https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Field Goals</td>	<td>FG %</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240225051744/https://mrucougars.com/sports/womens-basketball/stats#individual">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Field Goals</td>	<td>FGs Made</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240225051744/https://mrucougars.com/sports/womens-basketball/stats#individual">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Free Throws</td>	<td>FT made</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240225051744/https://mrucougars.com/sports/womens-basketball/stats#individual">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Team</td>	<td>San Francisco Waldorf HS (11th)</td>	<td>Free Throws</td>	<td>FT per game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[1]</a>	<a href="https://web.archive.org/web/20240311230530/https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Free Throws</td>	<td>FT%</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240225051744/https://mrucougars.com/sports/womens-basketball/stats#individual">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Off Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Off Reb</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=drebpg&view=&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Team</td>	<td>San Francisco Waldorf HS (11th)</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[1]</a>	<a href="https://web.archive.org/web/20240311230530/https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>State</td>	<td>CA Division 6 (11th)</td>	<td>Points</td>	<td>Points per Game</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/basketball/girls/23-24/division/division-6/stat-leaders/scoring/ppg/?statedivisionid=755cbb19-7a00-4d34-a3a8-0600b2a31a1e">[1]</a>	<a href="https://web.archive.org/web/20240224184718/https://www.maxpreps.com/ca/basketball/girls/23-24/division/division-6/stat-leaders/scoring/ppg/?statedivisionid=755cbb19-7a00-4d34-a3a8-0600b2a31a1e">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Division</td>	<td>North Coast Section Division (11th)</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/north-coast-section/basketball/girls/23-24/division/division-6/stat-leaders/scoring/ppg/?sectiondivisionid=2f28aa3d-aea4-4022-8615-92c260f5028a">[1]</a>	<a href="https://web.archive.org/web/20240311230923/https://www.maxpreps.com/ca/north-coast-section/basketball/girls/23-24/division/division-6/stat-leaders/scoring/ppg/?sectiondivisionid=2f28aa3d-aea4-4022-8615-92c260f5028a">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Conference</td>	<td>Bay Counties-Central (11th)</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/basketball/girls/23-24/league/bay-counties--central/stat-leaders/scoring/ppg/?leagueid=1f1bc343-6226-42c9-936e-0691ca73a03d">[1]</a>	<a href="https://web.archive.org/web/20240311231242/https://www.maxpreps.com/ca/basketball/girls/23-24/league/bay-counties--central/stat-leaders/scoring/ppg/?leagueid=1f1bc343-6226-42c9-936e-0691ca73a03d">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=drebpg&view=&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>JOHNSON, <q>Rose</q></td>	<td>High School</td>	<td>Team</td>	<td>Long Trail HS, Dorset, VT</td>	<td></td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>Team</td>	<td>KIPP Academy Lynn Collegiate,</td>	<td></td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>Team</td>	<td>San Francisco Waldorf HS (11th)</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[1]</a>	<a href="https://web.archive.org/web/20240311230530/https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>Canada West (Jr.)</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225052942/https://canadawest.org/sports/wbkb/2023-24/players?sort=blk&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mount Royal University (Jr.)</td>	<td>Rebounds</td>	<td>Total Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mrucougars.com/sports/womens-basketball/stats">[1]</a>	<a href="https://web.archive.org/web/20240310232007/https://mrucougars.com/sports/womens-basketball/stats#category-leaders">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>3-Points</td>	<td>3-Point %</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240319031800/http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>3-Points</td>	<td>3-Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240319031800/http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Assists</td>	<td>Assists per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240319031800/http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/dreb/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319032717/http://nerdballstats.com/fall2023wplus/stats/dreb/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>League</td>	<td>Lambda Basketball League - Women's</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/dreb/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319032717/http://nerdballstats.com/fall2023wplus/stats/dreb/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Field Goals</td>	<td>FG %</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240319031800/http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>League</td>	<td>Lambda Basketball League - Women's</td>	<td>Free Throws</td>	<td>FT %</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/ftper/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319032908/http://nerdballstats.com/fall2023wplus/stats/ftper/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Free Throws</td>	<td>FT %</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/ftper/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319032908/http://nerdballstats.com/fall2023wplus/stats/ftper/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Rebounds</td>	<td>Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240319031800/http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>League</td>	<td>Lambda Basketball League - Women's</td>	<td>Shooting</td>	<td>True Shooting Percentage</td>	<td>2nd</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/tsper/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319033029/http://nerdballstats.com/fall2023wplus/stats/tsper/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>Fall 2023</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>Team</td>	<td>Splash Sisters</td>	<td>Shooting</td>	<td>True Shooting Percentage</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/stats/tsper/?s=all">[1]</a>	<a href="https://web.archive.org/web/20240319033029/http://nerdballstats.com/fall2023wplus/stats/tsper/?s=all">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Def Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Field Goals</td>	<td>FG %</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Field Goals</td>	<td>FGs per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Free Throws</td>	<td>FT made</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Off Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>JOHNSON, <q>Rose</q></td>	<td>High School</td>	<td>Team</td>	<td>Long Trail HS, Dorset, VT</td>	<td></td>	<td>stats not available</td>	<td></td>	<td>USA</td>	<td></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Blocks</td>	<td>Total Blocks*</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310223824/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (So.)</td>	<td>Rebounds</td>	<td>Total Reb per Game</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310231337/https://mariners.viu.ca/sports/wbkb/2022-23/teams/viu?sort=fgppg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (Fr.)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu?sort=ptspg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310224754/https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu?sort=ptspg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234448/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234448/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q>*</td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (Fr.)</td>	<td>Field Goals</td>	<td>FG Percentage</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu">[1]</a>	<a href="https://web.archive.org/web/20240223092100/https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>PACWEST (Fr.)</td>	<td>Field Goals</td>	<td>FG%</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.comoxvalleyrecord.com/sports/comox-basketball-player-named-viu-rookie-of-the-year-1630242">[1]</a>	<a href="https://web.archive.org/web/20240311024333/https://www.comoxvalleyrecord.com/sports/comox-basketball-player-named-viu-rookie-of-the-year-1630242">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>FG %</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>FGs per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234448/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (Fr.)</td>	<td>Points</td>	<td>Points per Game</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu?sort=ptspg&view=lineup&pos=shg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310224754/https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu?sort=ptspg&view=lineup&pos=shg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>PACWEST (Fr.)</td>	<td>Points</td>	<td>Points per Minute</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.comoxvalleyrecord.com/sports/comox-basketball-player-named-viu-rookie-of-the-year-1630242">[1]</a>	<a href="https://web.archive.org/web/20240311024333/https://www.comoxvalleyrecord.com/sports/comox-basketball-player-named-viu-rookie-of-the-year-1630242">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234448/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240311231819/https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Steals</td>	<td>Steals per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Steals</td>	<td>Steals per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234448/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Steals</td>	<td>Total Assists</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Vancouver Island University (Fr.)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu">[1]</a>	<a href="https://web.archive.org/web/20240223092100/https://mariners.viu.ca/sports/wbkb/2021-22/teams/viu">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234343/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234343/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240311231819/https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Off Reb</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Off Reb</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234343/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234343/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240311231819/https://3c2asports.org/sports/wbkb/2021-22/players?sort=treb&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Steals</td>	<td>Total Steals</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://web.archive.org/web/20240225061144/https://www.lbccvikings.com/sports/wbkb/2021-22/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Steals</td>	<td>Total Steals</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234343/https://southcoastconf.com/sports/wbkb/2021-22/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Field Goals</td>	<td>FG per game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=sh&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Field Goals</td>	<td>FG%</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310235336/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=pts&view=&pos=st&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>FG %</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>FGs per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Points</td>	<td>Points per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=sh&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=sh&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Steals</td>	<td>Steals per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240225060050/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Steals</td>	<td>Steals per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234942/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=trebpg&view=&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234933/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310235336/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=pts&view=&pos=st&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Off Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Off Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234933/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Total Off Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Points</td>	<td>Total Points</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310235336/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=pts&view=&pos=st&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Long Beach City College</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=sh">[1]</a>	<a href="https://web.archive.org/web/20240310234042/https://www.lbccvikings.com/sports/wbkb/2019-20/teams/longbeach?view=lineup&r=1&pos=st">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234933/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Conference</td>	<td>South Coast Conference</td>	<td>Steals</td>	<td>Total Steals</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310234933/https://southcoastconf.com/sports/wbkb/2019-20/players?sort=treb&view=&pos=bt&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>Division</td>	<td>California Community College Athletic Association</td>	<td>Steals</td>	<td>Total Steals</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://3c2asports.org/sports/wbkb/2019-20/players?sort=ptspg&view=&pos=shg&r=0">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2015-???</td>	<td>PEREZ, <q>Augustina</q></td>	<td>Amateur</td>	<td></td>	<td>Villa San José de Salta </td>	<td></td>	<td>stats not available</td>	<td></td>	<td>ARG</td>	<td></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Assists</td>	<td>Assists per game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Def Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Field Goals</td>	<td>FG%</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Field Goals</td>	<td>FGs per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Points</td>	<td>Points per Game</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Reb per game</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Total Def Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Field Goals</td>	<td>Total FGs</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Total Off Reb*</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Points</td>	<td>Total Points</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (So./52yo)</td>	<td>Rebounds</td>	<td>Total Reb</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[1]</a>	<a href="https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012-2023</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (Fr./51yo)</td>	<td>Field Goals</td>	<td>FG%</td>	<td>2nd</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=fgpt&view=lineup&pos=sh&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310215356/http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012-2013</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (Fr./51yo)</td>	<td>Blocks</td>	<td>Blocks per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=orebpg&view=lineup&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310235908/http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=orebpg&view=lineup&pos=bcg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012-2013</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (Fr./51yo)</td>	<td>Rebounds</td>	<td>Off Reb per Game</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=orebpg&view=lineup&pos=bcg&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310235908/http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=orebpg&view=lineup&pos=bcg&r=0">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012-2013</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>Team</td>	<td>Mission College (Fr./51yo)</td>	<td>Blocks</td>	<td>Total Blocks</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=fgpt&view=lineup&pos=sh&r=0">[1]</a>	<a href="https://web.archive.org/web/20240310215356/http://www.cccaastats.org/sports/wbkb/2012-13/teams/mission?sort=blk&view=lineup&pos=bc&r=0">[2]</a></td>	</tr>
+     
+           
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

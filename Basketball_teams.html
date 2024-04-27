@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(5) {
+  display: none;
+}
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(7) {
+  text-align:center;
+}
+.filter-table tr > *:nth-child(8) {
+  text-align:center;
+}
+.filter-table tr > *:nth-child(9) {
+  text-align:center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Basketball</h1>
+        
+        <div class="herostat">
+            <p>13</p><p>teams</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>192+</p><p>total wins</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Basketball - Teams</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Basketball_results.html">Results</a></li>
+    <li><a href="Basketball_athletes.html">Athletes</a></li>
+    <li><a class="active2" href="Basketball_teams.html">Teams</a></li>
+    <li><a href="Basketball_awards.html">Awards</a></li>
+    <li><a href="Basketball_stats.html">Stats</a></li>
+    <li><a href="Basketball_records.html">Records</a></li>
+    <li><a href="Basketball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Teams Playing </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="ATHLETE">
+              <option value="">All</option>
+              <option value="CLARK, Gabriel Lazuli">CLARK, Gabriel "Lazuli"</option>
+              <option value="HANLON, Henry">HANLON, Henry</option>
+              <option value="HUSKEY, Donavion Navi">HUSKEY, Donavion "Navi"</option>
+              <option value="JOHNSON, Rose">JOHNSON, "Rose"</option>
+              <option value="LUDWIG, Robert Gabrielle">LUDWIG, Robert "Gabrielle"</option>
+              <option value="MACKENZIE, Declan Harriette">MACKENZIE, Declan "Harriette"</option>
+              <option value="PEREZ, Augustina">PEREZ, "Augustina"</option>
+              <option value="WARD, Billy Kayla">WARD, Billy "Kayla"</option>
+            </select>
+            </div>
+              
+              <div class="filter-menu">
+              <p class="filter-label">Season:</p>
+              <select class="filter" data-field="SEASON">
+              <option value="">All</option>
+              <option value="2023-2024">2023-2024</option>
+              <option value="2022-2023">2022-2023</option>
+              <option value="2021-2022">2021-2022</option>
+              <option value="2020-2021">2020-2021</option>
+              <option value="2019-2020">2019-2020</option>
+              <option value="2013-2014">2013-2014</option>
+              <option value="2012-2013">2012-2013</option>
+              <option value="Fall 2023">Fall 2023</option>
+              </select>
+              </div>
+              
+              
+              <div class="filter-menu">
+                <p class="filter-label">Level:</p>
+                <select class="filter" data-field="LEVEL">
+                <option value="">All</option>
+                <option value="Amateur">Amateur</option>
+                <option value="High School">High School</option>
+                <option value="Collegiate">Collegiate</option>
+                </select> 
+                </div>
+
+              <div class="filter-menu">
+              <p class="filter-label">Record:</p>
+              <select class="filter" data-field="W-L">
+              <option value="">All</option>
+              <option value="W">Winning Record</option>
+              <option value="L">Losing Record</option>
+              <option value="T">Tied Record</option>
+              </select> 
+              </div>
+              
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>SEASON</th> 
+                    <th>TEAM</th>
+                    <th>MALE ATHLETE</th> 
+                    <th>LEVEL</th>
+                    <th>W-L</th>
+                    <th>W-L RECORD</th>
+                    <th>CONF RECORD</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>San Francisco Waldorf HS, San Francisco, CA</td>	<td>HANLON, Henry</td>	<td>High School</td>	<td>W</td>	<td>18-5</td>	<td> 7-3</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/">[1]</a>	<a href="https://web.archive.org/web/20240310170943/https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Long Trail HS, Dorset, VT</td>	<td>JOHNSON, <q>Rose</q></td>	<td>High School</td>	<td>W</td>	<td> 21-1</td>	<td> 7-1 </td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/schedule/">[1]</a>	<a href="https://web.archive.org/web/20240311231348/https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/schedule/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>Mount Royal University, Calgary, AB</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>L</td>	<td> 8-12</td>	<td>n/a</td>	<td>CAN</td>	<td><a href="https://canadawest.org/sports/wbkb/2023-24/2023-24-wbkb-standings">[1]</a>	<a href="https://web.archive.org/web/20240311231209/https://canadawest.org/sports/wbkb/2023-24/2023-24-wbkb-standings">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023-2024</td>	<td>KIPP Academy Lynn Collegiate, Lynn, MA</td>	<td>CLARK, Gabriel <q>Lazuli</q></td>	<td>High School</td>	<td>W</td>	<td> 11-9</td>	<td>n/a</td>	<td>USA</td>	<td><a href="https://miaa.net/wp-content/uploads/2024/02/Basketball-Girls-Records-022324.pdf">[1]</a>	<a href="https://web.archive.org/web/20240305195513/https://miaa.net/wp-content/uploads/2024/02/Basketball-Girls-Records-022324.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Long Trail HS, Dorset, VT</td>	<td>JOHNSON, <q>Rose</q></td>	<td>High School</td>	<td>W</td>	<td> 12-1</td>	<td> 4-1</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/22-23/schedule/">[1]</a>	<a href="https://web.archive.org/web/20240225044332/https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/22-23/schedule/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022-2023</td>	<td>Vancouver Island University, Nanaimo, BC</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>W</td>	<td>20-2</td>	<td>15-2</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23/schedule">[1]</a>	<a href="https://web.archive.org/web/20240126053844/https://mariners.viu.ca/sports/wbkb/2022-23/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td> Fall 2023</td>	<td>Splash Sisters</td>	<td>WARD, Billy <q>Kayla</q></td>	<td>Amateur</td>	<td>L</td>	<td> 3-4</td>	<td>n/a</td>	<td>USA</td>	<td><a href="http://nerdballstats.com/fall2023wplus/teams/splash-sisters">[1]</a>	<a href="https://web.archive.org/web/20240323195023/http://nerdballstats.com/fall2023wplus#standings">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Vancouver Island University, Nanaimo, BC</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Collegiate</td>	<td>W</td>	<td>19-1</td>	<td>18-0</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2021-22/schedule">[1]</a>	<a href="https://web.archive.org/web/20240126054003/https://mariners.viu.ca/sports/wbkb/2021-22/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021-2022</td>	<td>Long Beach City College, Long Beach, CA</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>W</td>	<td>22-8</td>	<td> 9-1</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2021-22/schedule">[1]</a>	<a href="https://web.archive.org/web/20240311230711/https://www.lbccvikings.com/sports/wbkb/2021-22/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019-2020</td>	<td>Long Beach City College, Long Beach, CA</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Collegiate</td>	<td>W</td>	<td> 20-9</td>	<td> 10-0</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/schedule">[1]</a>	<a href="https://web.archive.org/web/20240311230546/https://www.lbccvikings.com/sports/wbkb/2019-20/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>Villa San José de Salta </td>	<td>PEREZ, <q>Augustina</q></td>	<td>Amateur</td>	<td>n/a</td>	<td>n/a</td>	<td>n/a</td>	<td>ARG</td>	<td><a href="https://www.laizquierdadiario.com/Agustina-Perez-la-primera-jugadora-trans-en-el-basquet-femenino-de-Argentina">[1]</a>	<a href="https://web.archive.org/web/20240311232111/https://www.laizquierdadiario.com/Agustina-Perez-la-primera-jugadora-trans-en-el-basquet-femenino-de-Argentina">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013-2014</td>	<td>Mission College, Santa Clara, CA</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>W</td>	<td>17-10</td>	<td> 10-2</td>	<td>USA</td>	<td><a href="https://www.missionsaints.com/sports/wbkb/wbkb_history">[1]</a>	<a href="https://web.archive.org/web/20201111202727/https://www.missionsaints.com/sports/wbkb/wbkb_history">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012-2013</td>	<td>Mission College, Santa Clara, CA</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Collegiate</td>	<td>W</td>	<td>21-8</td>	<td> 12-0</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/schedule?teamId=s302cocql7x2jq9b">[1]</a>	<a href="https://web.archive.org/web/20201111202727/https://www.missionsaints.com/sports/wbkb/wbkb_history">[2]</a></td>	</tr>                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

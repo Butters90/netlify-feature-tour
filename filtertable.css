@@ -1,0 +1,244 @@
+body {
+    overflow-x:hidden;
+    }
+    
+    .filtergroup {
+    margin:auto;
+    padding:10px;
+    padding-bottom:180px;
+    margin-bottom:-150px;
+    }
+    
+    .filter {
+    margin:5px;
+    width:100%;
+    border-radius:3px;
+    background-color:#EBEBEB;
+    padding:5px;
+    font-weight:500;
+    font-size:12px;
+    border:solid 1px #E1E1E1;
+    cursor:pointer;
+    }
+    
+    
+    .filter-menu {
+    width:25%;
+    float:left;
+    padding:8px;
+    margin-bottom:10px;
+    }
+    
+    .filter-label {
+    font-family: 'Lato', sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#787878;
+    margin-left:10px;
+    margin-top:2px;
+    }
+    
+    @media screen and (max-width: 1000px){
+    .filtergroup {
+    width:100%;
+    margin:auto;
+    padding-bottom:220px;
+    margin-bottom:-150px;
+    }
+    
+    .filter {
+    margin:5px;
+    width:100%;
+    border-radius:3px;
+    font-weight:bold;
+    border:solid 1px #E1E1E1;
+    cursor:pointer;
+    }
+    
+    .filter-menu {
+    width:50%;
+    margin-bottom:0px;
+    cursor:pointer;
+    }
+    
+    .filter-menu2 {
+    float:left;
+    width:50%;
+    }
+    
+    .filter-label {
+    font-family: 'Lato', sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#9F9F9F;
+    margin-left:10px;
+    margin-bottom:1px;
+    }}
+    
+    .tablecontainer {
+      width:100%;
+      overflow-x:auto !important;
+    }
+    
+    .filter-table {
+    border-collapse: separate;
+    border: thin solid #e3e3e3;
+    width:96%;
+    margin:auto;
+    font-size:13px;
+    margin-bottom:30px;
+    overflow-x:scroll;
+    border-spacing:0;
+    margin-top:30px;
+    }
+    
+    .filter-table a {
+    float:left;
+    }
+    
+    .filter-table th, .filter-table td {
+    padding: 0.45em 0.5em;
+    font-family: 'Lato', sans-serif;
+    }
+    
+    .filter-table th {
+    text-align: left;
+    background-color: rgb(17,24,31) !important;
+    color: white;
+    padding:1em;
+    font-weight:400;
+    }
+    
+    .filter-table tbody tr:nth-child(even) {
+      background:rgb(232,236,237);
+    }
+    
+    .hidden-row {
+      display: none;
+    }
+    
+    table {
+      counter-reset: rowNumber-1;
+    }
+    
+    table tr {
+      counter-increment: rowNumber;
+    }
+    
+    table tr td:first-child::before {
+      content: counter(rowNumber);
+      min-width: 1em;
+    }
+    
+    
+    
+    .fixed-header {
+      position: sticky;
+      top: -1px;
+      z-index:4;
+      background-color: rgb(17,24,31);
+    }
+    
+    
+    td:first-child, th:first-child {
+      position:sticky;
+      left:1px;
+      z-index:3;
+      background-color:white;
+    }
+    
+    td:nth-child(3),th:nth-child(4)  { 
+    position:sticky;
+      left:36px;
+      z-index:3;
+      background-color:white;
+      }
+      
+    td:nth-child(4),th:nth-child(4)  { 
+    position:sticky;
+      left:93px;
+      z-index:3;
+      background-color:white;
+      border-right: solid 2px white;
+      }
+    
+    table tr:nth-child(2n) > td:nth-child(1) {
+        background-color: rgb(232,236,237);
+    }
+    
+    table tr:nth-child(2n) > td:nth-child(3) {
+        background-color: rgb(232,236,237);
+    }
+    
+    table tr:nth-child(2n) > td:nth-child(4) {
+        background-color: rgb(232,236,237);
+    }
+    
+    table tr:hover > td:nth-child(1) {
+        background-color: #4685c9;
+    }
+    
+    table tr:hover > td:nth-child(3) {
+        background-color: #4685c9;
+    }
+    
+    table tr:hover > td:nth-child(4) {
+        background-color: #4685c9;
+    }
+    
+    ::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        width: 15px;
+        background-color: #F5F5F5;
+        height:15px;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #D7D7D7;
+    }
+    
+    
+    .filter-table tbody tr:hover {
+      background-color: #4685c9 !important;
+      color: white !important;
+    }
+    
+    .content {
+      width:95%;
+      margin:auto;
+      margin-top:50px;
+  }
+    .contentfilter {
+      background-color:white;
+  }
+    .contenttable {
+      background-color:white;
+      margin-top:10px;
+  }
+  
+  @media only screen and (min-width: 1000px){
+    .content {width:80%}}
+  
+  @media only screen and (max-width: 1000px){
+    .dropdown-content {columns:5}}
+  
+  @media only screen and (max-width: 700px){
+      .dropdown-content {columns:4}} 
+  
+  @media only screen and (max-width: 500px){
+        .dropdown-content {columns:3}}
+
+@media only screen and (min-width: 1000px){
+  td:nth-child(4),th:nth-child(4)  { 
+      border-right: none;
+      }}

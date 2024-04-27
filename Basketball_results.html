@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(9) {
+  text-align:center;
+}
+.filter-table tr > *:nth-child(10) {
+  text-align:center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Basketball</h1>
+        <div class="herostat">
+            <p>8</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>5+</p><p>championship<br>victories</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+          <p>12+</p><p>tournament<br>finals</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Basketball - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Basketball_results.html">Results</a></li>
+    <li><a href="Basketball_athletes.html">Athletes</a></li>
+    <li><a href="Basketball_teams.html">Teams</a></li>
+    <li><a href="Basketball_awards.html">Awards</a></li>
+    <li><a href="Basketball_stats.html">Stats</a></li>
+    <li><a href="Basketball_records.html">Records</a></li>
+    <li><a href="Basketball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="ATHLETE">
+              <option value="">All</option>
+              <option value="CLARK, Gabriel Lazuli">CLARK, Gabriel "Lazuli"</option>
+              <option value="HANLON, Henry">HANLON, Henry</option>
+              <option value="HUSKEY, Donavion Navi">HUSKEY, Donavion "Navi"</option>
+              <option value="JOHNSON, Rose">JOHNSON, "Rose"</option>
+              <option value="LUDWIG, Robert Gabrielle">LUDWIG, Robert "Gabrielle"</option>
+              <option value="MACKENZIE, Declan Harriette">MACKENZIE, Declan "Harriette"</option>
+              <option value="PEREZ, Augustina">PEREZ, "Augustina"</option>
+              <option value="WARD, Billy Kayla">WARD, Billy "Kayla"</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Level:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="Amateur">Club/Amateur</option>
+              <option value="Masters">Masters</option>
+              <option value="High School">High School</option>
+              <option value="Collegiate">Collegiate</option>
+              <option value="Professional">Professional</option>
+             </select> 
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Tournament Type:</p>
+            <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Conference">Conference Tournament</option>
+              <option value="League">League Tournament</option>
+              <option value="Regional">Regional Tournament</option>
+              <option value="State">State/Provincial Tournament</option>
+              <option value="National">National Tournament</option>
+              <option value="International">International Tournament</option>
+              <option value="Other">Other Tournament</option>
+             </select> 
+            </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>TEAM</th> 
+                    <th>CATEGORY</th>
+                    <th>LEVEL</th> 
+                    <th>COMPETITION</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-09</td>	<td>JOHNSON, <q>Rose</q></td>	<td>Long Trail HS, Dorset, VT (12th)</td>	<td>State</td>	<td>High School</td>	<td>VPA Division IV State Tournament - Championship</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.manchesterjournal.com/sports/west-rutland-claims-3-peat-defeats-long-trail-in-division-iv-final/article_19ffcfe0-dee4-11ee-9548-03760c3cdf36.html?utm_campaign=blox&utm_source=facebook&utm_medium=social">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-04</td>	<td>JOHNSON, <q>Rose</q></td>	<td>Long Trail HS, Dorset, VT (12th)</td>	<td>State</td>	<td>High School</td>	<td>VPA Division IV State Tournament - Semi-Final</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.mynbc5.com/article/long-trail-girls-basketball-advance-to-first-ever-championship/60086008">[1]</a>	<a href="https://web.archive.org/web/20240309231251/https://www.mynbc5.com/article/long-trail-girls-basketball-advance-to-first-ever-championship/60086008">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-01</td>	<td>JOHNSON, <q>Rose</q></td>	<td>Long Trail HS, Dorset, VT (12th)</td>	<td>State</td>	<td>High School</td>	<td>VPA Division IV State Tournament - Quarter-Final</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/games/3-1-2024/girls-basketball-23-24/long-trail-vs-poultney.htm?c=wXVvpcaAbkyiZ9GjhawQfg&returnurl=aHR0cHM6Ly93d3cubWF4cHJlcHMuY29tL2xvY2FsL2NvbnRlc3QvZGVmYXVsdC5hc3B4P2NvbnRlc3RpZD1hNTZmNzVjMS04MGM2LTRjNmUtYTI2Ny1kMWEzODVhYzEwN2Umc3NpZD02NGY0MjQzNy00NDJhLTRlMWQtYjg2My04MWM4ODgxYjQ1NGY#tab=matchup&schoolid=">[1]</a>	<a href="https://web.archive.org/web/20240310223305/https://www.maxpreps.com/games/3-1-2024/girls-basketball-23-24/long-trail-vs-poultney.htm?c=wXVvpcaAbkyiZ9GjhawQfg&returnurl=aHR0cHM6Ly93d3cubWF4cHJlcHMuY29tL2xvY2FsL2NvbnRlc3QvZGVmYXVsdC5hc3B4P2NvbnRlc3RpZD1hNTZmNzVjMS04MGM2LTRjNmUtYTI2Ny1kMWEzODVhYzEwN2Umc3NpZD02NGY0MjQzNy00NDJhLTRlMWQtYjg2My04MWM4ODgxYjQ1NGY#tab=matchup&schoolid=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-24</td>	<td>HANLON, Henry</td>	<td>Waldorf HS, San Francisco, CA (11th)</td>	<td>Regional</td>	<td>High School</td>	<td>2024 North Coast Section Girls Basketball Championships</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/tournament/LWgrmpoEEe6A1Aqb9tl3hA/M2BglpoEEe6A1Aqb9tl3hA/girls-basketball-23-24/2024-north-coast-section-girls-basketball-championships-division-6.htm">[1]</a>	<a href="https://web.archive.org/web/20240311023757/https://www.maxpreps.com/tournament/LWgrmpoEEe6A1Aqb9tl3hA/M2BglpoEEe6A1Aqb9tl3hA/girls-basketball-23-24/2024-north-coast-section-girls-basketball-championships-division-6.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-10</td>	<td>HANLON, Henry</td>	<td>Waldorf HS, San Francisco, CA (11th)</td>	<td>Conference</td>	<td>High School</td>	<td>BCL Central League Championship</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.maxpreps.com/games/2-10-2024/girls-basketball-23-24/international-vs-san-francisco-waldorf.htm?c=bz0FhXJakEib4eHv5jKTuA#tab=matchup&schoolid=">[1]</a>	<a href="https://web.archive.org/web/20240224191236/https://www.maxpreps.com/games/2-10-2024/girls-basketball-23-24/international-vs-san-francisco-waldorf.htm?c=bz0FhXJakEib4eHv5jKTuA#tab=matchup&schoolid=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Dec-14</td>	<td>JOHNSON, <q>Rose</q></td>	<td>Long Trail HS, Dorset, VT (11th)</td>	<td>Other</td>	<td>High School</td>	<td>Green Mountain Tournament</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.manchesterjournal.com/sports/long-trail-school-pulls-off-comeback-to-top-l-g-in-green-mountain-tournament/article_8409f1fc-9b84-11ee-a0c9-7f7deaa4a2f2.html?utm_campaign=blox&utm_source=facebook&utm_medium=social">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-18</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (So.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Championship</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://mariners.viu.ca/sports/wbkb/2022-23c/releases/20230329ty9fux">[1]</a>	<a href="https://web.archive.org/web/20240128082312/https://mariners.viu.ca/sports/wbkb/2022-23c/releases/20230329ty9fux">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-16</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (So.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Semi-Final</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ccaa.ca/sports/wbkb/2022-23c/schedule">[1]</a>	<a href="https://web.archive.org/web/20240213043418/https://www.ccaa.ca/sports/wbkb/2022-23c/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-15</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (So.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Quarter-Final</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ccaa.ca/sports/wbkb/2022-23c/schedule">[1]</a>	<a href="https://web.archive.org/web/20240213043418/https://www.ccaa.ca/sports/wbkb/2022-23c/schedule">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-04</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (So.)</td>	<td>Conference</td>	<td>Collegiate</td>	<td>PACWEST Championship</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.pacwestbc.ca/history/WBB/Cover_-_Championship_Conference/Web_Page_-_WBB_Conference_Champions">[1]</a>	<a href="https://web.archive.org/web/20240223215901/https://www.pacwestbc.ca/history/WBB/Cover_-_Championship_Conference/Web_Page_-_WBB_Conference_Champions">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-27</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (Fr.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Championship</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.ccaa.ca/sports/wbkb/history/2022_WBB.pdf">[1]</a>	<a href="https://web.archive.org/web/20240221052745/https://www.ccaa.ca/sports/wbkb/history/2022_WBB.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-26</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (Fr.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Semi-Final</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pacwestbc.ca/sports/wbkb/2021-22/releases/20220327-WBB-Nats-GOLD-Preview-VIU-NAIT">[1]</a>	<a href="https://web.archive.org/web/20240310170739/https://pacwestbc.ca/sports/wbkb/2021-22/releases/20220327-WBB-Nats-GOLD-Preview-VIU-NAIT">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-25</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (Fr.)</td>	<td>National</td>	<td>Collegiate</td>	<td>CCAA National Tournament - Quarter-Final</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.ccaa.ca/sports/wbkb/tournament/boxscores/20220325_e0kh.xml?view=boxscore">[1]</a>	<a href="https://web.archive.org/web/20240223231032/https://www.ccaa.ca/sports/wbkb/tournament/boxscores/20220325_e0kh.xml?view=boxscore">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-05</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Vancouver Island University (Fr.)</td>	<td>Conference</td>	<td>Collegiate</td>	<td>PACWEST Championship</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.pacwestbc.ca/championships/basketball_2021-22/Schedule_-_Results_Folder/Schedule_-_Results_-_WBB">[1]</a>	<a href="https://web.archive.org/web/20240223000425/https://www.pacwestbc.ca/championships/basketball_2021-22/Schedule_-_Results_Folder/Schedule_-_Results_-_WBB">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-19</td>	<td>HUSKEY, Donavion <q>Navi</q></td>	<td>Long Beach City College</td>	<td>Conference</td>	<td>Collegiate</td>	<td>South Coast Conference Championships</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.lbccvikings.com/sports/wbkb/2019-20/releases/202002201xttek">[1]</a>	<a href="https://web.archive.org/web/20240310164539/https://www.lbccvikings.com/sports/wbkb/2019-20/releases/202002201xttek">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2019-2020</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Isfeld Secondary, Courtenay, BC (11th)</td>	<td>Conference</td>	<td>High School</td>	<td>Vancouver Island Basketball Championship</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.vancouverislandfreedaily.com/sports/courtenay-basketball-star-commits-to-ontario-university-7204168">[1]</a>	<a href="https://web.archive.org/web/20240310164154/https://www.vancouverislandfreedaily.com/sports/courtenay-basketball-star-commits-to-ontario-university-7204168">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2017-2018</td>	<td>MACKENZIE, Declan <q>Harriette</q></td>	<td>Isfeld Secondary, Courtenay, BC (9th)</td>	<td>Conference</td>	<td>High School</td>	<td>Vancouver Island Basketball Championship</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.saanichnews.com/sports/photo-gallery-vancouver-island-senior-girls-basketball-championship-final-250248">[1]</a>	<a href="https://web.archive.org/web/20240310164223/https://www.saanichnews.com/sports/photo-gallery-vancouver-island-senior-girls-basketball-championship-final-250248">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2012-2013</td>	<td>LUDWIG, Robert <q>Gabrielle</q></td>	<td>Mission College</td>	<td>Conference</td>	<td>Collegiate</td>	<td>Coast Conference Championship</td>	<td>1st</td>	<td>USA</td>	<td><a href="http://www.cccaastats.org/sports/wbkb/2012-13/schedule?teamId=s302cocql7x2jq9b">[1]</a>	<a href="https://web.archive.org/web/20240310165010/http://www.cccaastats.org/sports/wbkb/2012-13/schedule?teamId=s302cocql7x2jq9b">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

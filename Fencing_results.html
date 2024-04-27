@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(6) {
+  display: none;
+}
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(9) {
+  display: none;
+}
+.filter-table tr > *:nth-child(12) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(13) {
+  text-align: center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Fencing</h1>   
+        <div class="herostat">
+            <p>5</p><p>male<br>athletes</p>
+        </div>
+        <div class="herostat">
+            <p>59+</p><p>tournament<br>victories</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>7</p><p>stolen<br>awards</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Fencing - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Fencing_results.html">Results</a></li>
+    <li><a href="Fencing_athletes.html">Athletes</a></li>
+    <li><a href="Fencing_awards.html">Awards</a></li>
+    <li><a href="Fencing_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Athlete:</p>
+            <select class="filter" data-field="ATHLETE">
+              <option value="">All</option>
+              <option value="DEBERTIN, Beth">DEBERTIN, "Beth"</option>
+              <option value="KOCAB, Greg Elizabeth">KOCAB, Greg "Elizabeth"</option>
+              <option value="PHILPOT, Evan Eden">PHILPOT, Evan "Eden"</option>
+              <option value="RUEDA, Mateo Rylie">RUEDA, Mateo "Rylie"</option>
+              <option value="WILSON, Dawn">WILSON, "Dawn"</option>
+
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+              <option value="Other">Other</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+            </div>
+
+            <div class="filter-menu">
+                <p class="filter-label">Event:</p>
+                <select class="filter" data-field="EVENT">
+                  <option value="">All</option>
+                  <option value="Epee">Epee</option>
+                  <option value="Saber">Saber</option>
+                  <option value="Foil">Foil</option>
+                </select>
+                </div>
+
+            
+            <div class="filter-menu">
+            <p class="filter-label">Level:</p>
+            <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Amateur">Club/Amateur</option>
+              <option value="Masters">Masters</option>
+              <option value="High School">High School</option>
+              <option value="Collegiate">Collegiate</option>
+              <option value="Professional">Professional</option>
+             </select> 
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Competition Type:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="Conference Championship">Conference Championship</option>
+              <option value="Provincial Championship">Provincial Championship</option>
+              <option value="National">National Championship</option>
+              <option value="International">International Championship</option>
+              <option value="Other">Other</option>
+             </select> 
+            </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>ATHLETE</th> 
+                    <th>TEAM</th> 
+                    <th>LEVEL</th>
+                    <th>CATEGORY</th> 
+                    <th>COMPETITION</th>
+                    <th>PLACE SORT</th>
+                    <th>EVENT</th>
+                    <th>CAT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-05</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>January NAC</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 70</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.fencingtimelive.com/events/results/DB95B5D954B94DEDBD972A1A099EB015">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Oct-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Daytona Beach</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 70</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/127863?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Oct-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Daytona Beach</td>	<td>4th</td>	<td>Epee</td>	<td>Vet Team</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/127868?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-16</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>Forge Fencing Veteran ROC</td>	<td>7th</td>	<td>Saber</td>	<td>Vet </td>	<td>7th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/18696/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-05</td>	<td>DEBERTIN, <q>Beth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>10th</td>	<td>Saber</td>	<td>Vet 40</td>	<td>10th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-summer-nationals-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-05</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>Other</td>	<td>Saber</td>	<td>V 50</td>	<td>12th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-summer-nationals-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-03</td>	<td>PHILPOT, Evan <q>Eden</q></td>	<td></td>	<td>National</td>	<td>Amateur</td>	<td>National Championships & July Challenge</td>	<td>1st</td>	<td>Saber</td>	<td>D1-A</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-summer-nationals-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-03</td>	<td>PHILPOT, Evan <q>Eden</q></td>	<td></td>	<td>National</td>	<td>Amateur</td>	<td>National Championships & July Challenge</td>	<td>6th</td>	<td>Foil</td>	<td>D1-A</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-summer-nationals-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-02</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 70</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/18006/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-29</td>	<td>PHILPOT, Evan <q>Eden</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>Windy City ROC /RJCC</td>	<td>1st</td>	<td>Saber</td>	<td>D1-A</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/16996/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-24</td>	<td>DEBERTIN, <q>Beth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>7th</td>	<td>Saber</td>	<td>Vet 40</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-april-nac-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-23</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & April NAC</td>	<td>Other</td>	<td>Saber</td>	<td>V 50</td>	<td>11th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-april-nac-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-23</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet 70</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/16933/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-23</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>7th</td>	<td>Saber</td>	<td>Vet</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/16932/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-23</td>	<td>DEBERTIN, <q>Beth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>8th*</td>	<td>Saber</td>	<td>Vet </td>	<td>8th*</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-april-nac-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-11</td>	<td>PHILPOT, Evan <q>Eden</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>GRAFA Third Coast Cup ROC</td>	<td>1st</td>	<td>Saber</td>	<td>D1-A</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/15916/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-11</td>	<td>PHILPOT, Evan <q>Eden</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>GRAFA Third Coast Cup ROC</td>	<td>2nd</td>	<td>Foil</td>	<td>D1-A</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/15914/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jan-06</td>	<td>DEBERTIN, <q>Beth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>January NAC</td>	<td>8th</td>	<td>Saber</td>	<td>Vet 40</td>	<td>8th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-january-nac-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jan-06</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>January NAC</td>	<td>8th</td>	<td>Saber</td>	<td>V 50</td>	<td>8th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2023-january-nac-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Oct-12</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Zadar</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/107522?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Oct-12</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Zadar</td>	<td>1st</td>	<td>Epee</td>	<td>V 70</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/107517?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jul-07</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>Other</td>	<td>Saber</td>	<td>Vet 50</td>	<td>14th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9634/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-05</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USA Fencing National Championships & July Challenge</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 70</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9613/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-06</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>Other</td>	<td>Saber</td>	<td>Vet </td>	<td>11th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/12264/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-05</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>Other</td>	<td>Epee</td>	<td>Vet 70</td>	<td>11th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/12248/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-04</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 70</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/12233/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-08</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>NACATTACK Vet Epee Combineds</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 70</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9899/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-08</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>January NAC</td>	<td>Other</td>	<td>Epee</td>	<td>D1-A</td>	<td>56th (137)</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/11047/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-07</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>January NAC</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 70</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/11034/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-12</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>Battle In Space City ROC/RJCC</td>	<td>5th</td>	<td>Epee</td>	<td>D1-A</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/6116/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-28</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Veteran National Championships & Vet Open NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9377/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-28</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Veteran National Championships & Vet Open NAC</td>	<td>6th</td>	<td>Saber</td>	<td>Vet</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9379/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-27</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Veteran National Championships & Vet Open NAC</td>	<td>Other</td>	<td>Saber</td>	<td>Vet 50</td>	<td>12th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/9350/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-06</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships, Junior Olympics, & July NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/6474/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-05</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>8th</td>	<td>Saber</td>	<td>Vet 50</td>	<td>8th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/6458/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-May-08</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td></td>	<td>Other</td>	<td>Amateur</td>	<td>May NAC</td>	<td>Other</td>	<td>Epee</td>	<td>D1-A</td>	<td>16th (116)</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/7224/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Mar-08</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>Arnold Fencing Classic 2020</td>	<td>1st</td>	<td>Saber</td>	<td>Vet </td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/5037/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Mar-08</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td>Boston College</td>	<td>Regional</td>	<td>Collegiate</td>	<td>NCAA Northeast Regional </td>	<td>5th</td>	<td>Epee</td>	<td></td>	<td>5th</td>	<td>USA</td>	<td><a href="https://bceagles.com/news/2020/3/8/fencing-eagles-compete-at-ncaa-northeast-regional.aspx">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-23</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td>Boston College</td>	<td>Conference</td>	<td>Collegiate</td>	<td>2020 ACC Championships</td>	<td>3rd</td>	<td>Epee</td>	<td></td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.fencingtimelive.com/events/results/53E23DF1AEAC40229F33A1A202A7CF3E">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Dec-09</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC (Vet Epee)</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/2961/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Dec-08</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC (Vet-60 Epee)</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 60</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/2952/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Nov-02</td>	<td>RUEDA, Mateo <q>Rylie</q></td>	<td>Boston College</td>	<td>Other</td>	<td>Collegiate</td>	<td>NEIFC Fall Invitational</td>	<td>1st</td>	<td>Epee</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://bceagles.com/news/2019/11/2/fencing-eagles-open-up-2019-20-season-at-neifc-invitational.aspx">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-11</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Cairo</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/79410?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-11</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Cairo</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet Team</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/79429?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jun-30</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USA Fencing National Championships  (Vet-60 Epee)</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/4066/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Apr-14</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>April Championship & NAC</td>	<td>8th</td>	<td>Saber</td>	<td>Vet 50</td>	<td>8th</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/1236/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Apr-12</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>April Championship and NAC (Vet-60-Epee)</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/1212/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Mar-03</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>Arnold Fencing Classic 2019</td>	<td>1st</td>	<td>Saber</td>	<td>Vet </td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencingtracker.com/event/1116/results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Dec-15</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4959543-2018-2019-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Oct-14</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Livorno</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/12334?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Oct-14</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Livorno</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet Team</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/12353?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-03</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>5th</td>	<td>Saber</td>	<td>Vet 50</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-01</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>The Needles</td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jul-01</td>	<td>WILSON, <q>Dawn</q></td>	<td>Broadswords</td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>5th</td>	<td>Saber</td>	<td>Vet Team</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jun-30</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-21</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>April Championship and NAC</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 60</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-21</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>April Championship & NAC</td>	<td>5th</td>	<td>Saber</td>	<td>Vet</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-20</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>April Championship & NAC</td>	<td>2nd</td>	<td>Saber</td>	<td>Vet 50</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Apr-20</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>April Championship and NAC </td>	<td>6th</td>	<td>Epee</td>	<td>Vet</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Dec-11</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Dec-09</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/4536804-2017-2018-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Oct-21</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Maribor</td>	<td>1st</td>	<td>Epee</td>	<td>140+ Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/5966?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Oct-21</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Maribor</td>	<td>9th</td>	<td>Epee</td>	<td>Vet 60</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/5947?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jul-04</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 60</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jul-03</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championship & July Challenge</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet 50</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2917</td>	<td>2017-Apr-24</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2917</td>	<td>2017-Apr-23</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Apr-22</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>The Needles</td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Apr-22</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships/April NAC</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet 50 </td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Dec-04</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>Decemeber NAC</td>	<td>7th</td>	<td>Saber</td>	<td>Vet</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Dec-04</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>9th</td>	<td>Saber</td>	<td>Vet 50</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Dec-03</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>9th</td>	<td>Epee</td>	<td>Vet</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Dec-02</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/3700057-2016-2017-season">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Oct-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Stralsund</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/29244?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Oct-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Stralsund</td>	<td>5th</td>	<td>Epee</td>	<td>Vet Team</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/29263?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Jul-10</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July Challenge</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Apr-11</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet </td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Apr-09</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Apr-08</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>The Needles</td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Dec-07</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Dec-05</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet </td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/2872898-2015-2016-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Oct-25</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Limoges</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet 60</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/77270?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Oct-25</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Limoges</td>	<td>4th</td>	<td>Epee</td>	<td>140+ Team</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/77289?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Jul-03</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Jul-01</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & March NAC</td>	<td>1st</td>	<td>Saber</td>	<td>Vet 40</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Mar-02</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>March Championships and NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Mar-01</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>March Championships and NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Mar-01</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & March NAC</td>	<td>1st</td>	<td>Saber</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Feb-28</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & March NAC</td>	<td>1st</td>	<td>Saber</td>	<td>Vet 40</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Feb-27</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>The Needles</td>	<td>National</td>	<td>Masters</td>	<td>March Championships and NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Dec-08</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>5th</td>	<td>Epee</td>	<td>Vet</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Dec-07</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/2014-2015seasonresults">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Oct-26</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Drebecen</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/64165?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Oct-26</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Team USA</td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Drebecen</td>	<td>4th</td>	<td>Epee</td>	<td>140+ Team</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/64211?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Jul-23</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>1st</td>	<td>Saber</td>	<td>Vet 40</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Jun-22</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-14</td>	<td>WILSON, <q>Dawn</q></td>	<td>Broadswords</td>	<td>National</td>	<td>Masters</td>	<td>National Championships & April NAC</td>	<td>1st</td>	<td>Saber</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-14</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-13</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & April NAC</td>	<td>2nd</td>	<td>Saber</td>	<td>Vet 40</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-12</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-11</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & April NAC</td>	<td>Other</td>	<td>Saber</td>	<td>Vet</td>	<td>11th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Apr-11</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>The Needles</td>	<td>National</td>	<td>Masters</td>	<td>Division 1 Championships/April NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet Team</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Dec-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>5th</td>	<td>Epee</td>	<td>Vet </td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Dec-15</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet 40 </td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Dec-14</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Dec-13</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>2nd</td>	<td>Saber</td>	<td>Vet</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/1289637-2013-2014-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Oct-06</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Varna</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/83815?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-30</td>	<td>WILSON, <q>Dawn</q></td>	<td>Broadswords</td>	<td>National</td>	<td>Masters</td>	<td>USFA National Championships & July NAC</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet Team</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-29</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td>Three Needles</td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>2nd</td>	<td>Epee</td>	<td>Vet Team</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-29</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USFA National Championships & July NAC</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet 40</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Jun-28</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National Championships & July NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Mar-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Mar-15</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Mar-08</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>3rd</td>	<td>Saber</td>	<td>Vet </td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Dec-10</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Dec-08</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/987263-2012-2013-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Oct-21</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Krems</td>	<td>3rd</td>	<td>Epee</td>	<td>Vet 60</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/61809?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Mar-17</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/707309-2011-2012-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Mar-16</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet </td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/707309-2011-2012-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Oct-02</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>International</td>	<td>Masters</td>	<td>Veteran's Fencing World Championships, Porec</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 50</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://fencing.ophardt.online/en/search/results-competition/71047?backbiosa=309337">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Mar-03</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>March NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 50</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usafencing.org/page/show/707189-2010-2011-season-national-results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet 60</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://cdn1.sportngin.com/attachments/document/0034/6020/V60WE.pdf">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011</td>	<td>KOCAB, Greg <q>Elizabeth</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>December NAC</td>	<td>1st</td>	<td>Epee</td>	<td>Vet</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://cdn1.sportngin.com/attachments/document/0034/5864/VETWE.pdf">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008</td>	<td>WILSON, <q>Dawn</q></td>	<td></td>	<td>Other</td>	<td>Masters</td>	<td>NAC E</td>	<td>Other</td>	<td>Saber</td>	<td>Vet</td>	<td>11th</td>	<td>USA</td>	<td><a href="https://usfencingresults.org/results/2007-2008/NAC%20E/0708%20NAC%20E%20Results%20-%20VETWS.pdf">[1]</a></td>	</tr>
+                            
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(5) {
+  display: none;
+}
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(8) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(9) {
+  text-align: center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Golf</h1>
+        
+        <div class="herostat">
+            <p>6</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>30+</p><p>unfair<br>victories</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>$130,143+</p><p>stolen<br>in prizes</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Golf - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Golf_results.html">Results</a></li>
+    <li><a href="Golf_athletes.html">Athletes</a></li>
+    <li><a href="Golf_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BAGGER, Mianne">BAGGER, "Mianne"</option>
+              <option value="DAVIDSON, James Hailey">DAVIDSON, "Hailey"</option>
+              <option value="GILL, Breanna">GILL, "Breanna"</option>
+              <option value="LANCASTER, Bobbi">LANCASTER, "Bobbi"</option>
+              <option value="LAWLESS, Lana">LAWLESS, "Lana"</option>
+              <option value="O'NEILL, Jamie">O'NEILL, "Jamie"</option>
+
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE SORT">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+              <option value="MC">Missed Cut</option>
+              <option value="Other">Other</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+            </select>
+            </div>
+            
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>LEVEL</th>
+                    <th>COMPETITION</th>
+                    <th>PLACE SORT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-31</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>NSW Women's Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5510">[1]</a>	<a href="https://web.archive.org/web/20240422204619/https://www.rolexrankings.com/events/5510">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-29</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Royal St. Cloud Women's Championship</td>	<td>Other</td>	<td>24th</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt2412/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422201201/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt2412/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-21</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Halifax Women's Championship</td>	<td>9th</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt23/event/nxxtwpt236/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422200915/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt23/event/nxxtwpt236/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-14</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Redtail Women's Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt247/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422200634/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt247/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-11</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The WEBEX Players Series Sydney</td>	<td>8th</td>	<td>8th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5486">[1]</a>	<a href="https://web.archive.org/web/20240422204609/https://www.rolexrankings.com/events/5486">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Feb-04</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>VIC Open</td>	<td>Other</td>	<td>17th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5484">[1]</a>	<a href="https://web.archive.org/web/20240422204446/https://www.rolexrankings.com/events/5484">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-24</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>NXXT Women's Championship</td>	<td>7th</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt244/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422200917/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt244/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-21</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The Players Series Murray River</td>	<td>Other</td>	<td>11th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5477">[1]</a>	<a href="https://web.archive.org/web/20240422203215/https://www.rolexrankings.com/events/5477">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-17</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>NXXT Women's Classic </td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://archive.is/4YQpY">[1]</a>	<a href="">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-10</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Crane Lakes Women's Classic</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolfw/nxxtwpt24/event/nxxtwpt242/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422201317/https://nxxtwpt.bluegolf.com/bluegolfw/nxxtwpt24/event/nxxtwpt242/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Nov-29</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>NXXT Women's Championship at Alaqua CC</td>	<td>7th</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt23/event/nxxtwpt235/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422200917/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt24/event/nxxtwpt244/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Nov-15</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Eagle Creek Women's Pro Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt23/event/nxxtwpt2312/contest/1/leaderboard.htm">[1]</a>	<a href="https://web.archive.org/web/20240422201507/https://nxxtwpt.bluegolf.com/bluegolf/nxxtwpt23/event/nxxtwpt2312/contest/1/leaderboard.htm">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Aug-30</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Florida Women's Open</td>	<td>7th</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://www.fsga.org/Tournament/Results/25fad1e3-fa20-44ec-8400-723d35c28bb2?boolQual=False">[1]</a>	<a href="https://web.archive.org/web/20231203211400/https://fsga.org/Tournament/Results/25fad1e3-fa20-44ec-8400-723d35c28bb2?boolQual=False">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-06</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Spring Slams @ Riim 45 Women's</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-06</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Spring Slams @ Riim - Open Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-02</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Australian Womens Classic 2023</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5245">[1]</a>	<a href="https://web.archive.org/web/20240422203142/https://www.rolexrankings.com/events/5245">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-22</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>Winter Series Championship at Rio Pinar</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/CqIyqe1Oidj/?hl=en">[1]</a>	<a href="https://archive.fo/bEBFc">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-26</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The Players Series Hunter Valley</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5220">[1]</a>	<a href="https://web.archive.org/web/20240422203042/https://www.rolexrankings.com/events/5220">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-19</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The  Players Series Sydney</td>	<td>6th</td>	<td>6th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5215">[1]</a>	<a href="https://web.archive.org/web/20240422202701/https://www.rolexrankings.com/events/5215">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-12</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>VIC Open</td>	<td>Other</td>	<td>19th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5211">[1]</a>	<a href="https://web.archive.org/web/20240422202657/https://www.rolexrankings.com/events/5211">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-05</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The Players Series Murray River</td>	<td>4th</td>	<td>4th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5210">[1]</a>	<a href="https://web.archive.org/web/20240422202620/https://www.rolexrankings.com/events/5210">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-04</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>February Drives @ the Riim - 45 Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Feb-04</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>February Drives @ the Riim - Open Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jan-29</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>The Players Series Victoria</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5208">[1]</a>	<a href="https://web.archive.org/web/20240422202453/https://www.rolexrankings.com/events/5208">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2023 RedTail Women's Championship</td>	<td>Other</td>	<td>11th</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2023 ECWPGT Winter Series Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2023 Cactus Tour Mayfair Championship </td>	<td>5th</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Dec-04</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>ISPS Handa Australian Open</td>	<td>Other</td>	<td>40th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5198">[1]</a>	<a href="https://web.archive.org/web/20240422202546/https://www.rolexrankings.com/events/5198">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-06</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>2022 Texas League Championship at the Riim - Open Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-06</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>2022 Texas League Championship at the Riim - 35 Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-06</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>2022 Texas League Championship at the Riim - Seniors Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-30</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Drives at Vaalor Creek Golf Club - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-02</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>July Driving at the Riim - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-11</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Mile High Shootout</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-01</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Women's NSW Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/5007">[1]</a>	<a href="https://web.archive.org/web/20240422202519/https://www.rolexrankings.com/events/5007">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-24</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Australian Women's Classic - Bonville</td>	<td>Other</td>	<td>33rd</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4998">[1]</a>	<a href="https://web.archive.org/web/20240422202251/https://www.rolexrankings.com/events/4998">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-30</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2022 ECWPGT Winter Series Finale </td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.facebook.com/ecwpgt/posts/pfbid0eD7nGnaAC3zSqXf3WYPkkrbDphiHESnDkKfZK14YDBuj7b4uRgc7kAVbYXeSFtwgl">[1]</a>	<a href="https://archive.fo/FAIm6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Feb-13</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>2022 VIC Open</td>	<td>Other</td>	<td>34th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4964">[1]</a>	<a href="https://web.archive.org/web/20240422202207/https://www.rolexrankings.com/events/4964">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-16</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Australian WPGA Championship</td>	<td>Other</td>	<td>16th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4956">[1]</a>	<a href="https://web.archive.org/web/20240422202250/https://www.rolexrankings.com/events/4956">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2022 PXG Women's Match Play </td>	<td>Other</td>	<td>21st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2022 ECWPGT Rio Pinar Orlando Women's Championship</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2022 ECWPGT RedTail Women's Championship</td>	<td>6th</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2022 LPGA Q School Stage 1</td>	<td>MC</td>	<td>MC</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>May Drives at the Riim - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>April Long Drive at the Riim - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Spring Slamming at the Riim - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Spring Sling at Vaalor Creek</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Long Drive Blast @ the Riim - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>XLD 40+ Championships, Lakewood Ranch, FL</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>XLD 45+ Championships, Lakewood Ranch, FL</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>XLD Open Championships, Lakewood Ranch, FL</td>	<td>5th</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Sunshine Smash</td>	<td>8th</td>	<td>8th</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Oct-30</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Pumpkin Smash - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-May-13</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td></td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/CO0qhyDHVuC/?hl=en">[1]</a>	<a href="https://archive.ph/iezlR">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Mar-07</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>TPS Sydney</td>	<td>2nd</td>	<td>2nd</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4770">[1]</a>	<a href="https://web.archive.org/web/20240422202014/https://www.rolexrankings.com/events/4770">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2021 NWGA</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2021 NWGA Dare the Bear Championship</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>DAVIDSON, James <q>Hailey</q></td>	<td>Professional</td>	<td>2021 NWGA Orange Tree Championship</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/Cwnm6T_MdZM/?hl=en">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Turkey Hangover in San Antonio - Senior Women</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>Mashing at Marti Golf Center </td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Nov-01</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>XLD Championships, Greensboro, NC</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://thegolfwire.com/2020-xtreme-long-drive-champions/">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Sept-26</td>	<td>O'NEILL, <q>Jamie</q></td>	<td>Professional</td>	<td>XLD Corn Field Classic, Des Moines, IA</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://prolongdrive.com/profile/331_jamie-o'neill/">[1]</a>	<a href="https://web.archive.org/web/20240422002521/https://prolongdrive.com/profile/331_jamie-o'neill/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Mar-01</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Women's NSW Open</td>	<td>Other</td>	<td>19th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4654">[1]</a>	<a href="https://web.archive.org/web/20240422202045/https://www.rolexrankings.com/events/4654">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-23</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Ladies Classic - Bonville</td>	<td>Other</td>	<td>11th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4653">[1]</a>	<a href="https://web.archive.org/web/20231004210842/https://www.rolexrankings.com/events/4653">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-09</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>ISPS Handa VIC Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4651">[1]</a>	<a href="https://web.archive.org/web/20240422201740/https://www.rolexrankings.com/events/4651">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Oct-06</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Hero Women's Indian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4619">[1]</a>	<a href="https://web.archive.org/web/20221130113030/https://www.rolexrankings.com/events/4619">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Sept-06</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Trust Golf Thailand LPGA Masters</td>	<td>Other</td>	<td>51st</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4597">[1]</a>	<a href="https://web.archive.org/web/20240422201727/https://www.rolexrankings.com/events/4597">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Mar-10</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Worrells NSW Womens Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4470">[1]</a>	<a href="https://web.archive.org/web/20240422201520/https://www.rolexrankings.com/events/4470">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Mar-03</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>ACTEWAGL Canberra Classic (ALPG)</td>	<td>Other</td>	<td>29th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4465">[1]</a>	<a href="https://web.archive.org/web/20240422204614/https://www.rolexrankings.com/events/4465">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-24</td>	<td>GILL, <q>Breanna</q></td>	<td>Professional</td>	<td>Australian Ladies Classic Bonville (ALPG)</td>	<td>Other</td>	<td>49th</td>	<td>AUS</td>	<td><a href="https://www.rolexrankings.com/events/4463">[1]</a>	<a href="https://web.archive.org/web/20240422205042/https://www.rolexrankings.com/events/4463">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2014-Feb-02</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS HANDA New Zealand Women's Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1405X">[1]</a>	<a href="https://web.archive.org/web/20240423141255/https://golfdata.se/sgfranking/tournament_results?CompID=WP1405X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Oct-26</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Grecotel Amirandes Ladies Open</td>	<td>Other</td>	<td>16th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1343X">[1]</a>	<a href="https://web.archive.org/web/20240423140829/https://golfdata.se/sgfranking/tournament_results?CompID=LA1343X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Oct-06</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Azores Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1340X">[1]</a>	<a href="https://web.archive.org/web/20240423141041/https://golfdata.se/sgfranking/tournament_results?CompID=LA1340X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Sept-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>WPGA International Challenge</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1339X">[1]</a>	<a href="https://web.archive.org/web/20240423140807/https://golfdata.se/sgfranking/tournament_results?CompID=LA1339X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Sept-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Norwegian Challenge</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1338X">[1]</a>	<a href="https://web.archive.org/web/20240423140427/https://golfdata.se/sgfranking/tournament_results?CompID=LA1338X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Sept-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Norwegian Challenge</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1338X">[1]</a>	<a href="https://web.archive.org/web/20231003211348/https://golfdata.se/sgfranking/tournament_results?CompID=ND1338X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Aug-11</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>HLR Golf Academy Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1332X">[1]</a>	<a href="https://web.archive.org/web/20240110160741/https://golfdata.se/sgfranking/tournament_results?CompID=LA1332X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Norrporten Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1335X">[1]</a>	<a href="https://web.archive.org/web/20240423140400/https://golfdata.se/sgfranking/tournament_results?CompID=LA1335X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Norrporten Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1335X">[1]</a>	<a href="https://web.archive.org/web/20240423140539/https://golfdata.se/sgfranking/tournament_results?CompID=ND1335X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Aug-27</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ingarö Ladies Open hosted by Elin Emanuelsson</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1330X">[1]</a>	<a href="https://web.archive.org/web/20240423140421/https://golfdata.se/sgfranking/tournament_results?CompID=LA1330X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Aug-27</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ingarö Ladies Open hosted by Elin Emanuelsson</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1330X">[1]</a>	<a href="https://web.archive.org/web/20240422211557/https://golfdata.se/sgfranking/tournament_results?CompID=ND1330X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-May-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Sölvesborg Ladies Open hosted by Fanny Sunesson</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1321X">[1]</a>	<a href="https://web.archive.org/web/20240422211700/https://golfdata.se/sgfranking/tournament_results?CompID=ND1321X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-May-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Sölvesborg Ladies Open hosted by Fanny Sunesson</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1330X">[1]</a>	<a href="https://web.archive.org/web/20240422211557/https://golfdata.se/sgfranking/tournament_results?CompID=ND1330X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-May-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Kristianstad Åhus Ladies PGA Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1320X">[1]</a>	<a href="https://web.archive.org/web/20240422211339/https://golfdata.se/sgfranking/tournament_results?CompID=LA1320X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-May-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Kristianstad Åhus Ladies PGA Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1320X">[1]</a>	<a href="https://web.archive.org/web/20240422211542/https://golfdata.se/sgfranking/tournament_results?CompID=ND1320X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Apr-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Dinard Ladies Open</td>	<td>Other</td>	<td>66th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1314X">[1]</a>	<a href="https://web.archive.org/web/20240422211439/https://golfdata.se/sgfranking/tournament_results?CompID=LA1314X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Mar-23</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Terre Blanche Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1312X">[1]</a>	<a href="https://web.archive.org/web/20240422211407/https://golfdata.se/sgfranking/tournament_results?CompID=LA1312X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Feb-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS Handa Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LP1306X">[1]</a>	<a href="https://web.archive.org/web/20240422211250/https://golfdata.se/sgfranking/tournament_results?CompID=LP1306X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Feb-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS Handa Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1307X">[1]</a>	<a href="https://web.archive.org/web/20240422211228/https://golfdata.se/sgfranking/tournament_results?CompID=WP1307X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Feb-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS Handa New Zealand Women’s Open hosted by Christchurch</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1306X">[1]</a>	<a href="https://web.archive.org/web/20240422211222/https://golfdata.se/sgfranking/tournament_results?CompID=WP1306X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2013</td>	<td>2013-Feb-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Volvik RACV Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1305X">[1]</a>	<a href="https://web.archive.org/web/20240422211213/https://golfdata.se/sgfranking/tournament_results?CompID=WP1305X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2014</td>	<td>2013-Jan-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Mount Broughton Classic</td>	<td>Other</td>	<td>52nd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=AD1403X">[1]</a>	<a href="https://web.archive.org/web/20240423140830/https://golfdata.se/sgfranking/tournament_results?CompID=AD1403X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Nov-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Banesto Tour Valencia</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1245X">[1]</a>	<a href="https://web.archive.org/web/20240422211042/https://golfdata.se/sgfranking/tournament_results?CompID=LA1245X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Sept-23</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Tenerife Open de España Femenino</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1245X">[1]</a>	<a href="https://web.archive.org/web/20240422211042/https://golfdata.se/sgfranking/tournament_results?CompID=LA1245X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Sept-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Fourqueux Ladies Open</td>	<td>Other</td>	<td>26th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1237X">[1]</a>	<a href="https://web.archive.org/web/20240422211031/https://golfdata.se/sgfranking/tournament_results?CompID=LA1237X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Aug-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS Handa Ladies British Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1233X">[1]</a>	<a href="https://web.archive.org/web/20240422211043/https://golfdata.se/sgfranking/tournament_results?CompID=WP1233X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Aug-11</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Women's Bank Open</td>	<td>Other</td>	<td>30th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1232X">[1]</a>	<a href="https://web.archive.org/web/20240422211037/https://golfdata.se/sgfranking/tournament_results?CompID=LA1232X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Jun-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Raiffeisenbank Prague Golf Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1225X">[1]</a>	<a href="https://web.archive.org/web/20240422210901/https://golfdata.se/sgfranking/tournament_results?CompID=WP1225X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Jun-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Deutsche Bank Ladies Swiss Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1224X">[1]</a>	<a href="https://web.archive.org/web/20240422210116/https://golfdata.se/sgfranking/tournament_results?CompID=WP1224X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Jun-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Allianz Ladies Slovak Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1223X">[1]</a>	<a href="https://web.archive.org/web/20240422210122/https://golfdata.se/sgfranking/tournament_results?CompID=WP1223X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Jun-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Deloitte Ladies Open</td>	<td>Other</td>	<td>68th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1222X">[1]</a>	<a href="https://web.archive.org/web/20240422210112/https://golfdata.se/sgfranking/tournament_results?CompID=WP1222X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-May-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>GolfStream Ladies Open</td>	<td>Other</td>	<td>15th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1221X">[1]</a>	<a href="https://web.archive.org/web/20240422210122/https://golfdata.se/sgfranking/tournament_results?CompID=LA1221X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-May-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ljungbyhed Park PGA Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1220X">[1]</a>	<a href="https://web.archive.org/web/20240422210057/https://golfdata.se/sgfranking/tournament_results?CompID=LA1220X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-May-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ljungbyhed Park PGA Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1220X">[1]</a>	<a href="https://web.archive.org/web/20240422210057/https://golfdata.se/sgfranking/tournament_results?CompID=LA1220X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-May-12</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Kristianstad Åhus Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1219X">[1]</a>	<a href="https://web.archive.org/web/20240422205720/https://golfdata.se/sgfranking/tournament_results?CompID=ND1219X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Apr-21</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Banesto Tour Zaragoza</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1216X">[1]</a>	<a href="https://web.archive.org/web/20240422205606/https://golfdata.se/sgfranking/tournament_results?CompID=LA1216X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Apr-14</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Dinard Ladies Open</td>	<td>Other</td>	<td>27th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=LA1215X">[1]</a>	<a href="https://web.archive.org/web/20240422205706/https://golfdata.se/sgfranking/tournament_results?CompID=LA1215X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2012</td>	<td>2012-Feb-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS Handa New Zealand Women's Open hosted by Christchurch</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1207X">[1]</a>	<a href="https://web.archive.org/web/20240422205821/https://golfdata.se/sgfranking/tournament_results?CompID=WP1207X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Oct-09</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Sicilian Ladies Italian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1140X">[1]</a>	<a href="https://web.archive.org/web/20240422205837/https://golfdata.se/sgfranking/tournament_results?CompID=WP1140X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Sept-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Open de España Femenino</td>	<td>Other</td>	<td>33rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1137X">[1]</a>	<a href="https://web.archive.org/web/20240422205624/https://golfdata.se/sgfranking/tournament_results?CompID=WP1137X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Aug-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SM Match</td>	<td>Other</td>	<td>17th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1133X">[1]</a>	<a href="https://web.archive.org/web/20240422205356/https://golfdata.se/sgfranking/tournament_results?CompID=ND1133X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Aug-13</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>A6 Ladies Open</td>	<td>Other</td>	<td>22nd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1132X">[1]</a>	<a href="https://web.archive.org/web/20240422205229/https://golfdata.se/sgfranking/tournament_results?CompID=ND1132X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Aug-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>VW Söderbergs Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1131X">[1]</a>	<a href="https://web.archive.org/web/20231014134218/https://golfdata.se/sgfranking/tournament_results?CompID=ND1131X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>IT-Arkitekterna Ladies Open</td>	<td>Other</td>	<td>47th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1126X">[1]</a>	<a href="https://web.archive.org/web/20240422205416/https://golfdata.se/sgfranking/tournament_results?CompID=ND1126X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>IT-Arkitekterna Ladies Open</td>	<td>Other</td>	<td>47th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WE1126X">[1]</a>	<a href="https://web.archive.org/web/20240422205412/https://golfdata.se/sgfranking/tournament_results?CompID=WE1126X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-May-29</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ljungbyhed Park PGA Ladies Open</td>	<td>3rd</td>	<td>3rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1121X">[1]</a>	<a href="https://web.archive.org/web/20240422204758/https://golfdata.se/sgfranking/tournament_results?CompID=ND1121X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Apr-30</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>BGT 2011 - Retamares</td>	<td>Other</td>	<td>36th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WE1117X">[1]</a>	<a href="https://web.archive.org/web/20240422204919/https://golfdata.se/sgfranking/tournament_results?CompID=WE1117X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Feb-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Pegasus New Zealand Women's Open hosted by Christchurch</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1107X">[1]</a>	<a href="https://web.archive.org/web/20240422204932/https://golfdata.se/sgfranking/tournament_results?CompID=WP1107X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Feb-13</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ RACV Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1106X">[1]</a>	<a href="https://web.archive.org/web/20240422204908/https://golfdata.se/sgfranking/tournament_results?CompID=WP1106X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2011</td>	<td>2011-Feb-06</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ISPS HANDA Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1105X">[1]</a>	<a href="https://web.archive.org/web/20240422204703/https://golfdata.se/sgfranking/tournament_results?CompID=WP1105X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Sept-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Mölle Masters hosted by Golfland</td>	<td>3rd</td>	<td>3rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1037X">[1]</a>	<a href="https://web.archive.org/web/20240423151529/https://golfdata.se/sgfranking/tournament_results?CompID=ND1037X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Sept-12</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Open de France Féminin</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1036X">[1]</a>	<a href="https://web.archive.org/web/20240423151515/https://golfdata.se/sgfranking/tournament_results?CompID=WP1036X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Aug-29</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Finnair Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1034X">[1]</a>	<a href="https://web.archive.org/web/20240423151516/https://golfdata.se/sgfranking/tournament_results?CompID=WP1034X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Aug-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>S4C Wales Ladies Championship of Europe</td>	<td>Other</td>	<td>RTD</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1032X">[1]</a>	<a href="https://web.archive.org/web/20240423150114/https://golfdata.se/sgfranking/tournament_results?CompID=WP1032X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Aug-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>VW Söderbergs Ladies Masters/PGA Mästerskapet</td>	<td>Other</td>	<td>31st</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1031X">[1]</a>	<a href="https://web.archive.org/web/20240423150109/https://golfdata.se/sgfranking/tournament_results?CompID=ND1031X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Aug-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Körunda Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1027X">[1]</a>	<a href="https://web.archive.org/web/20240423150106/https://golfdata.se/sgfranking/tournament_results?CompID=ND1027X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Aug-04</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Tenerife Ladies Open</td>	<td>Other</td>	<td>51st</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1026X">[1]</a>	<a href="https://web.archive.org/web/20240423150221/https://golfdata.se/sgfranking/tournament_results?CompID=WP1026X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Jun-06</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ABN AMRO Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1022X">[1]</a>	<a href="https://web.archive.org/web/20240423150241/https://golfdata.se/sgfranking/tournament_results?CompID=WP1022X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-May-29</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Fredrik Jacobson Masters (W) by Telenor</td>	<td>7th</td>	<td>7th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1021X">[1]</a>	<a href="https://web.archive.org/web/20240423145122/https://golfdata.se/sgfranking/tournament_results?CompID=ND1021X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Mar-14</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1010X">[1]</a>	<a href="https://web.archive.org/web/20240423145107/https://golfdata.se/sgfranking/tournament_results?CompID=WP1010X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Mar-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ LadiesMasters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1009X">[1]</a>	<a href="https://web.archive.org/web/20240423145111/https://golfdata.se/sgfranking/tournament_results?CompID=WP1009X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010-Feb-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Pegasus New Zealand Women’s Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=WP1008X">[1]</a>	<a href="https://web.archive.org/web/20240423145104/https://golfdata.se/sgfranking/tournament_results?CompID=WP1008X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2010</td>	<td>2010</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SM Match Damer</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ND1033X">[1]</a>	<a href="https://web.archive.org/web/20240423150217/https://golfdata.se/sgfranking/tournament_results?CompID=ND1033X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Sept-26</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>PGA of Sweden National Open</td>	<td>8th</td>	<td>8th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=MD0939X">[1]</a>	<a href="https://web.archive.org/web/20240423145022/https://golfdata.se/sgfranking/tournament_results?CompID=MD0939X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Sept-13</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>UNIQA Ladies Golf Open presented by Raiffeisen</td>	<td>Other</td>	<td>70th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0937XX">[1]</a>	<a href="https://web.archive.org/web/20240423144213/https://golfdata.se/sgfranking/tournament_results?CompID=W0937XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Sept-12</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Randstad Open de France Dames</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0938XX">[1]</a>	<a href="https://web.archive.org/web/20240423144916/https://golfdata.se/sgfranking/tournament_results?CompID=W0938XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Aug-30</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Finnair Masters</td>	<td>Other</td>	<td>47th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0935XX">[1]</a>	<a href="https://web.archive.org/web/20230528120922/https://golfdata.se/sgfranking/tournament_results?CompID=W0935XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Aug-09</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>S4C Wales Ladies Championship of Europe</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0932XX">[1]</a>	<a href="https://web.archive.org/web/20240423144156/https://golfdata.se/sgfranking/tournament_results?CompID=W0932XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Aug-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Open de Espana femenino</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0929XX">[1]</a>	<a href="https://web.archive.org/web/20230607145412/https://golfdata.se/sgfranking/tournament_results?CompID=W0929XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Aug-04</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SAS Ladies Masters</td>	<td>Other</td>	<td>49th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0927XX">[1]</a>	<a href="https://web.archive.org/web/20240423144125/https://golfdata.se/sgfranking/tournament_results?CompID=W0927XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jun-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>AIB Ladies Irish Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0926XX">[1]</a>	<a href="https://web.archive.org/web/20230527235934/https://golfdata.se/sgfranking/tournament_results?CompID=W0926XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jun-14</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Open de Portugal</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0924XX">[1]</a>	<a href="https://web.archive.org/web/20240423143716/https://golfdata.se/sgfranking/tournament_results?CompID=W0924XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Jun-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ABN AMRO Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0923XX">[1]</a>	<a href="https://web.archive.org/web/20240423143725/https://golfdata.se/sgfranking/tournament_results?CompID=W0923XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-May-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>HypoVereinsbank Ladies German Open presented by Audi</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0921XX">[1]</a>	<a href="https://web.archive.org/web/20240423143738/https://golfdata.se/sgfranking/tournament_results?CompID=W0921XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-May-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Deutsche Bank Ladies Swiss Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0920XX">[1]</a>	<a href="https://web.archive.org/web/20240423143717/https://golfdata.se/sgfranking/tournament_results?CompID=W0920XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Feb-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0907XX">[1]</a>	<a href="https://web.archive.org/web/20240423143545/https://golfdata.se/sgfranking/tournament_results?CompID=W0907XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2009</td>	<td>2009-Feb-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0906XX">[1]</a>	<a href="https://web.archive.org/web/20230528201837/https://golfdata.se/sgfranking/tournament_results?CompID=W0906XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Oct-22</td>	<td>LAWLESS, <q>Lana</q></td>	<td>Professional</td>	<td>World Long Drive Championship</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://prolongdrive.com/history_of_long_drive/">[1]</a>	<a href="https://www.bunkered.co.uk/golf-news/world-long-drive-championship-format-prize-money-tv/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Sept-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Vediorbis Open de France Dames</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0839XX">[1]</a>	<a href="https://web.archive.org/web/20240423142945/https://golfdata.se/sgfranking/tournament_results?CompID=W0839XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Sept-21</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Göteborg Masters (LET)</td>	<td>Other</td>	<td>26th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=MD0838X">[1]</a>	<a href="https://web.archive.org/web/20240423142941/https://golfdata.se/sgfranking/tournament_results?CompID=MD0838X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Sept-21</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Göteborg Masters</td>	<td>Other</td>	<td>26th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0838XX">[1]</a>	<a href="https://web.archive.org/web/20240423142944/https://golfdata.se/sgfranking/tournament_results?CompID=W0838XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Sept-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Nykredit Masters</td>	<td>Other</td>	<td>28th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0836XX">[1]</a>	<a href="https://web.archive.org/web/20240423142936/https://golfdata.se/sgfranking/tournament_results?CompID=W0836XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-31</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Finnair Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0835XX">[1]</a>	<a href="https://web.archive.org/web/20240423142800/https://golfdata.se/sgfranking/tournament_results?CompID=W0835XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SAS Masters</td>	<td>Other</td>	<td>42nd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0834XX">[1]</a>	<a href="https://web.archive.org/web/20240423142925/https://golfdata.se/sgfranking/tournament_results?CompID=W0834XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>S4C Wales Ladies Championship of Europe</td>	<td>Other</td>	<td>48th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0833XX">[1]</a>	<a href="https://web.archive.org/web/20240423142322/https://golfdata.se/sgfranking/tournament_results?CompID=W0833XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Scandinavian TPC hosted by Annika</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0832XX">[1]</a>	<a href="https://web.archive.org/web/20240423142312/https://golfdata.se/sgfranking/tournament_results?CompID=W0832XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>BMW Ladies Italian Open</td>	<td>Other</td>	<td>51st</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0829XX">[1]</a>	<a href="https://web.archive.org/web/20240423142211/https://golfdata.se/sgfranking/tournament_results?CompID=W0829XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-13</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>AIB Ladies Irish Open</td>	<td>Other</td>	<td>47th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0828XX">[1]</a>	<a href="https://web.archive.org/web/20240423142326/https://golfdata.se/sgfranking/tournament_results?CompID=W0828XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Aug-06</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>The Oxfordshire Ladies English Open</td>	<td>Other</td>	<td>53rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0827XX">[1]</a>	<a href="https://web.archive.org/web/20240423142203/https://golfdata.se/sgfranking/tournament_results?CompID=W0827XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Jun-22</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Tenerife Ladies Open</td>	<td>Other</td>	<td>17th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0825XX">[1]</a>	<a href="https://web.archive.org/web/20240423142249/https://golfdata.se/sgfranking/tournament_results?CompID=W0825XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Jun-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Open de Portugal</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0824XX">[1]</a>	<a href="https://web.archive.org/web/20240423141647/https://golfdata.se/sgfranking/tournament_results?CompID=W0824XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Jun-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ABN AMRO Ladies Open</td>	<td>Other</td>	<td>27th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0823XX">[1]</a>	<a href="https://web.archive.org/web/20240423141523/https://golfdata.se/sgfranking/tournament_results?CompID=W0823XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Jun-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>HypoVereinsbank Ladies German Open presented by Audi</td>	<td>Other</td>	<td>40th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0822XX">[1]</a>	<a href="https://web.archive.org/web/20240423141531/https://golfdata.se/sgfranking/tournament_results?CompID=W0822XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-May-25</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Deutsche Bank Ladies Swiss Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0821XX">[1]</a>	<a href="https://web.archive.org/web/20240423141602/https://golfdata.se/sgfranking/tournament_results?CompID=W0821XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-May-11</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Turkish Ladies Open</td>	<td>Other</td>	<td>55th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0819XX">[1]</a>	<a href="https://web.archive.org/web/20240423141612/https://golfdata.se/sgfranking/tournament_results?CompID=W0819XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Apr-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Open De España Femenino</td>	<td>Other</td>	<td>65th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0816XX">[1]</a>	<a href="https://web.archive.org/web/20240423141521/https://golfdata.se/sgfranking/tournament_results?CompID=W0816XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Feb-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0806XX">[1]</a>	<a href="https://web.archive.org/web/20240423162426/https://golfdata.se/sgfranking/tournament_results?CompID=W0806XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2008</td>	<td>2008-Feb-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>MFS Women’s Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0805XX">[1]</a>	<a href="https://web.archive.org/web/20240423141320/https://golfdata.se/sgfranking/tournament_results?CompID=W0805XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Oct-06</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Madrid Ladies Masters</td>	<td>Other</td>	<td>21st</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0740XX">[1]</a>	<a href="https://web.archive.org/web/20240423141331/https://golfdata.se/sgfranking/tournament_results?CompID=W0740XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Sept-30</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Austrian Ladies Open</td>	<td>Other</td>	<td>26th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0739XX">[1]</a>	<a href="https://web.archive.org/web/20240423141310/https://golfdata.se/sgfranking/tournament_results?CompID=W0739XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Sept-09</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Nykredit Masters</td>	<td>Other</td>	<td>60th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0736XX">[1]</a>	<a href="https://web.archive.org/web/20240423141309/https://golfdata.se/sgfranking/tournament_results?CompID=W0736XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Sept-02</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Finnair Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0735XX">[1]</a>	<a href="https://web.archive.org/web/20240423162024/https://golfdata.se/sgfranking/tournament_results?CompID=W0735XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Aug-26</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SAS Masters</td>	<td>Other</td>	<td>48th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0734XX">[1]</a>	<a href="https://web.archive.org/web/20240423162019/https://golfdata.se/sgfranking/tournament_results?CompID=W0734XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Aug-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Wales Ladies Championship of Europe</td>	<td>Other</td>	<td>55th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0733XX">[1]</a>	<a href="https://web.archive.org/web/20240423162045/https://golfdata.se/sgfranking/tournament_results?CompID=W0733XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Aug-12</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Scandinavian TPC hosted by Annika</td>	<td>Other</td>	<td>28th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0732XX">[1]</a>	<a href="https://web.archive.org/web/20240423160441/https://golfdata.se/sgfranking/tournament_results?CompID=W0732XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Aug-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies English Open</td>	<td>Other</td>	<td>54th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0727XX">[1]</a>	<a href="https://web.archive.org/web/20240423160635/https://golfdata.se/sgfranking/tournament_results?CompID=W0727XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Open de Portugal</td>	<td>Other</td>	<td>37th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0726XX">[1]</a>	<a href="https://web.archive.org/web/20240423160606/https://golfdata.se/sgfranking/tournament_results?CompID=W0726XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Jun-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Vediorbis Open de France</td>	<td>Other</td>	<td>26th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0725XX">[1]</a>	<a href="https://web.archive.org/web/20240423160542/https://golfdata.se/sgfranking/tournament_results?CompID=W0725XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Jun-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>KLM Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0723XX">[1]</a>	<a href="https://web.archive.org/web/20240423160536/https://golfdata.se/sgfranking/tournament_results?CompID=W0723XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-May-26</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>BMW Ladies Italian Open</td>	<td>Other</td>	<td>16th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0721XX">[1]</a>	<a href="https://web.archive.org/web/20240423160618/https://golfdata.se/sgfranking/tournament_results?CompID=W0721XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-May-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Deutsche Bank Ladies Swiss Open</td>	<td>8th</td>	<td>8th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0720XX">[1]</a>	<a href="https://web.archive.org/web/20240423155847/https://golfdata.se/sgfranking/tournament_results?CompID=W0720XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-May-13</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Open De España Femenino - Castellón</td>	<td>Other</td>	<td>51st</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0719XX">[1]</a>	<a href="https://web.archive.org/web/20240423155852/https://golfdata.se/sgfranking/tournament_results?CompID=W0719XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Feb-11</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ Ladies Masters</td>	<td>Other</td>	<td>68th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0706XX">[1]</a>	<a href="https://web.archive.org/web/20240423155840/https://golfdata.se/sgfranking/tournament_results?CompID=W0706XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2007</td>	<td>2007-Feb-04</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>MFS Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0705XX">[1]</a>	<a href="https://web.archive.org/web/20240423155907/https://golfdata.se/sgfranking/tournament_results?CompID=W0705XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Oct-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>BBC Radio Kent Ladies English Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0627XX">[1]</a>	<a href="https://web.archive.org/web/20240423155857/https://golfdata.se/sgfranking/tournament_results?CompID=W0627XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Oct-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ekerum Ladies Masters</td>	<td>Other</td>	<td>11th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0639XX">[1]</a>	<a href="https://web.archive.org/web/20240423155824/https://golfdata.se/sgfranking/tournament_results?CompID=M0639XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Sept-23</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Falköping Ladies Open</td>	<td>3rd</td>	<td>3rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0638XX">[1]</a>	<a href="https://web.archive.org/web/20240423155525/https://golfdata.se/sgfranking/tournament_results?CompID=M0638XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Sept-17</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Siemens Austrian Ladies Golf Open</td>	<td>Other</td>	<td>16th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0637XX">[1]</a>	<a href="https://web.archive.org/web/20240423155445/https://golfdata.se/sgfranking/tournament_results?CompID=W0637XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Sept-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Nykredit Masters</td>	<td>6th</td>	<td>6th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0636XX">[1]</a>	<a href="https://web.archive.org/web/20240423155442/https://golfdata.se/sgfranking/tournament_results?CompID=W0636XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Sept-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Finnair Masters</td>	<td>Other</td>	<td>15th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0635XX">[1]</a>	<a href="https://web.archive.org/web/20240423155503/https://golfdata.se/sgfranking/tournament_results?CompID=W0635XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Aug-27</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SAS Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0634XX">[1]</a>	<a href="https://web.archive.org/web/20240423155436/https://golfdata.se/sgfranking/tournament_results?CompID=W0634XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Aug-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Rejmes Ladies Open</td>	<td>10th</td>	<td>10th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0633XX">[1]</a>	<a href="https://web.archive.org/web/20240423155409/https://golfdata.se/sgfranking/tournament_results?CompID=M0633XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Aug-30</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>SI Körunda Ladies Club SGT Open</td>	<td>5th</td>	<td>5th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0630BX">[1]</a>	<a href="https://web.archive.org/web/20240423154755/https://golfdata.se/sgfranking/tournament_results?CompID=M0630BX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Aug-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>OTP Bank Ladies Central European Open - Hungary</td>	<td>7th</td>	<td>7th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0628XX">[1]</a>	<a href="https://web.archive.org/web/20240423154801/https://golfdata.se/sgfranking/tournament_results?CompID=W0628XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Aug-08</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Gelfe Ladies Open</td>	<td>9th</td>	<td>9th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0627XX">[1]</a>	<a href="https://web.archive.org/web/20240423154752/https://golfdata.se/sgfranking/tournament_results?CompID=M0627XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Jun-11</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Klitterbyn Ladies Open</td>	<td>Other</td>	<td>23rd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0623XX">[1]</a>	<a href="https://web.archive.org/web/20240423154725/https://golfdata.se/sgfranking/tournament_results?CompID=M0623XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-May-14</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>España Femenino Castellón</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0619XX">[1]</a>	<a href="https://web.archive.org/web/20240423154709/https://golfdata.se/sgfranking/tournament_results?CompID=W0619XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2006</td>	<td>2006-Feb-05</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ Ladies Masters</td>	<td>Other</td>	<td>65th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0605XX">[1]</a>	<a href="https://web.archive.org/web/20240423154758/https://golfdata.se/sgfranking/tournament_results?CompID=W0605XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Sept-18</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>KLM Ladies Open</td>	<td>Other</td>	<td>35th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0537XX">[1]</a>	<a href="https://web.archive.org/web/20240423153948/https://golfdata.se/sgfranking/tournament_results?CompID=W0537XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Sept-04</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Nykredit Masters</td>	<td>Other</td>	<td>40th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0535XX">[1]</a>	<a href="https://web.archive.org/web/20240423153958/https://golfdata.se/sgfranking/tournament_results?CompID=W0535XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Aug-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies Finnish Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0534XX">[1]</a>	<a href="https://web.archive.org/web/20240423153953/https://golfdata.se/sgfranking/tournament_results?CompID=W0534XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Aug-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Scandinavian TPC hosted by Annika</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0531XX">[1]</a>	<a href="https://web.archive.org/web/20240423153933/https://golfdata.se/sgfranking/tournament_results?CompID=W0531XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Aug-16</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>OTP Bank Ladies Central European Open - Hungary</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0528XX">[1]</a>	<a href="https://web.archive.org/web/20240423153613/https://golfdata.se/sgfranking/tournament_results?CompID=W0528XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Aug-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies English Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0527XX">[1]</a>	<a href="https://web.archive.org/web/20240423153614/https://golfdata.se/sgfranking/tournament_results?CompID=W0527XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Jun-26</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Algarve Ladies Open of Portugal</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0525XX">[1]</a>	<a href="https://web.archive.org/web/20240423153601/https://golfdata.se/sgfranking/tournament_results?CompID=W0525XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Jun-12</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Arras Open de France Dames</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0523XX">[1]</a>	<a href="https://web.archive.org/web/20240423153528/https://golfdata.se/sgfranking/tournament_results?CompID=W0523XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Jun-05</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>BMW Ladies Italian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0522XX">[1]</a>	<a href="https://web.archive.org/web/20240423153527/https://golfdata.se/sgfranking/tournament_results?CompID=W0522XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-May-29</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Siemens Austrian Ladies Golf Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0521XX">[1]</a>	<a href="https://web.archive.org/web/20240423153604/https://golfdata.se/sgfranking/tournament_results?CompID=W0521XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-May-15</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>España Femenino Castellón</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0519XX">[1]</a>	<a href="https://web.archive.org/web/20240423152927/https://golfdata.se/sgfranking/tournament_results?CompID=W0519XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Apr-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Tenerife Ladies Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0514XX">[1]</a>	<a href="https://web.archive.org/web/20240423152944/https://golfdata.se/sgfranking/tournament_results?CompID=W0514XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005-Feb-27</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>ANZ Ladies Masters</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0508XX">[1]</a>	<a href="https://web.archive.org/web/20240423152909/https://golfdata.se/sgfranking/tournament_results?CompID=W0508XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Femilet Ladies Challenge Professionals</td>	<td>7th</td>	<td>7th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=ES0536X">[1]</a>	<a href="https://web.archive.org/web/20240423153944/https://golfdata.se/sgfranking/tournament_results?CompID=ES0536X">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2005</td>	<td>2005</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies European Tour Kval 2005</td>	<td>Other</td>	<td>47th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0547XX">[1]</a>	<a href="https://web.archive.org/web/20240423154015/https://golfdata.se/sgfranking/tournament_results?CompID=W0547XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Nov-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Ladies European Tour Qualifying School</td>	<td>9th</td>	<td>9th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0445XX">[1]</a>	<a href="https://web.archive.org/web/20240423152910/https://golfdata.se/sgfranking/tournament_results?CompID=W0445XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Sept-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Telia Ladies Final</td>	<td>2nd</td>	<td>2nd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0438XX">[1]</a>	<a href="https://web.archive.org/web/20240423152928/https://golfdata.se/sgfranking/tournament_results?CompID=M0438XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Sept-19</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Telia Ladies Final</td>	<td>2nd</td>	<td>2nd</td>	<td>AUS</td>	<td><a href="https://golfdata.se/tournytt/resultatlista.asp?TID=M0438XX">[1]</a>	<a href="https://web.archive.org/web/20240421204104/https://golfdata.se/tournytt/resultatlista.asp?TID=M0438XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Sept-04</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Öijared Ladies Open</td>	<td>Other</td>	<td>17th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0436XX">[1]</a>	<a href="https://web.archive.org/web/20240423152906/https://golfdata.se/sgfranking/tournament_results?CompID=M0436XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Aug-28</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Skandia PGA Open Damer</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0435XX">[1]</a>	<a href="https://web.archive.org/web/20240423151630/https://golfdata.se/sgfranking/tournament_results?CompID=M0435XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Aug-20</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Swedish International</td>	<td>Other</td>	<td>24th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0434XX">[1]</a>	<a href="https://web.archive.org/web/20240423151634/https://golfdata.se/sgfranking/tournament_results?CompID=M0434XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Aug-01</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Österåker Ladies Masters</td>	<td>Other</td>	<td>13th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0431XX">[1]</a>	<a href="https://web.archive.org/web/20240423162415/https://golfdata.se/sgfranking/tournament_results?CompID=M0431XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Aug-24</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Gefle Ladies Open</td>	<td>Other</td>	<td>12th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0430XX">[1]</a>	<a href="https://web.archive.org/web/20240423162101/https://golfdata.se/sgfranking/tournament_results?CompID=M0430XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Aug-10</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Rejmes Ladies Open</td>	<td>10th</td>	<td>10th</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0428XX">[1]</a>	<a href="https://web.archive.org/web/20240423162054/https://golfdata.se/sgfranking/tournament_results?CompID=M0428XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Jun-03</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>Beirut Café Ladies Trophy</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=M0423XX">[1]</a>	<a href="https://web.archive.org/web/20240423162035/https://golfdata.se/sgfranking/tournament_results?CompID=M0423XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2004</td>	<td>2004-Mar-07</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Professional</td>	<td>AAMI Women's Australian Open</td>	<td>MC</td>	<td>MC</td>	<td>AUS</td>	<td><a href="https://golfdata.se/sgfranking/tournament_results?CompID=W0410XX">[1]</a>	<a href="https://web.archive.org/web/20221219075210/https://golfdata.se/sgfranking/tournament_results?CompID=W0410XX">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2002</td>	<td>2002</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Amateur Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://archive.golf.org.au/wp-content/uploads/2020/11/00043367-source.pdf">[1]</a>	<a href="https://web.archive.org/web/20240226210645/https://archive.golf.org.au/wp-content/uploads/2020/11/00043367-source.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2002</td>	<td>2002</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Classic (72 Strokeplay Championship)</td>	<td>6th</td>	<td>6th</td>	<td>AUS</td>	<td><a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2001</td>	<td>2001</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Amateur Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://assets.ctfassets.net/3urhge2ecl20/1231mnN925jlVJG2JLK0w9/cd7ccef53da76175e1938789656aaab3/SA_Honour_Roll_Full.pdf">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2001</td>	<td>2001</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Classic (72 Strokeplay Championship)</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://assets.ctfassets.net/3urhge2ecl20/1231mnN925jlVJG2JLK0w9/cd7ccef53da76175e1938789656aaab3/SA_Honour_Roll_Full.pdf">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2001</td>	<td>2001</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Amateur Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://web.archive.org/web/20240423164750/https://assets.ctfassets.net/3urhge2ecl20/1231mnN925jlVJG2JLK0w9/cd7ccef53da76175e1938789656aaab3/SA_Honour_Roll_Full.pdf">[1]</a>	<a href="https://web.archive.org/web/20240226210645/https://archive.golf.org.au/wp-content/uploads/2020/11/00043367-source.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2001</td>	<td>2001</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian State Team</td>	<td>2nd</td>	<td>2nd</td>	<td>AUS</td>	<td><a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2000</td>	<td>2000</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian State Team</td>	<td>2nd</td>	<td>2nd</td>	<td>AUS</td>	<td><a href="https://www.trans-health.com/2002/mianne-bagger/">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1999</td>	<td>1999</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian Amateur Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://archive.golf.org.au/wp-content/uploads/2020/11/00043367-source.pdf">[1]</a>	<a href="https://web.archive.org/web/20240226210645/https://archive.golf.org.au/wp-content/uploads/2020/11/00043367-source.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1999</td>	<td>1999</td>	<td>BAGGER, <q>Mianne</q></td>	<td>Amateur</td>	<td>South Australian State Team</td>		<td>1st</td>	<td>1st</td> <td>AUS</td>	<td><a href="https://www.trans-health.com/2002/mianne-bagger/">[1]</a>	<a href="https://web.archive.org/web/20240423165608/https://www.trans-health.com/2002/mianne-bagger/">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

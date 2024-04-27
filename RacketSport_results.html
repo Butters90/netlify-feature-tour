@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(8) {
+  display: none;
+}
+.filter-table tr > *:nth-child(11) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(12) {
+  text-align: center;
+}
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Racket Sports</h1>
+        
+        <div class="herostat">
+            <p>8+</p><p>male<br>athletes</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>23+</p><p>tournament<br>victories</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Racket Sports - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="RacketSport_results.html">Results</a></li>
+    <li><a href="RacketSport_athletes.html">Athletes</a></li>
+    <li><a href="RacketSport_awards.html">Awards</a></li>
+    <li><a href="RacketSport_records.html">Records</a></li>
+    <li><a href="RacketSport_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="FEDRA, Mia">FEDRA, "Mia"</option>
+              <option value="MALIK, Hazel">MALIK, "Hazel"</option>
+              <option value="O'CONNOR, Ashley">O'CONNOR, "Ashley"</option>
+              <option value="PAREDES, Ernesto Andrea">PAREDES, Ernesto "Andrea"</option>
+              <option value="RASKIN, Richard Renee Richards">RASKIN, Richard "Renee Richards"</option>
+              <option value="ROSS, Brian Brooklyn">ROSS, Brian "Brooklyn"</option>
+              <option value="ROWLEY, Alicia">ROWLEY, "Alicia"</option>
+              <option value="WEISS, Sara">WEISS, "Sara"</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="1980">2001</option>
+              <option value="1979">1989</option>
+              <option value="1978">1988</option>
+              <option value="1977">1987</option>
+              <option value="1976">1986</option>
+            </select>
+            </div>
+
+            
+            <div class="filter-menu">
+            <p class="filter-label">Level:</p>
+            <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Amateur">Club/Amateur</option>
+              <option value="Masters">Masters</option>
+              <option value="High School">High School</option>
+              <option value="Collegiate">Collegiate</option>
+              <option value="Professional">Professional</option>
+             </select> 
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Competition Type:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="Provincial">Provincial Championship</option>
+              <option value="National">National Championship</option>
+              <option value="Other">Other</option>
+             </select> 
+            </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>SPORT</th>
+                    <th>TEAM</th> 
+                    <th>LEVEL</th>
+                    <th>CATEGORY</th> 
+                    <th>COMPETITION</th>
+                    <th>EVENT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Oct-08</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Cuningham</td>	<td>Provincial</td>	<td>Amateur</td>	<td>Tournoi Provincial de Magog Pierre Gauthier, Magog, QC</td>	<td>Mixed Doubles 4.5</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=d759e517-e372-46ab-bd9d-e58e856818ed">[1]</a>	<a href="https://web.archive.org/web/20240424134845/https://pickleballbrackets.com/ptplg.aspx?eid=d759e517-e372-46ab-bd9d-e58e856818ed">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Oct-07</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Benoit</td>	<td>Provincial</td>	<td>Amateur</td>	<td>Tournoi Provincial de Magog Pierre Gauthier, Magog, QC</td>	<td>Womens Doubles 4.5</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=d759e517-e372-46ab-bd9d-e58e856818ed">[1]</a>	<a href="https://web.archive.org/web/20240424134845/https://pickleballbrackets.com/ptplg.aspx?eid=d759e517-e372-46ab-bd9d-e58e856818ed">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-23</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Janssen</td>	<td>National</td>	<td>Amateur</td>	<td>2023 USA Pickeball National Indoor Championship</td>	<td>Mixed Doubles Open</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=f62160fb-94c3-41e4-b842-ac9cb38707cd">[1]</a>	<a href="https://web.archive.org/web/20240424134902/https://pickleballbrackets.com/ptplg.aspx?eid=f62160fb-94c3-41e4-b842-ac9cb38707cd">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-09</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Belanger</td>	<td>Other</td>	<td>Amateur</td>	<td>PB Sport Open 5e Edition, Laval, QC</td>	<td>Womens Doubles 4.5 35+</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=ff586d37-f45c-4681-9ed9-edcc8155ea67">[1]</a>	<a href="https://web.archive.org/web/20240424134930/https://pickleballbrackets.com/ptplg.aspx?eid=ff586d37-f45c-4681-9ed9-edcc8155ea67">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Aug-19</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Janssen</td>	<td>Other</td>	<td>Amateur</td>	<td>Saskatoon Open, Saskatoon, SK</td>	<td>Mixed Doubles Open</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=d318cd3d-7aae-409c-a7f4-04849ac37f9c">[1]</a>	<a href="https://web.archive.org/web/20240424134906/https://pickleballbrackets.com/ptplg.aspx?eid=d318cd3d-7aae-409c-a7f4-04849ac37f9c">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-23</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USTA National Women's 35-85 Grass Court Championships (55s)</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usta.com/en/home/play/player-search/profile.html#uaid=1180486430&tab=results&results-year=2023">[1]</a>	<a href="https://archive.ph/1KKpa">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-22</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USTA National Indoor Championships (55 and over Singles)</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usta.com/en/home/play/player-search/profile.html#uaid=1180486430&tab=results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-May-22</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>USTA National Indoor Championships (55 and over Doubles)</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.usta.com/en/home/play/player-search/profile.html#uaid=1180486430&tab=results">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Apr-30</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Cuningham</td>	<td>Other</td>	<td>Amateur</td>	<td>Gatineau Open 2023, Gatineau, QC</td>	<td>Mixed Doubles 4.5</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=08f50726-bb6b-41d7-9e72-71f0e28cdd57">[1]</a>	<a href="https://web.archive.org/web/20240424135839/https://pickleballbrackets.com/ptplg.aspx?eid=08f50726-bb6b-41d7-9e72-71f0e28cdd57">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-19</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Tardif</td>	<td>Provincial</td>	<td>Amateur</td>	<td>Ontario Championship Series - East Regional</td>	<td>Womens Doubles 4.0</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=0b9832b9-8b30-4c0d-9015-2307a84a8dc1">[1]</a>	<a href="https://web.archive.org/web/20240424135759/https://pickleballbrackets.com/ptplg.aspx?eid=0b9832b9-8b30-4c0d-9015-2307a84a8dc1">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-18</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Tardif</td>	<td>Provincial</td>	<td>Amateur</td>	<td>Ontario Championship Series - East Regional</td>	<td>Mixed Open</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=0b9832b9-8b30-4c0d-9015-2307a84a8dc1">[1]</a>	<a href="https://web.archive.org/web/20240424135759/https://pickleballbrackets.com/ptplg.aspx?eid=0b9832b9-8b30-4c0d-9015-2307a84a8dc1">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Nov-13</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td>Mid-Atlantic</td>	<td>National</td>	<td>Amateur</td>	<td>USTA National Women's Intersectional Team Championships</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://playtennis.usta.com/competitions/frankveltritenniscenter/Tournaments/overview/F4E9CE94-2994-4B79-9E8E-00763FA225FA">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Sept-10</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Benoit</td>	<td>Other</td>	<td>Amateur</td>	<td>PB Sport Open, Laval, QC</td>	<td>Womens Doubles 4.5</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=203c9027-d59c-49b6-82e5-6f2ea7723416">[1]</a>	<a href="https://web.archive.org/web/20240424135845/https://pickleballbrackets.com/ptplg.aspx?eid=203c9027-d59c-49b6-82e5-6f2ea7723416">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-26</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Valcour</td>	<td>National</td>	<td>Amateur</td>	<td>2022 Pickleball Canada National Championship</td>	<td>Mixed Doubles</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[1]</a>	<a href="https://web.archive.org/web/20240424140305/https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-25</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Lin</td>	<td>National</td>	<td>Amateur</td>	<td>2022 Pickleball Canada National Championship</td>	<td>Womens Doubles Skill</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[1]</a>	<a href="https://web.archive.org/web/20240424140305/https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-22</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Lin</td>	<td>National</td>	<td>Amateur</td>	<td>2022 Pickleball Canada National Championship</td>	<td>Womens Doubles</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[1]</a>	<a href="https://web.archive.org/web/20240424140305/https://pickleballbrackets.com/ptplg.aspx?eid=c7838bf2-434f-42d9-b721-9367e8eaafc1&eaid=&sw=weiss&pgid=&fid=">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-23</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Valcour</td>	<td>Other</td>	<td>Amateur</td>	<td>Gatineau Open 2022, Gatineau, QC</td>	<td>Mixed Doubles 4.0</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=5cad541d-965c-4b81-92ef-5d5cc61a6def">[1]</a>	<a href="https://web.archive.org/web/20240424135912/https://pickleballbrackets.com/ptplg.aspx?eid=5cad541d-965c-4b81-92ef-5d5cc61a6def">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Aug-14</td>	<td>WEISS, <q>Sara</q></td>	<td>Pickleball</td>	<td>Weiss / Spec</td>	<td>Other</td>	<td>Amateur</td>	<td>Ottowa Open, Manotick, ONT</td>	<td>Womens Doubles 3.0</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://pickleballbrackets.com/ptplg.aspx?eid=5b61cace-2766-43f1-b91b-b954b16b8ec4">[1]</a>	<a href="https://web.archive.org/web/20240424135830/https://pickleballbrackets.com/ptplg.aspx?eid=5b61cace-2766-43f1-b91b-b954b16b8ec4">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Nov-18</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td>Mid-Atlantic</td>	<td>National</td>	<td>Masters</td>	<td>USTA National Women’s Intersectional Team Event - 45s</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://static1.squarespace.com/static/5f07b98f72a74d7457cdae96/t/5f5a592e971ed55b93b3061f/1599756597772/nswta-2017_vol-3.pdf">[1]</a>	<a href="https://web.archive.org/web/20240322162612/https://static1.squarespace.com/static/5f07b98f72a74d7457cdae96/t/5f5a592e971ed55b93b3061f/1599756597772/nswta-2017_vol-3.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Aug-20</td>	<td>ROWLEY, <q>Alicia</q></td>	<td>Tennis</td>	<td></td>	<td>National</td>	<td>Masters</td>	<td>National 40 & 50 Indoor Championships (50s)</td>	<td></td>	<td>1st</td>	<td>USA</td>	<td><a href="https://static1.squarespace.com/static/5f07b98f72a74d7457cdae96/t/5f5a592e971ed55b93b3061f/1599756597772/nswta-2017_vol-3.pdf">[1]</a>	<a href="https://web.archive.org/web/20240227031024/https://static1.squarespace.com/static/5f07b98f72a74d7457cdae96/t/5f5a592e971ed55b93b3061f/1599756597772/nswta-2017_vol-3.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Aug-13</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Flemington</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Flemington">[1]</a>	<a href="https://web.archive.org/web/20230505153616/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Flemington">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Jul-28</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Erie </td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Erie">[1]</a>	<a href="https://web.archive.org/web/20240322163508/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Erie">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Jul-14</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Atlantic City</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Atlantic_City">[1]</a>	<a href="https://web.archive.org/web/20240322163555/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Atlantic_City">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Jun-30</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>St. Joseph</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980St._Joseph">[1]</a>	<a href="https://web.archive.org/web/20240322163634/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980St._Joseph">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Jun-08</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Memphis</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Memphis">[1]</a>	<a href="https://web.archive.org/web/20240322163542/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Memphis">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-Jun-04</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Fayetteville</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Fayetteville">[1]</a>	<a href="https://web.archive.org/web/20240322164139/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Fayetteville">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1980</td>	<td>1980-May-19</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Gainesville</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Gainesville">[1]</a>	<a href="https://web.archive.org/web/20240322164011/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1980Gainesville">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1979</td>	<td>1979-Sept-10</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Pittsburgh</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1979Pittsburgh">[1]</a>	<a href="https://archive.ph/HscpN">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1979</td>	<td>1979-Aug-06</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Indianapolis</td>	<td>Womens Singles</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1979Indianapolis">[1]</a>	<a href="https://web.archive.org/web/20240322162003/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1979Indianapolis">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1979</td>	<td>1979-Feb-05</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Seattle</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1979Seattle">[1]</a>	<a href="https://web.archive.org/web/20240322164703/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1979Seattle">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1978</td>	<td>1978-Mar-29</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Stuart</td>	<td>Womens Singles</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Stuart">[1]</a>	<a href="https://web.archive.org/web/20240322162019/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Stuart">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1978</td>	<td>1978-Mar-06</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Fort Myers Futures</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Fort_Myers_Futures">[1]</a>	<a href="https://web.archive.org/web/20240322164438/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Fort_Myers_Futures">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1978</td>	<td>1978-Jan-23</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Columbus</td>	<td>Womens Singles</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Columbus">[1]</a>	<a href="https://web.archive.org/web/20240322161944/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1978Columbus">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1977</td>	<td>1977-Oct-31</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Buenos Aires River Plate</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Buenos_Aires_River_Plate">[1]</a>	<a href="https://web.archive.org/web/20240322163951/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Buenos_Aires_River_Plate">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1977</td>	<td>1977-Sept-19</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Pensacola Pro Championships</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Pensacola_Pro_Chps">[1]</a>	<a href="https://web.archive.org/web/20240322163956/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Pensacola_Pro_Chps">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1977</td>	<td>1977-Sept-11</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>US Open - Doubles</td>	<td>Womens Doubles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.itftennis.com/en/tournament/US-open/usa/1977/w-sl-usa-01a-1977/draws-and-results/">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>1977</td>	<td>1977-Apr-11</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Port Washington</td>	<td>Womens Singles</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Port_Washington">[1]</a>	<a href="https://web.archive.org/web/20240322162000/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Port_Washington">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1977</td>	<td>1977-Mar-28</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Little Rock</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Little_Rock">[1]</a>	<a href="https://web.archive.org/web/20240322162027/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1977Little_Rock">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1976</td>	<td>1976-Dec-13</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Kona (WTA World Tour)</td>	<td>Womens Singles</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976Kona">[1]</a>	<a href="https://web.archive.org/web/20240322164145/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976Kona">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1976</td>	<td>1976-Dec-06</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>Kauai (WTA World Tour)</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976Kauai">[1]</a>	<a href="https://web.archive.org/web/20240322163450/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976Kauai">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1976</td>	<td>1976-Aug-21</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>South Orange (WTA)</td>	<td>Womens Singles</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976South_Orange">[1]</a>	<a href="https://web.archive.org/web/20240322162022/https://www.tennisabstract.com/cgi-bin/wtourney.cgi?t=W_1976South_Orange">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>1976</td>	<td>1976-Jul-11</td>	<td>RASKIN, Richard<q> Renee Richards</q></td>	<td>Tennis</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>La Jolla Tennis Tournament, New York</td>	<td>Womens Singles</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.nytimes.com/1976/07/24/archives/a-former-male-tennis-player-seeks-to-join-womens-tour.html">[1]</a>	<a href="https://web.archive.org/web/20240322162749/https://www.nytimes.com/1976/07/24/archives/a-former-male-tennis-player-seeks-to-join-womens-tour.html">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

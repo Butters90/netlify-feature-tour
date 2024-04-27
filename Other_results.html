@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="filtertable.css">
+</head>  
+
+<style>
+
+    .filter-table tr > *:nth-child(2) {
+  display: none;
+}
+
+.filter-table tr > *:nth-child(7) {
+  display: none;
+}
+.filter-table tr > *:nth-child(8) {
+  display: none;
+}
+.filter-table tr > *:nth-child(10) {
+  display: none;
+}
+.filter-table tr > *:nth-child(11) {
+  text-align: center;
+}
+.filter-table tr > *:nth-child(12) {
+  text-align: center;
+}
+
+.hero-text {
+    width:600px !important;
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Other</h1>
+        
+        <div class="herostat">
+            <p>6</p><p>male<br>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>6</p><p>sports</p>
+        </div>
+        <div class="herostat" style="border-right:none">
+          <p>32+</p><p>unfair<br>victories</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Lacrosse_Hockey_results.html">Lacrosse/Hockey</a>
+        <a href="RacketSport_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Weightlifting_results.html">Weightlifting</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Other - Results</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a class="active2" href="Other_results.html">Results</a></li>
+    <li><a href="Other_athletes.html">Athletes</a></li>
+    <li><a href="Other_awards.html">Awards</a></li>
+    <li><a href="Other_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<div class="contentfilter">
+    <div class="filtergroup">
+
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+        <div class="filter-menu">
+            <p class="filter-label">Male Athlete:</p>
+            <select class="filter" data-field="MALE ATHLETE">
+              <option value="">All</option>
+              <option value="BURTON, Savannah">BURTON, "Savannah"</option>
+              <option value="EGAN, Ryan Egan Sasha Jane Lowerson">EGAN, Ryan Egan "Sasha Jane Lowerson"</option>
+              <option value="GUMBRELL, Jamie">GUMBRELL, "Jamie"</option>
+              <option value="KIRKPATRICK, Galen">KIRKPATRICK, "Galen"</option>
+              <option value="MACBETH CAIN, Isabella">MACBETH CAIN, "Isabella"</option>
+              <option value="SALTZMAN, Elias Alyssa">SALTZMAN, Elias "Alyssa"</option>
+
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Place:</p>
+            <select class="filter" data-field="PLACE SORT">
+              <option value="">All</option>
+              <option value="1st">1st Place</option>
+              <option value="2nd">2nd Place</option>
+              <option value="3rd">3rd Place</option>
+              <option value="4th">4th Place</option>
+              <option value="5th">5th Place</option>
+              <option value="6th">6th Place</option>
+              <option value="7th">7th Place</option>
+              <option value="8th">8th Place</option>
+              <option value="9th">9th Place</option>
+              <option value="10th">10th Place</option>
+              <option value="Other">Other</option>
+            </select>
+            </div>
+            
+            <div class="filter-menu">
+            <p class="filter-label">Year:</p>
+            <select class="filter" data-field="YEAR">
+              <option value="">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+            </select>
+            </div>
+
+            <div class="filter-menu">
+                <p class="filter-label">Sport:</p>
+                <select class="filter" data-field="SPORT">
+                  <option value="">All</option>
+                  <option value="Dodgeball">Dodgeball</option>
+                  <option value="Paragliding">Paragliding</option>
+                  <option value="Croquet">Croquet</option>
+                  <option value="Surfing">Surfing</option>
+                  <option value="Irish Dance">Irish Dance</option>
+                  <option value="Oyster Shucking">Oyster Shucking</option>
+                </select>
+                </div>
+
+            
+            <div class="filter-menu">
+            <p class="filter-label">Level:</p>
+            <select class="filter" data-field="CATEGORY">
+              <option value="">All</option>
+              <option value="Amateur">Club/Amateur</option>
+              <option value="Masters">Masters</option>
+              <option value="High School">High School</option>
+              <option value="Collegiate">Collegiate</option>
+              <option value="Professional">Professional</option>
+             </select> 
+            </div>
+            
+            <div class="filter-menu">  
+            <p class="filter-label">Competition Type:</p>
+            <select class="filter" data-field="LEVEL">
+              <option value="">All</option>
+              <option value="Regional">Regional Championship</option>
+              <option value="Provincial/State">State/Provincial Championship</option>
+              <option value="National">National Championship</option>
+              <option value="International">World Championship</option>
+              <option value="Other">Other</option>
+             </select> 
+            </div>
+</div>
+</div>
+        <div class="contenttable">    
+            <div class="tablecontainer">
+            <table class="filter-table">
+              <thead>
+                <tr> <th>#</th> 
+                    <th>YEAR</th> 
+                    <th>DATE</th> 
+                    <th>MALE ATHLETE</th> 
+                    <th>SPORT</th>
+                    <th>TEAM</th> 
+                    <th>LEVEL</th>
+                    <th>CATEGORY</th> 
+                    <th>COMPETITION</th>
+                    <th>PLACE SORT</th>
+                    <th>PLACE</th>
+                    <th>COUNTRY</th> 
+                    <th>LINK/AR</th></tr>
+              </thead>
+              <tbody>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-31</td>	<td>SALTZMAN, Elias <q>Alyssa</q></td>	<td>Irish Dance</td>	<td>Inis Cairde School of Irish Dance</td>	<td>International</td>	<td>Junior</td>	<td>Irish Dance World Championships 14-15</td>	<td>Other</td>	<td>20th</td>	<td>USA</td>	<td><a href="https://www.clrgoireachtas.com/_files/ugd/d07f78_c004d9198618470abfb0de6257f587fc.pdf">[1]</a>	<a href="https://web.archive.org/web/20240403135805/https://www.clrgoireachtas.com/_files/ugd/d07f78_c004d9198618470abfb0de6257f587fc.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Mar-16</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>FlyWithGalen, Convergence Paragliding, Eagle paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>13th Paragliding World Cup Superfinal 2023</td>	<td>9th</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://scoring.pwca.org/superfinal-2023/ranking1.html">[1]</a>	<a href="https://web.archive.org/web/20240403203001/https://scoring.pwca.org/superfinal-2023/ranking1.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2024</td>	<td>2024-Jan-13</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>National </td>	<td>Amateur</td>	<td>Red Rocks Wide Open, Monroe, UT</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://monarcaopen.com/results/2024/t6/cwomen.pdf">[1]</a>	<a href="https://web.archive.org/web/20240403201409/https://monarcaopen.com/results/2024/t6/cwomen.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Oct-21</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://usoysterfest.com/?page_id=33">[1]</a>	<a href="https://web.archive.org/web/20240401225522/https://usoysterfest.com/?page_id=33">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-19</td>	<td>GUMBRELL, Jamie </td>	<td>Croquet</td>	<td></td>	<td>National</td>	<td>Amateur</td>	<td>Australian National Championship Tournament</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://croquetscores.com/2023/gc/australia-womens-singles/championship-k-o-at-como">[1]</a>	<a href="https://web.archive.org/web/20240228025918/https://croquet-australia.com.au/wp-content/uploads/2024/01/2023-Croquet-Australia-Events-Results-1.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Sept-16</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Cloudbase Mayhem</td>	<td>National</td>	<td>Amateur</td>	<td>Red Rocks Wide Open</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/red-rocks-wide-open/results/task6311/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403195952/https://airtribune.com/red-rocks-wide-open/results/task6311/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Aug-14</td>	<td>GUMBRELL, Jamie </td>	<td>Croquet</td>	<td></td>	<td>International</td>	<td>Amateur</td>	<td>Women's Golf Croquet World Championship</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://www.croquetengland.org.uk/news_and_media/jamie-gumbrell-is-the-womens-gc-world-champion-2023/">[1]</a>	<a href="https://web.archive.org/web/20240315161442/https://www.croquetengland.org.uk/news_and_media/jamie-gumbrell-is-the-womens-gc-world-champion-2023/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jul-01</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Kansas</td>	<td>National</td>	<td>Amateur</td>	<td>US Open of Paragliding, Chelan, USA</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/us-open-paragliding-2023/results/task6207/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403195600/https://airtribune.com/us-open-paragliding-2023/results/task6207/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jun-23</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>NW Paragliding, Joshua Tree Distilling</td>	<td>Other</td>	<td>Amateur</td>	<td>Ozone Chelan Open, Chelan 2023</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/ozone-chelan-open-2023/results/task6197/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403203325/https://airtribune.com/ozone-chelan-open-2023/results/task6197/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jun-02</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding/ Team USA</td>	<td>International</td>	<td>Amateur</td>	<td>18th FAI Paragliding World Championships</td>	<td>7th</td>	<td>7th</td>	<td>USA</td>	<td><a href="https://civlcomps.org/event/pgworlds-2023/results/647a2d0a73b44">[1]</a>	<a href="https://web.archive.org/web/20240403223103/https://civlcomps.org/event/pgworlds-2023/results/647a2d0a73b44">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-25</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Convergence Paragliding, Northwest Paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>World Cup Castelo, Brazil 2023</td>	<td>5th</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://pwca.org/events/2023-world-cup-castelo-brazil-2023/results?#content">[1]</a>	<a href="https://web.archive.org/web/20240403224059/https://pwca.org/events/2023-world-cup-castelo-brazil-2023/results#content">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Mar-15</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>White Rabbit</td>	<td>Other</td>	<td>Amateur</td>	<td>4th British Winter Open, Castello</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://airtribune.com/bwo2023/results/task6080/comp/female-class">[1]</a>	<a href="https://web.archive.org/web/20240403224643/https://airtribune.com/bwo2023/results/task6080/comp/female-class">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023-Jan-14</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding/Penguin Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Monarca Paragliding Open -2023, Valle de Bravo, Mexico</td>	<td>4th</td>	<td>4th</td>	<td>USA</td>	<td><a href="https://www.monarcaopen.com/results/2023/t3/cwomen.html">[1]</a>	<a href="https://web.archive.org/web/20240403200924/https://www.monarcaopen.com/results/2023/t3/cwomen.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2023</td>	<td>2023</td>	<td>SALTZMAN, Elias <q>Alyssa</q></td>	<td>Irish Dance</td>	<td>Inis Cairde School of Irish Dance</td>	<td>Regional</td>	<td>Amateur</td>	<td>U14 2023 Southern Region Oireachtas</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.quickfeis.com/FullOireachtasResultsFreeV2?OireachtasId=25">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Dec-03</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>Continental</td>	<td>Amateur</td>	<td>North American Paragliding Nationals, Temascaltepec, Mexico</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://airtribune.com/north-american-paragliding-nationals/results/task5996/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403225203/https://airtribune.com/north-american-paragliding-nationals/results/task5996/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2022-Nov-12</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>17th FAI Paragliding World Championship 2021, Loma Bola, Argentina</td>	<td>13th</td>	<td>13th</td>	<td>USA</td>	<td><a href="https://airtribune.com/17th-world-paragliding-championship-tucuman-argent/results/task5552/comp/female">[1]</a>	<a href="https://web.archive.org/web/20240403233137/https://airtribune.com/17th-world-paragliding-championship-tucuman-argent/results/task5552/comp/female">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Oct-15</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://usoysterfest.com/?page_id=33">[1]</a>	<a href="https://web.archive.org/web/20240401225522/https://usoysterfest.com/?page_id=33">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Sept-17</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Red Rocks Wide Open, Monroe, UT</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/red-rocks-wide-open-22/results/task5970/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403202450/https://airtribune.com/red-rocks-wide-open-22/results/task5970/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Sept-13</td>	<td>GUMBRELL, Jamie </td>	<td>Croquet</td>	<td></td>	<td>National</td>	<td>Amateur</td>	<td>Australian National Championship Tournament</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://croquetscores.com/2022/gc/australia-womens-singles/final-ko-bo3-1">[1]</a>	<a href="https://web.archive.org/web/20240315161454/https://croquetscores.com/2022/gc/australia-womens-singles/final-ko-bo3-1">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Aug-18</td>	<td>EGAN, Ryan Egan <q>Sasha Jane Lowerson</q></td>	<td>Surfing</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>Australian Longboard Titles</td>	<td>4th</td>	<td>4th</td>	<td>AUS</td>	<td><a href="https://liveheats.com/events/35126/divisions/105875/result">[1]</a>	<a href="https://archive.fo/rsa7q">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-24</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Northwest Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Ozone Chelan Open 2022</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/ozone-chelan-open-2022/results/task5808/comp/en-c-open-ladies">[1]</a>	<a href="https://web.archive.org/web/20240403231453/https://airtribune.com/ozone-chelan-open-2022/results/task5808/comp/en-c-open-ladies">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jun-19</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Unleashed</td>	<td>National</td>	<td>Amateur</td>	<td>2022 Canadian National Dodgeball Championships </td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://www.youtube.com/watch?v=rZaOi8nXFO8">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-15</td>	<td>EGAN, Ryan Egan <q>Sasha Jane Lowerson</q></td>	<td>Surfing</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>West Coast Suspensions Longboard & Logger State Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[1]</a>	<a href="https://web.archive.org/web/20240315203641/https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-15</td>	<td>EGAN, Ryan Egan <q>Sasha Jane Lowerson</q></td>	<td>Surfing</td>	<td></td>	<td>Other</td>	<td>Professional</td>	<td>West Coast Suspensions Longboard & Logger State Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[1]</a>	<a href="https://web.archive.org/web/20240315203641/https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-15</td>	<td>EGAN, Ryan Egan <q>Sasha Jane Lowerson</q></td>	<td>Surfing</td>	<td></td>	<td>State</td>	<td>Professional</td>	<td>West Coast Suspensions Longboard & Logger State Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[1]</a>	<a href="https://web.archive.org/web/20240315203641/https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-May-15</td>	<td>EGAN, Ryan Egan <q>Sasha Jane Lowerson</q></td>	<td>Surfing</td>	<td></td>	<td>State</td>	<td>Professional</td>	<td>West Coast Suspensions Longboard & Logger State Championships</td>	<td>1st</td>	<td>1st</td>	<td>AUS</td>	<td><a href="https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[1]</a>	<a href="https://web.archive.org/web/20240315203641/https://surfingwa.com.au/west-oz-longboard-logger-state-champions-crowned-at-avalon/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-19</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td></td>	<td>Continental</td>	<td>Amateur</td>	<td>5th FAI Pan-American Paragliding Championships, Brazil</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://xcmag.com/news/comps-and-events/r-saladini-and-g-kirkpatrick-pan-american-champions/">[1]</a>	<a href="https://web.archive.org/web/20240403194814/https://xcmag.com/news/comps-and-events/r-saladini-and-g-kirkpatrick-pan-american-champions/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Apr-02</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>World Cup Baixo Guandu, Brazil 2022</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://pwca.org/events/2022-world-cup-baixo-guandu-brazil-2022/results?#content">[1]</a>	<a href="https://web.archive.org/web/20240403230332/https://pwca.org/events/2022-world-cup-baixo-guandu-brazil-2022/results#content">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Mar-20</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Unleashed</td>	<td>Provincial/State</td>	<td>Amateur</td>	<td>2022 Dodgeball Ontario Provincial Championships</td>	<td>2nd</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.youtube.com/watch?v=p2XYExMtafk">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Feb-13</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>World Cup Roldanillo, Colombia 2022</td>	<td>5th</td>	<td>5th</td>	<td>USA</td>	<td><a href="https://pwca.org/events/2022-world-cup-roldanillo-colombia-2022/results?#content">[1]</a>	<a href="https://web.archive.org/web/20240403230429/https://pwca.org/events/2022-world-cup-roldanillo-colombia-2022/results#content">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Feb-05</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2022 Low Country Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[1]</a>	<a href="https://web.archive.org/web/20240401234719/https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2022</td>	<td>2022-Jan-15</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Monarca Paragliding Open -2022, Valle de Bravo, Mexico</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://airtribune.com/monarca2022/results/task5588/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403201223/https://airtribune.com/monarca2022/results/task5588/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2021-Oct-19</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://usoysterfest.com/?page_id=33">[1]</a>	<a href="https://web.archive.org/web/20240401225522/https://usoysterfest.com/?page_id=33">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Oct-16</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National</td>	<td>Professional</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://usoysterfest.com/?page_id=33">[1]</a>	<a href="https://web.archive.org/web/20240401225522/https://usoysterfest.com/?page_id=33">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Sept-11</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>International</td>	<td>Amateur</td>	<td>World Cup Aksaray, Turkey 2021</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://pwca.org/events/2022-world-cup-aksaray-turkey-2021-season-2022/results">[1]</a>	<a href="https://web.archive.org/web/20240403212551/https://pwca.org/events/2022-world-cup-aksaray-turkey-2021-season-2022/results">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-24</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>National</td>	<td>Amateur</td>	<td>US Open of Paragliding, Chelan 2021</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/us-open-paragliding-2021/results/task5283/comp/overall-women">[1]</a>	<a href="https://web.archive.org/web/20240403204637/https://airtribune.com/us-open-paragliding-2021/results/task5283/comp/overall-women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jul-16</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Ozone Chelan Open 2021</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://airtribune.com/ozone-chelan-open-2021/results/task5253/comp/en-c-open-ladies">[1]</a>	<a href="https://web.archive.org/web/20240403212949/https://airtribune.com/ozone-chelan-open-2021/results/task5253/comp/en-c-open-ladies">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Jun-26</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding/Free Flight Lab</td>	<td>Other</td>	<td>Amateur</td>	<td>2021 Applegate Open Race</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://cdv.li/bre/cal/results/ApplegateOpen/2019.pdf">[1]</a>	<a href="https://web.archive.org/web/20240403213422/https://cdv.li/bre/cal/results/ApplegateOpen/2019.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021-Feb-06</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2021 Low Country Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[1]</a>	<a href="https://web.archive.org/web/20240401234719/https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2021</td>	<td>2021</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>Urbana Oyster Festival</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/CYq765erMAU/?img_index=1">[1]</a>	<a href="https://archive.ph/38ltl">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Feb-16</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Unleashed</td>	<td>Provincial/State</td>	<td>Amateur</td>	<td>2020 Dodgeball Ontario Provincial Championships</td>	<td>3rd</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/photo/?fbid=2324487964319453&set=pcb.2324492000985716">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2020</td>	<td>2020-Jan-18</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>Other</td>	<td>Amateur</td>	<td>Monarca Paragliding Open - 2020, Valle de Bravo, Mexico</td>	<td>6th</td>	<td>6th</td>	<td>USA</td>	<td><a href="https://www.monarcaopen.com/results/2020/d2/COMPWOMEN.pdf">[1]</a>	<a href="https://web.archive.org/web/20240403201743/https://www.monarcaopen.com/results/2020/d2/COMPWOMEN.pdf">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jul-13</td>	<td>KIRKPATRICK, Galen</td>	<td>Paragliding</td>	<td>Eagle Paragliding</td>	<td>National</td>	<td>Amateur</td>	<td>US Open of Paragliding - Chelan 2019</td>	<td>9th</td>	<td>9th</td>	<td>USA</td>	<td><a href="https://airtribune.com/us-open-paragliding-chelan-2019/results/task4232/comp/women">[1]</a>	<a href="https://web.archive.org/web/20240403215051/https://airtribune.com/us-open-paragliding-chelan-2019/results/task4232/comp/women">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Apr-20</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Team Canada</td>	<td>Other</td>	<td>Amateur</td>	<td>The Atlantic Cup, Manchester, UK</td>	<td>2nd</td>	<td>2nd*</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/DodgeballCA/photos/t.100063593829085/848874302113723/?type=3">[1]</a>	<a href="https://archive.ph/rI8Op">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Apr-17</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td></td>	<td>National</td>	<td>Amateur</td>	<td>2019 Canadian National Dodgeball Championships, Charlottetown</td>	<td>8th</td>	<td>8th</td>	<td>CAN</td>	<td><a href="https://web.archive.org/web/20190410083904/http://dodgeballpei.ca/womens-division-standings/">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Feb-10</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Wildlings</td>	<td>Provincial/State</td>	<td>Amateur</td>	<td>2019 Dodgeball Ontario Provincial Championships</td>	<td>3rd</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/photo/?fbid=1277004529125593&set=pcb.1277004665792246">[1]</a>	<a href="https://archive.ph/dktwW">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-27</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>Urbana Oyster Festival</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/B6AC2myhq0h/">[1]</a>	<a href="https://archive.ph/ctDyT">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-27</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2019 Low Country Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[1]</a>	<a href="https://web.archive.org/web/20240401234719/https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2019</td>	<td>2019-Jan-21</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>We Don't Care Bears</td>	<td>Other</td>	<td>Amateur</td>	<td>Sin City Classic, Las Vegas, NV</td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/savannahburtonbatb/posts/pfbid035ye6WaR5Yr9THFtr3WqtnzJHPyWCz1AUj6JVJ16wrqLTuak53C4QmmrzSET1dFPBl">[1]</a>	<a href="https://archive.ph/F0Bwn">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Nov-11</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Wildlings</td>	<td>Provincial/State</td>	<td>Amateur</td>	<td>Quebec Cup 2018</td>	<td>Other</td>	<td>Semifinals</td>	<td>CAN</td>	<td><a href="https://www.youtube.com/watch?v=gsfxN7n1zws&t=8444s">[1]</a>	<a href="https://archive.ph/b0Ckq">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Oct-21</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National </td>	<td>Amateur</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>3rd</td>	<td>3rd</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/BpPnI4jhDIg/?img_index=3">[1]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Sept-05</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Wildlings</td>	<td>Other</td>	<td>Amateur</td>	<td>Ultimate Dodgeball Championships, Chicago</td>	<td>2nd</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="http://www.savannahburton.ca/">[1]</a>	</td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-May-26</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Havoc</td>	<td>Other</td>	<td>Amateur</td>	<td>Tournament of Champions, Vancouver </td>	<td>2nd</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.youtube.com/watch?v=rC1H2wFBrWk&list=PLqyw55HBmDkePgAVfcVUG7O_IkvNfSDwV">[1]</a>	<a href="https://archive.ph/UdQcr">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2018</td>	<td>2018-Jan-28</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2018 Low Country Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://charlestoncitypaper.com/2018/02/28/isabella-cain-is-making-oyster-shucking-history/">[1]</a>	<a href="https://web.archive.org/web/20240401233209/https://charlestoncitypaper.com/2018/02/28/isabella-cain-is-making-oyster-shucking-history/">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Oct-21</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>National </td>	<td>Amateur</td>	<td>U.S. National Oyster Shucking Championship</td>	<td>2nd</td>	<td>2nd</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/BamAqFeBzsr/">[1]</a>	<a href="https://archive.ph/IoHvv">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Apr-23</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Golden Snatches</td>	<td>National</td>	<td>Amateur</td>	<td>2017 Canadian National Dodgeball Championships, Halifax</td>	<td>2nd</td>	<td>2nd</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/photo/?fbid=445449772456180&set=a.219886901679136">[1]</a>	<a href="https://archive.ph/i3HJg">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017-Jan-29</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2017 Lowcountry Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.instagram.com/p/BQzJNMbhdFD/">[1]</a>	<a href="https://archive.ph/R5nF6">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2017</td>	<td>2017</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>Urbana Oyster Festival</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.theladyoyster.com/blogs/blog/2017-11-5-opening-minds-opening-oysters-the-story-of-bella-gator-macbeth">[1]</a>	<a href="https://web.archive.org/web/20240402003953/https://www.theladyoyster.com/blogs/blog/2017-11-5-opening-minds-opening-oysters-the-story-of-bella-gator-macbeth">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Mar-28</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Burton/Taylor</td>	<td>Other</td>	<td>Amateur</td>	<td>Ontario: 2v2 Tournament Series #1</td>	<td>1st</td>	<td>1st</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/TnT13/posts/pfbid0hsjTBebZwfwxso8oKBjTmZJdQxDic3BrmAKrpLSWkjKnwuCPUHTZYS32Dx1hJLMNl">[1]</a>	<a href="https://archive.ph/FHbmj">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016-Jan-31</td>	<td>MACBETH CAIN, <q>Isabella</q></td>	<td>Oyster Shucking</td>	<td></td>	<td>State</td>	<td>Amateur</td>	<td>2016 Lowcountry Oyster Shucking Contest</td>	<td>1st</td>	<td>1st</td>	<td>USA</td>	<td><a href="https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[1]</a>	<a href="https://web.archive.org/web/20240401234719/https://www.postandcourier.com/moultrie-news/culture/lowcountry-champion-to-shuck-oysters-on-national-stage/article_e620de94-4641-11ed-8cb1-075c9dfc4fa8.html">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2016</td>	<td>2016</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>West Coast</td>	<td>National</td>	<td>Amateur</td>	<td>2016 Canadian National Dodgeball Championships </td>	<td>3rd</td>	<td>3rd</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/photo/?fbid=277037909297368&set=a.276263049374854">[1]</a>	<a href="https://archive.ph/RcdW2">[2]</a></td>	</tr>
+                <tr>	<td></td>	<td>2015</td>	<td>2015-Aug-16</td>	<td>BURTON, <q>Savannah</q></td>	<td>Dodgeball</td>	<td>Team Canada</td>	<td>International</td>	<td>Amateur</td>	<td>Dodgeball World Championships, Las Vegas, NV</td>	<td>4th</td>	<td>4th</td>	<td>CAN</td>	<td><a href="https://www.facebook.com/savannahburtonbatb/posts/pfbid0Udz9W8T3LsX7yp6ktrtrsbQjwBQrFPS5KBnysZhUhjvrx8VQN4QBfvvbnEEmCp2Al">[1]</a>	<a href="https://archive.ph/kvsAZ">[2]</a></td>	</tr>
+                
+              </tbody>
+            </table>
+            </div>
+</div>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
+
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("jumptotopBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

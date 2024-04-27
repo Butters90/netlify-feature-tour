@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Quicksand&display=swap rel="stylesheet">
+<link rel="stylesheet" href=https://kit.fontawesome.com/5f3f4ae479.css crossorigin="anonymous">
+<link rel="preconnect" href=https://fonts.googleapis.com>
+<link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+<link href=https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap rel="stylesheet">
+<link rel="stylesheet" href="resultpage.css">
+<link rel="stylesheet" href="athletebio.css">
+</head>  
+
+<style>
+
+
+.accordion {
+  display:block;
+  margin:auto;
+  background: linear-gradient(-45deg, #D8D8D8 25px, #F6F6F6 0);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  padding-bottom:30px;
+  padding-top:30px;
+  width: 80%;
+  border-bottom:solid #E9E9E9 1px;
+  border-left:none;
+  border-right:none;
+  margin-top:-1px;
+  border-top:solid #E9E9E9 1px;
+  outline: none;
+  transition: 0.4s;
+  text-align:left;
+  position:relative;
+  z-index: 1;
+}
+
+.even {
+  background: linear-gradient(-45deg, #D8D8D8 25px, white 0)
+}
+
+.athlete-name { 
+  font-size: 18px;
+}
+
+.team-city {
+  float:right;
+  margin-right:50%;
+} 
+
+.active, .accordion:hover {
+  background: linear-gradient(-45deg, #D8D8D8 25px, #E9E9E9 0);
+  color:#A7A7A7;
+}
+
+.accordion:after {
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.subpanel {
+  width:80%;
+  display:block;
+  margin:auto;
+  padding: 0, 18px;
+  background-color: white;
+  font-weight:normal;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size:16px;
+}
+
+.subpanel p {
+  padding-left:20px;
+  padding-right:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.plus {
+  position:absolute;
+  right:3px;
+  bottom:5px;
+  color:white;
+}
+
+@media only screen and (max-width: 700px) {
+  .accordion {width:100%;}
+  .subpanel {width:100%}
+  .team-city::before {content: "\a"; white-space: pre;}
+}
+
+.photo {
+    font-size: 40px;
+    color: red;
+    cursor:pointer;
+}
+
+.photo:hover {
+    color:#777
+}
+</style>
+
+<body>
+
+
+<button onclick="topFunction()" id="jumptotopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    
+<nav class="sticky">
+    <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+
+            <div class="logo">
+            <h1 style="margin-top:10px; font-family:'Lato', sans-serif; font-size:16px">HeCheated.org</h1>
+            </div>
+
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Totals_results.html">Results</a></li>
+              <li><a href="Myths.html">Myths</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="HallofShame.html">Hall of Shame</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Basketball</h1>
+        
+        <div class="herostat">
+            <p>24</p><p>athletes</p>
+        </div>
+
+        <div class="herostat">
+            <p>24</p><p>athletes</p>
+        </div>
+
+        <div class="herostat" style="border-right:none">
+            <p>24</p><p>athletes</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="sportbar sticky2">
+    <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Choose Sport <i class="fa fa-caret-down"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+        <a href="Totals_results.html">All</a>
+        <a href="Archery_results.html">Archery</a>
+        <a href="Baseball_results.html">Baseball/Softball</a>
+        <a href="Basketball_results.html">Basketball</a>
+        <a href="Billiards_results.html">Billiards</a>
+        <a href="BikeSports_results.html">Bike Sports</a>
+        <a href="CombatSports_results.html">Combat Sports</a>
+        <a href="Cricket_results.html">Cricket</a>
+        <a href="DistanceRunning_results.html">Distance Running</a>
+        <a href="Darts_results.html">Darts</a>
+        <a href="DiscGolf_results.html">Disc Golf</a>
+        <a href="Fencing_results.html">Fencing</a>
+        <a href="Football_results.html">Football</a>
+        <a href="Golf_results.html">Golf</a>
+        <a href="Handball_results.html">Handball</a>
+        <a href="Hockey_results.html">Ice Hockey</a>
+        <a href="Lacrosse_FieldHockey_results.html">Lacrosse/Field Hockey</a>
+        <a href="Badminton_results.html">Raquet Sports</a>
+        <a href="RollerDerby_results.html">Roller Derby</a>
+        <a href="Rowing_results.html">Rowing</a>
+        <a href="Rugby_results.html">Rugby</a>
+        <a href="Skateboarding_results.html">Skateboarding</a>
+        <a href="Skiing_results.html">Skiing/Skimo</a>
+        <a href="Soccer_results.html">Soccer/Football</a>
+        <a href="Swimming_results.html">Swimming</a>
+        <a href="TrackandField_results.html">Track and Field</a>
+        <a href="UltimateFrisbee_results.html">Ultimate Frisbee</a>
+        <a href="Volleyball_results.html">Volleyball</a>
+        <a href="Lifting_results.html">Weightlifting</a>
+        <a href="Wrestling_results.html">Wrestling</a>
+        <a href="Other_results.html">Other</a>
+       </div>
+    </div>
+    <h4>Basketball - Athletes</h4>
+ </div>
+
+ <div class="sportmenu">
+  <ul>
+    <li><a href="Basketball_results.html">Results</a></li>
+    <li><a class="active2" href="Basketball_athletes.html">Athletes</a></li>
+    <li><a href="Basketball_teams.html">Teams</a></li>
+    <li><a href="Basketball_awards.html">Awards</a></li>
+    <li><a href="Basketball_stats.html">Stats</a></li>
+    <li><a href="Basketball_analysis.html">Analysis</a></li>
+  </ul>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Male')" style="border-right:1px #F1F1F1 solid;">MALE<br> <span style="color:#A8A8A8;">athletes</button>
+  <button class="tablinks" onclick="openTab(event, 'Female')">FEMALE <br><span style="color:#A8A8A8;">athletes</button>
+</div>
+
+<div id="Male" class="tabcontent">
+    
+
+    <h2 class="tabhead">MALE <span style="color:#AAAAAA;">Athletes on </span>FEMALE <span style="color:#AAAAAA;">Basketball Teams</span></h2>
+
+    <div id="Athletes" class="panel">
+          <button class="accordion"><span class="athlete-name"><q>Augustina</q> Pérez</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <div class="biopanel">
+
+                <div class="biolists">
+                <ul>
+                <li><h4 class="biohead">SPORT(S)</h4></li>
+                <li class="biodetail"><h2>BASKETBALL</h2></li>
+                </ul>
+                
+                <ul>
+                <li><h4 class="biohead">HEIGHT/WEIGHT</h4></li>
+                <li class="biodetail"><h2>N/A</h2></li>
+                </ul>
+                
+                <ul>
+                <li><h4 class="biohead">AGE</h4></li>
+                <li class="biodetail"><h2>N/A</h2></li>
+                </ul>
+                
+                <ul>
+                <li><h4 class="biohead">COUNTRY</h4></li>
+                <li class="biodetail"><h2>ARGENTINA</h2></li>
+                </ul>
+                </div>
+                
+                <div class="biolists">
+                <ul>
+                <li><h4 class="biohead">AWARDS</h4></li>
+                <li>Basketball</li>
+                </ul>
+                </div>
+                
+                <div class="biolists">
+                <ul>
+                <li><h4 class="biohead">STATS</h4></li>
+                <li>Basketball</li>
+                </ul>
+                </div>
+                </div>
+                
+            <p>Pérez is lauded as Argentina’s first trans player in women’s basketball after he imposed himself onto the Villa San José de Salta women’s team. In other words, he’s the first man to openly play basketball on a women’s team in Argentina.</p>
+            <br>
+            <p> Pérez previously played basketball on several men’s team, but decided to quit because he just <q>didn’t feel comfortable</q> playing with his male peers and that they were making him feel bad without realizing it. Despite being <q>welcomed</q> by his teammates, opposing teams threatened to withdraw from competitions against San José to avoid putting their female players in an unfair situation where they would have to play against a male athlete.</p> 
+            <br> 
+            <p>Specific details on Pérez’s participation on the team are not known at this time.</p>
+            <br>
+            <a href=""><i class="fa-solid fa-image photo"></i></a>
+        </div>
+          <button class="accordion even"><span class="athlete-name">Billy <q>Kayla</q> Ward</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Unlike the majority of female athletes who aspire to be the first female players in the NBA, Ward is a male athlete who hopes to become the first <q>trans woman</q> i.e. man, to play in the WNBA. Ward claims he has known he was <q>supposed to be a girl</q> since he was 6 (the age changes to 5 in some stories), but for some reason did not come into his <q>identity</q> until his 30s after his wife asked for a divorce in 2011.  He blames feelings of isolation in childhood on <q>dysphoria</q> rather than his allegedly physically abusive stepfather.</p>
+            <br>
+            <p>41-year-old Ward’s Instagram is filled with pictures of himself in sexual poses, sometimes wearing nothing but lingerie, along with videos of himself playing basketball in dresses and heels. Ward works for Grindr (a hookup app for gay men) and plays with Lambda Basketball, an LGBTQ+ friendly league in Los Angeles County where he sits on the board of directors alongside ten other men. There are no female board members.</p> 
+            <br>
+            <p>The full extent of Ward’s participation in women’s leagues or tournaments is not known at this time, but he participated on Lambda’s Splash Sisters women’s basketball team in the Fall of 2023 where he led the team in assists per game, rebounds per game, field goal, 3-point, and free throw percentage, and the entire women’s league in free throw percentage and defensive rebounds per game.</p>
+            <br>
+            <p>Despite pumping his body full of wrong-sex hormones that have known, adverse effects on health for the sake of his aesthetic, and having large silicone implants installed in his chest, Ward was featured in an Asics video as part of their “I Move Me” campaign to help <q>inspire people to live healthier, more active and happier lives.</q></p>
+            <br>
+            <p>Ward’s poster for the campaign is a shot of himself suspended mid-hangtime more than two feet off the ground going for a reverse layup, as most 40-year-old women do, especially those who have not played past the high school level.</p>
+           <br> 
+           <a href="https://www.instagram.com/p/BXn8sBYAa0i/?utm_source=ig_embed&ig_rid=1faeb525-0379-4a2c-b3d7-f6727b5bcf69"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6AY--MWCQey1hR5Ew1lYwGpDr6sN5wla56hlEiHUbOiHDXSISshXUJUFfbDY0HU5x-Q0&usqp=CAU"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://stat.ameba.jp/user_images/20220703/15/pu4s7q6895/d8/5e/j/o0640066515141797845.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+    
+<button class="accordion even"><span class="athlete-name">Declan <q>Harriette</q> Mackenzie</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+    <div class="subpanel">
+            <div class="biopanel">
+
+        <div class="biolists">
+        <ul>
+            <li><h4 class="biohead">SPORT(S)</h4></li>
+            <li class="biodetail"><h2>BASKETBALL</h2></li>
+        </ul>
+                
+        <ul>
+            <li><h4 class="biohead">HEIGHT</h4></li>
+            <li class="biodetail"><h2>6'2"</h2></li>
+        </ul>
+                
+        <ul>
+            <li><h4 class="biohead">AGE</h4></li>
+            <li class="biodetail"><h2>20</h2></li>
+        </ul>
+                
+        <ul>
+            <li><h4 class="biohead">COUNTRY</h4></li>
+            <li class="biodetail"><h2>UNITED STATES	</h2></li>
+        </ul>
+        </div>
+                
+        <div class="biolists">
+        <ul>
+            <li><h4 class="biohead">AWARDS STOLEN</h4></li>
+            <li><b>1 x</b> CCAA All-Canadian</li>
+            <li><b>1 x</b> CCAA First All-Tournament Team</li>
+            <li><b>1 x</b> CCAA First Team Tournament All-Star</li>
+            <li><b>1 x</b> CCAA National Tournament MVP</li>
+            <li><b>1 x</b> MVP of the PACWEST Provincial Tournament</li>
+            <li><b>1 x</b> North Island MVP</li>
+            <li><b>1 x</b> PACWEST All Rookie Team</li>
+            <li><b>1 x</b> PACWEST Female Athlete of the Year</li>
+            <li><b>1 x</b> PACWEST First Team All-Star</li>
+            <li><b>1 x</b> PACWEST Player of the Year</li>
+            <li><b>1 x</b> Player of the Game - PACWEST Semifinal #1</li>
+            <li><b>4 x</b> Vancouver Island All Star</li>
+            <li><b>1 x</b> VIU Player of the Year</li>
+            <li><b>1 x</b> VIU Rookie of the Year<li>
+        </ul>
+        </div>
+                
+        <div class="biolists">
+        <ul>
+            <li><h4 class="biohead">STATS</h4></li>
+      		<li><h4>Team Leader</h4></li>
+            <li><b>2 x</b> Blocks per Game</li>
+	        <li><b>3 x</b> Def Reb</li>
+            <li><b>2 x</b> Def Reb per Game</li>
+            <li><b>1 x</b> FG%</li>
+            <li><b>1 x</b> FGM</li>
+            <li><b>1 x</b> FG per Game</li>
+            <li><b>2 x</b> FT Made</li>
+            <li><b>1 x</b> FT%</li>
+            <li><b>2 x</b> Off Rebounds</li>
+            <li><b>2 x</b> Off Reb per Game</li>
+            <li><b>2 x</b>PPG</li>
+            <li><b>2 x</b> Total Blocks</li>
+            <li><b>2 x</b> Total Rebounds</li>
+            <li><b>2 x</b> Total Rebounds per Game</li>
+            <li><h4>Conference Leader</h4></li>
+            <li><b>1 x</b> Points per minute</li>
+            <li><b>1 x</b> FG%</li>
+        </ul>
+        </div>
+    </div> 
+            <h4 class="biohead">Athlete Bio</h4>   
+            <p>Mackenzie has reportedly been pretending to be a girl since he was 
+                <a href=”https://chatelaine.com/living/ms-chatelaine/ms-chatelaine-harriette-cunningham-trans-rights-trailblazer/”>eight years old</a> 
+                after desiring to wear braids in his hair and play with dolls. Rather than addressing and correcting the obvious sexism their son, Declan, had incorporated into his understanding of boys and girls, his parents took the word of the eight-year-old at face value and proceeded to use him as a political prop, parading him in front of the British Columbia Human Rights Tribunal, first petitioning to remove the requirement of penile inversion in order to legally falsify sex on birth certificates, and later to remove sex from the birth certificate altogether.</p>
+                <br>
+                <p>Mackenzie imparted his 12-year-old wisdom on how the world works by telling adults that “When a baby is born, you don’t know if it will be male, female, intersex, transgender or gender-fluid.”</p>
+                <br>
+                <p>Despite Mackenzie’s belief that sex is trivial, the differences between male and female can be made no more apparent than in his domination of women’s basketball.</p> 
+                <br>
+                <p>Mackenzie played on the girls’ varsity basketball team at Isfeld Secondary in Comox, B.C. where he helped his team to two Vancouver Island Basketball Championship finals and took a <a href="https://web.archive.org/web/20240203063405/https://www.comoxvalleyrecord.com/sports/courtenay-basketball-star-commits-to-ontario-university-1613964">Vancouver Island All-Star title each year of play</a> from a female athlete who had rightfully earned it.</p> 
+                <br>
+                <p>After graduating in 2021, the 6’2” male athlete joined the women’s basketball team at Ontario Tech University and transferred early in the season to the VIU Mariners. Despite playing only half a season for the Mariners and averaging 14 minutes per game, Mackenzie was second on the team in blocks and led the PacWest conference in field goal percentage and points per minute.</p> 
+                <br>
+                <p>With a male player leading the team, the Mariners had an undefeated regular season, coming second in the PacWest Conference Championships and second in the Canadian Collegiate Athletic Association (CCAA) national tournament. Mackenzie stole the VIU Rookie of the Year award and CCAA First All-Tournament Team and PacWest All Rookie Team spots from female athletes.</p> 
+                <br>
+                <p>In the 2022-2023 season, Mackenzie led his team in 10 different stat categories (including high-scorer) and was in the top ten in the Canada West Division for rebounds per game, offensive rebounds, defensive rebounds, total rebounds, and total blocks. The female athlete with the second highest number of blocks on his team that season had a total of 7. Mackenzie had <em>37</em>. Using Mackenzie to cheat, the Mariners captured both the PacWest and CCAA national championship titles, and Mackenzie stole no less than 9 awards from female athletes including CCAA National Tournament MVP and PacWest Female Athlete of the Year award, which included athletes from all sports. Mackenzie is a male athlete. Two male athletes won the Athlete of the Year award in 2023 while female athletes in the PacWest Conference received nothing.</p> 
+                <br>
+                 <p>Mackenzie transferred to Mount Royal University for the 2023-2024 season, where he again led the team in scoring, rebounds, and blocks.</p> 
+                <br>
+                <p>Mount Royal’s 2024 season ended in a loss against the Alberta Pandas in the first round of the Canada West Conference Championship playoffs, eliminating them from the tournament and a bid for the national tournament. During the game, Mackenzie led his team in rebounds and scored a game-high 20 points <em>coming off the bench.</em></p> 
+                <br>
+                <p>With no sign of support for female athletes from Canadian athletic associations, we can expect Mackenzie to continue dominating the female basketball league in his remaining year of eligibility in 2024-2025.</p>
+                <br>
+                <a href="https://www.bpmcdn.com/f/files/comoxvalley/import/2022-12/31186312_web1_221207-CVR-S-Harriette-Mackenzie-2_1.jpg"><i class="fa-solid fa-image photo"></i></a>
+                <a href="https://www.bpmcdn.com/f/files/comoxvalley/import/2022-03/28597748_web1_220330-CVR-S-Harriette-2_2.jpg"><i class="fa-solid fa-image photo"></i></a>
+                <a href="https://www.bpmcdn.com/f/files/comoxvalley/import/2022-03/28597748_web1_220330-CVR-S-Harriette-1_1.jpg;w=1200;h=800;mode=crop"><i class="fa-solid fa-image photo"></i></a>
+                <a href="https://www.bpmcdn.com/f/files/comoxvalley/import/2023-03/32191712_web1_230322-CVR-S-Harriette-1_1.jpg
+                "><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Donavion <q>Navi</q> Huskey</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Huskey is 6 feet tall, describes himself as <q>transfeminine nonbinary,</q> and forces other people to refer to him as <q>she,</q> <q>they,</q> or <q>yum</q> when they are speaking about him. He has a twin sibling who self-describes as “transmasculine” and goes by <q>Juice.</q></p> 
+            <br>
+            <p>Huskey seems to have had no problem playing with men in pickup games and was previously part of the Lambda Basketball League (a member of the National Gay Basketball Association) where he enjoyed playing games while wearing women’s clothing.</p> 
+            <br>
+            <p><q>That was an embodiment of the feminine and it was so beautiful to me, running up and down the court and posting people up and you are wearing a skirt.</q></p> 
+            <br>
+            <p>In 2019 he underwent what he refers to as “affirming surgeries” (no description of what those surgeries were) and decided to join a women’s collegiate team at 31 years of age. After being refused by multiple colleges, Huskey was able to get on the roster at Long Beach,  Community College, a school desperate for players.</p> 
+            <br>
+            <p>Huskey’s first game with Long Beach, playing against women, he achieved a double-double, putting up 22 points and grabbing <em>27 rebounds</em>. Throughout the season he achieved double-doubles more often than not, averaging 22 points and 19 rebounds per game. He led his team to an undefeated season in the conference and to the South Coast Conference Championship title and was made co-MVP of the South Coast Conference with his teammate, Isabel Lizarraga, an honor she alone should have had.</p> 
+            <br>
+            <p>In the 2019-2020 season, Huskey led not only his team, but the entire California Community College Athletic Association in field goals and rebounds, and he led the South Coast Conference in multiple stats including rebounds, points, and field goal percentage.</p> 
+            <br>
+            <p>The following season (2021-2022 due to COVID), Huskey once again led his team in points per game and the majority of defensive stats and lead the South Coast Conference in rebounds. His team went 9-1 in their conference and 22-8 overall.</p> 
+            <br>
+            <p>Huskey claims that the only criticisms against him playing on the women’s team, not only as a man but also as a man ten years older than the other players, only come from opposing coaches and no female players have an issue with it.</p> 
+            <br>
+           <a href="https://ca-times.brightspotcdn.com/dims4/default/a9887a5/2147483647/strip/true/crop/2048x1339+0+0/resize/1200x785!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F14%2F37%2F7ec7936199f7ff52cafbfe7e95d7%2Fla-1551214141-p1y0r2wjxs-snap-image"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.gayvox.fr/wp-content/uploads/2021/03/1617165484_74_Navi-Huskey-innove-en-tant-quetudiant-athlete-trans-non-binaire.jpg"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.gayvox.fr/wp-content/uploads/2021/03/Navi-Huskey-innove-en-tant-quetudiant-athlete-trans-non-binaire.jpg"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.gayvox.fr/wp-content/uploads/2021/03/1617165483_363_Navi-Huskey-innove-en-tant-quetudiant-athlete-trans-non-binaire.jpg"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.gayvox.fr/wp-content/uploads/2021/03/1617165484_902_Navi-Huskey-innove-en-tant-quetudiant-athlete-trans-non-binaire.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Henry Hanlon</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Hanlon is an 11th-grade male who plays girls’ basketball, volleyball, and soccer for San Francisco Waldorf High School. Waldorf is a private school located in San Francisco, CA in the United States. The annual tuition is set at
+                <a href=”https://www.sfwaldorf.org/admission/grade-school/faqs#:~:text=wait%20pool%20work%3F-,How%20much%20is%20tuition%3F,here%20to%20talk%20about%20scenarios”>$56,000.</a></p>
+                <br>
+                <p>Hanlon joined the varsity girls’ basketball team as a freshman for the ’21-’22 season during which the Wolverines ended with a 
+                <a href=”https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/21-22/schedule/”>12-9</a>
+                 win-loss record. The following season they went
+                <a href=”https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/22-23/schedule/”>10-5.</a>
+                In the most recent ’23-’24 season, with Hanlon as a captain and starter for the team, the Wolverines ended with an <a href=”https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/schedule/”>18-5</a> overall record.
+                Hanlon led the team in scoring for the season, with an average of <a href=”https://www.maxpreps.com/ca/san-francisco/san-francisco-waldorf-wolverines/basketball/girls/stats/#TeamLeaders”>17.8 PPG.</a></p>
+                <br> 
+                <p>During the team’s five-game win streak, Hanlon scored over a third of his team’s points in four consecutive games, putting up <a href=”https://www.maxpreps.com/games/1-18-2024/girls-basketball-23-24/jewish-community-vs-san-francisco-waldorf.htm?c=E36VEeP7aUmAJUE2yCl_UQ#tab=box-score&schoolid=”>24 points</a> against Jewish Community, another <a href=”https://www.maxpreps.com/games/1-16-2024/girls-basketball-23-24/san-francisco-waldorf-vs-the-bay-school.htm?c=Ktk3dXrLD0SlZjy680EHcQ#tab=box-score&schoolid=”>26</a>
+                against The Bay School, and <a href=”https://www.maxpreps.com/games/1-13-2024/girls-basketball-23-24/drew-vs-san-francisco-waldorf.htm?c=yAtfZ2h2nUC2Qt1dV7cbng#tab=box-score&schoolid=”>22</a> against Drew High School where his team totaled 39 points altogether.</p>
+                <br>
+                <p>The Wolverines breezed past opposing teams for much of the season, with point margins of 25 points or more in ten games. In their first game of the offseason playoffs, Waldorf beat South Forks High School<a href="https://www.maxpreps.com/news/JTPUW_dmME-9el4NMQ_vpg/san-francisco-waldorf-skates-past-south-fork-with-ease.htm">67-12.</a></p>
+                <br>
+                <p>Hanlon’s participation in girls’ sports was brought to light on <a href=”https://www.breitbart.com/sports/2024/01/08/report-islamic-calif-high-school-cancels-girls-basketball-game-to-avoid-playing-team-with-transgender-player/”>January 4th, 2024</a>
+                 when  Averroes High School canceled their game against Waldorf due to fairness and safety concerns involved in playing a girls’ team with boy on the roster.</p>
+                <br>
+                 <p>The CIF's position favors boys who want to compete with girls rather than female athletes who would like to compete with female peers, with the CIF Associate Executive Director Brian Seymour issuing a statement saying, <q>All of our athletes, all the eligible athletes, are afforded the opportunity to compete with the gender they feel most comfortable with</q>. In light of the fact that female teams are choosing to self-exclude due to the discomfort of playing against male athletes, Seymour’s statement should be taken to mean, <q>All male athletes who claim to be girls are afforded the opportunity to compete with whoever they would like regardless of the ‘comfort’ of female players.</q></p>
+                <br>
+           <a href="https://pbs.twimg.com/media/GEPT4D0bMAAr-fX.jpg:large"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://pbs.twimg.com/media/GESaAz-awAAOdfq.jpg"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://pbs.twimg.com/media/GHTN_4YXIAAb_7Q?format=jpg&name=900x900"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://media.notthebee.com/articles/65ae63abe775665ae63abe7757.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name"><q>Lazuli</q> Clark</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Clark is a male student, reportedly over 6 feet tall, who participates in three girls’ sports at KIPP Academy Lynn in Massachusetts: track and field, volleyball, and basketball.</p>
+            <br>
+            <p>Clark garnered attention in February of 2024 when he caused Collegiate Charter School of Lowell to 
+            <a href=”https://afn.net/sports/2024/02/26/safety-concerns-compelled-coach-to-forfeit/”>
+            forfeit their game against KIPP</a> due to safety concerns. Clark had injured <em>three</em> Collegiate Charter players before halftime. One of the injuries occurred in a battle over possession during which Clark clearly overpowered his female opponent.</p> 
+            <br>
+            <p>With Clark on the team, KIPP Academy finished the ’23-’24 season with an 11-9 win-loss record and a bid to the state tournament which they withdrew from for undisclosed reasons.</p> 
+            <br>
+            <p>Massachusetts’ policy on athletics gives boys like Clark free access to girls’ teams, declaring that:
+            <q>A student shall not be excluded from participation on a gender-specific sports team that is consistent with the student's bona fide gender identity</q></p>
+            <br>
+            <p>The state has not clarified what a <q>gender identity</q> is and how an <q>identity</q> that is subjective, fluid, personal, unobservable, and undefinable can be proven as <q>bona fide.</q></p> 
+            <br>
+            <p>Clark has set track and field records on the girls’ track team and was an all-star player on the girls’ volleyball team.</p> 
+            <br>
+           <a href="https://www.youtube.com/watch?v=UytNuGmXDrg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name"><q>Lexi</q> Rogers</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Rogers decided he was a <q>woman</q> during the pandemic after going through a bad breakup and finding out that his mother had a terminal illness.</p> 
+            <br>
+            <p>He petitioned to play in the NBL1 league, a semi-professional basketball league in Australia, on a women’s team in 2023, but his application was denied. In a response to the decision, Rogers issued a statement through Instagram in which he said, <q>…[my] passion and love for the game motivates me to play to the best of my abilities against the toughest competitors at the highest level.</q></p> 
+            <br>
+            <p>By <q>toughest competitors</q> Rogers does not mean his male peers, but women who have an entirely different anatomy than himself, and who are at a clear disadvantage to male athletes, especially in a sport like basketball where height and jumping ability are incredibly advantageous.</p> 
+            <br>
+            <p>Many female athletes (myself included) hone their skills by playing against male opponents and in men’s leagues when women’s leagues are not available, but Rogers only seems to want to play against women. It remains to be seen if he will try to reapply to a women’s team or if he will enter the men’s league where he belongs.</p> 
+            <br>
+           <a href="https://i.dailymail.co.uk/1s/2023/04/18/02/69937997-11983653-The_decision_to_block_the_transgender_player_from_the_women_s_co-a-6_1681780194910.jpg"><i class="fa-solid fa-image photo"></i></a>
+        </div>
+
+        <button class="accordion even"><span class="athlete-name">Robert <q>Gabrielle</q> Ludwig</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Ludwig, a 6’6”, 230 pound man, decided he wanted to play collegiate women’s basketball at <em>50 years of age</em> after having last played on the men’s team in 1980.</p> 
+            <br>
+            <p>Ludwig confesses to stealing and wearing his mother’s clothing in his youth and getting high off of the pills in the house. He wondered if that made him gay, despite developing a strong attraction to women.</p>
+            <br>
+            <p>After serving eight years in the navy, he started dressing “like a woman” and taking hormones behind his wife’s back, leading to a divorce (his first of two). He knows that he was not suffering from sexual compulsions due to a paraphilia, but rather “gender dysphoria,” because he read about it on the Internet.</p> 
+            <br>
+            <p>Working as an engineer in 2012, Ludwig’s company footed the $30,000 surgery and $100,000 total hospital bill he acquired after he decided to electively invert his penis for cosmetic purposes.</p>
+            <br>
+            <p>He joined the Mission College women’s basketball team for the 2012-2013 season where he predictably <a href=”https://web.archive.org/web/20240225065834/https://www.cccaasports.org/sports/wbkb/2013-14/teams/mission?sort=treb&view=lineup&pos=bc&r=0”>led the team in 9 stats</a> including rebounds, blocks, and field goal percentage. At 52 years old, the male player wound on the top of the <a href=”https://web.archive.org/web/20201111202727/https://www.missionsaints.com/sports/wbkb/wbkb_history “>all-time list</a> for Mission College in rebounding average and the highest number of blocks in a single game in program history (those stats have since been surpassed and he now rests at 3rd and 2nd respectively).</p>
+            <br>
+            <p>Mission College head coach, Corey Cafferata, the man who initially encouraged Ludwig to join the women’s team at Mission College describes the team as being <q>somewhat built around [him].</q> In his first season, Ludwig helped Cafferata win a Coast Conference Championship and to an overall 
+            <a href=”http://www.cccaastats.org/sports/wbkb/2012-13/schedule?teamId=s302cocql7x2jq9b “>21-8</a> win-loss record (12-0 in the conference, the best conference record in Mission College’s history).</p> 
+            <br>
+            <p>In 2013-2014, Ludwig stole a 
+            <a href=”https://thehollyspirit.org/2134/sports/the-journey-of-gabrielle-ludwig-one-of-the-first-transgender-college-athletes/“>First Team All-Conference award</a> from a female athlete and led Mission College to another winning season with a 
+            <a href=”https://www.missionsaints.com/sports/wbkb/wbkb_history“>10-2 conference record.</a></p>
+            <br>
+            <p>He believes that being a man doesn’t give him an advantage because he’s old and therefore still has to work to keep his spot, never mind the fact that in his second season, at 52 years old, he was still able to take a spot on the team from a college-aged (18-21) female athlete in her athletic prime, something no 52 year-old attempting to play in the men's division would be able to do.</p>
+            <br>
+            <p>In response to criticism about unfair advantage, Ludwig responded, <q>My advantage last season was my height; this year it's my conditioning.</q></p>
+            <br>
+            <p>Ludwig claims that he lost a lot of weight over the summer between his first and second seasons, confessing that he weighed around 268 pounds and was at risk of a heart attack. Ludwig fails to recognize why he was able to keep up with female collegiate athletes despite being 30 years older than the rest of the team and grossly overweight.</p>
+            <br>
+            <p>He also believes that women should feel insulted when we recognize that males are on average bigger and stronger than females.
+            <q>One inimitable truth that I am sick and tired of is when people, especially men, equate femininity with weakness,</q> Ludwig said.</p>
+            <br>
+            <p>Apparently, the only reason female athletes cannot compete on the same level as male athletes is because we just don’t work hard enough for it. Female people also do not seem to exist in Ludwig’s narrative, which ignores the crux of the argument that centers around differences between male and female bodies and instead implies that women are nothing more than a collection of <q>femininity</q>.</p> 
+            <br>
+           <a href="https://www.usatoday.com/gcdn/media/USATODAY/USATODAY/2012/12/04/c01-scov-05-16_9.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.usatoday.com/gcdn/media/USATODAY/USATODAY/2012/12/04/xxx-7806-3_4.jpg?width=497&height=660&fit=crop&format=pjpg&auto=webp"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.usatoday.com/gcdn/media/USATODAY/USATODAY/2012/12/04/xxx-7800-3_4.jpg?width=497&height=660&fit=crop&format=pjpg&auto=webp"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.usatoday.com/gcdn/media/USATODAY/USATODAY/2012/12/04/xxx-7805-3_4.jpg?width=497&height=660&fit=crop&format=pjpg&auto=webp"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://www.recordnet.com/gcdn/authoring/2012/12/19/NRCD/ghows-SR-8ea36ee4-04ec-4ffb-9d85-efd4223685d3-87723d8b.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://scpr.brightspotcdn.com/dims4/default/eb598f1/2147483647/strip/true/crop/308x512+0+0/resize/308x512!/quality/90/?url=https%3A%2F%2Fa.scpr.org%2F57091_e6899f6173e18243fc788e2b03cf010b_original.jpg"><i class="fa-solid fa-image photo"></i></a>   
+        </div>
+
+        <button class="accordion even"><span class="athlete-name"><q>Rose</q> Johnson</span><span class="team-city">location</span><a class="plus"><i class="fa-solid fa-plus"></i></a></button>
+        <div class="subpanel">
+            <p>Johnson is a 6’-1” male student at Long Trail High School in Dorset, Vermont who decided to join the girls’ basketball team his junior year for the 2022-2023 season during which the team, who had had a previous win-loss record of <a href=”https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/21-22/schedule/”>4-15</a> during the 2021-2022 season, went <a href=”https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/22-23/schedule/”>12-6.</a></p> 
+            <br>
+            <p>The following year, LTS went undefeated the entire season, winning the Green Mountain Tournament and advancing to the VPA Division IV State Championship for <a href=”https://www.mynbc5.com/article/long-trail-girls-basketball-advance-to-first-ever-championship/60086008”>the first time in school history</a> where they were defeated in the final championship match to become the state-runners-up. LTS ended the season with a <a href=”https://www.maxpreps.com/vt/dorset/long-trail/basketball/girls/schedule/”>21-1</a> W-L record.</p> 
+            <br>
+            <p>Johnson’s participation in girls’ sports garnered media attention when Mid Vermont Christian School <a href=”https://apnews.com/article/transgender-athlete-basketball-game-forfeit-vermont-cb1b11f15de6c42780cd0d0987c9f37b”>forfeited a game against LTS</a> on February 21st, 2023, over safety and fairness concerns. The Vermont Principal’s Association subsequently banned Mid Vermont from participation in all tournament activities in all sports as punishment for refusing to force their female athletes to play against a girl’s team fielding a male player. </p> 
+            <br>
+            <p>Johnson also plays on the girls’ soccer team at LTS. LTS has both a boys’ basketball and soccer team that Johnson has every opportunity join, but he would rather force himself onto the girls’ team than compete with his male peers.</p> 
+            <br>
+           <a href="https://longtrailschool.smugmug.com/2023-24/LTS-Varsity-Girls-vs-Eagles-photos-by-Gary-Baker/i-KrzBpps/A"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://longtrailschool.smugmug.com/2023-24/LTS-Varsity-Girls-vs-Eagles-photos-by-Gary-Baker/i-P3F4tdf/A"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://longtrailschool.smugmug.com/2023-24/LTS-Varsity-Girls-vs-Eagles-photos-by-Gary-Baker/i-p3m8RDN/A"><i class="fa-solid fa-image photo"></i></a>
+           <a href="https://longtrailschool.smugmug.com/2023-24/LTS-Varsity-Girls-vs-Eagles-photos-by-Gary-Baker/i-MB9Gf3X/A"><i class="fa-solid fa-image photo"></i></a>
+            </div>
+</div>
+
+<div id="Female" class="tabcontent">
+    <h2 class="tabhead">FEMALE <span style="color:#AAAAAA;">Competitions Won by </span>MALE <span style="color:#AAAAAA;">Athletes</span></h2>
+</div>
+
+
+<script>
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.   body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+</script>
+
+<script>
+    /* toggle between hiding and showing the dropdown content */
+    function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+             var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+             }
+          }
+       }
+    }
+ 
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+       
+
+<script>
+    const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+        
+    const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+        .map((td, index) => [headers[index], td.textContent]));
+    
+    const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+        
+    const refresh = () => {
+        const
+        headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+        filters = Object.entries(filterState),
+        showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+        const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+        row.classList.toggle('hidden-row', !show);
+        });
+    };
+        
+    const handleFilterChange = (e) => {
+          const
+            field = e.target.dataset.field,
+        value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+    };
+          
+    document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
+</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>
